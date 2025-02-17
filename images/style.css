@@ -1,0 +1,233 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   display: grid;
+   place-items: center;
+   height: 280dvh;
+   overflow-x: hidden;
+   align-items: space-around;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.live-stream-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 80%;
+   overflow-x: hidden;
+   margin-top: 230px;
+}
+
+.element-type {
+   color: black;
+   position: absolute;
+   top: 100px;
+   right: 900px;
+   font-size: 450%;
+}
+
+@keyframes slideOut {
+   0% {
+      transform: translate(5%) scale(0);
+   }
+
+   100% {
+      transform: translate(-10%) scale(1);
+   }
+}
+
+.element-type-1 {
+   color: rgb(29, 164, 218);
+   position: absolute;
+   top: 190px;
+   right: 800px;
+   align-content: center;
+   /* padding: 10px; */
+   font-size: 150%;
+   letter-spacing: 3px;
+}
+
+.item2 {
+   display: flex;
+   align-content: center;
+   align-items: center;
+   position: absolute;
+   flex-wrap: wrap;
+   margin-bottom: 190px;
+   gap: 30px;
+   overflow: none;
+}
+
+.language-button {
+   background-color: #2c3e50;
+   background-color: #d40c27;
+   color: #ffffff;
+   font-family: sans-serif;
+   font-size: 1.3em;
+   height: 50px;
+   padding: 15px;
+   margin: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.language-options a {
+   text-decoration: none;
+   color: #337ab7;
+}
+
+.language-options li {
+   display: flex;
+   margin-bottom: 15px;
+   width: 200px;
+   align-items: center;
+   justify-content: center;
+}
+
+.language-options :hover {
+   background-color: #23527c;
+   color: #ffffff;
+}
+
+.language-options {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   border: 1px solid #ccc;
+   padding: 10px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+}
+
+.item2 .element2 {
+   color: #ffffff;
+   background-color: #2c3e50;
+   border-radius: 5px;
+   display: inline-block;
+   font-size: 23px;
+   padding: 9px 9px;
+   text-align: center;
+   text-decoration: none;
+}
+
+.element-type-2 {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   position: absolute;
+   top: 790px;
+   left: 410px;
+   padding: 10px;
+   transition-duration: 0.2s;
+}
+
+.accepted {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   font-size: 1.5em;
+   margin-top: 420px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hidden-button {
+   display: none;
+}
+
+.toggle-button {
+   display: inline-block;
+   padding: 5px;
+   line-height: 50px;
+   background-color: #2c3e50;
+   color: #ffffff;
+   border: none;
+   cursor: pointer;
+}
+
+fieldset {
+   display: flex;
+   position: absolute;
+   /* flex-wrap: wrap; */
+   border: 1px solid black;
+   justify-content: center;
+   height: 30vh;
+   left: -70px;
+   align-items: center;
+}
+
+#alter-call {
+   flex-wrap: wrap;
+   position: absolute;
+   top: 980px;
+   left: 70px;
+}
+
+#first-time-worshipper {
+   position: absolute;
+   top: 980px;
+   left: 370px;
+}
+
+#testimonies {
+   position: absolute;
+   top: 980px;
+   left: 800px;
+}
+
+#prayer-request {
+   position: absolute;
+   top: 980px;
+   left: 1080px;
+}
+
+.toggle-button:hover {
+   background-color: #3e8e41;
+}
+
+.toggle-button,
+.hidden-details fieldset {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.stay-connected {
+   align-items: center;
+   position: absolute;
+   font-size: 5em;
+   justify-content: center;
+   margin-top: 980px;
+}
+
+footer {
+   gap: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+footer p {
+   display: flex;
+   justify-content: center;
+   color: white;
+}
+
+.never-miss-an-update {
+   display: flex;
+   color: rgb(29, 164, 218);
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 290px;
+}
