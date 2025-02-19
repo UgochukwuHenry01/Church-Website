@@ -47,6 +47,19 @@ giveBtn.addEventListener('click', () => {
     console.log('Give button clicked!');
 });
 
+
+const giftBtn = document.querySelector('.gift-btn');
+const paymentForm = document.querySelector('.payment-form');
+const donateBtn = document.querySelector('.donate-btn');
+
+giftBtn.addEventListener('click', () => {
+  paymentForm.style.display = 'block';
+});
+
+donateBtn.addEventListener('click', () => {
+  // Add payment processing logic here
+  alert('Thank you for your donation!');
+});
 //for my map to show
 // function initMap() {
 // const map = newgoogle.maps.Map(document.getElementById("map"),{

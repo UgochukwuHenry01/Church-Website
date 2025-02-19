@@ -26,9 +26,9 @@
                     </li>
             </nav>
         </section>
-        
+
         <section class="give-options">
-            <h2>Give Options</h2>
+            <!-- <h2>Give Options</h2>
             <ul>
                 <li>
                     <input type="radio" id="one-time" name="give-type">
@@ -41,10 +41,24 @@
             </ul>
             <form>
                 <label for="amount">Amount:</label>
-                <input type="number" id="amount" name="amount">
-                <button class="give-btn">Give Now</button>
-            </form>
+                <input type="number" id="amount" name="amount"> -->
+                <div class="payment-form" style="display: none;">
+                    <h2>Make a Donation</h2>
+                    <form>
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" name="amount"><br><br>
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number"><br><br>
+                        <label for="expiration-date">Expiration Date:</label>
+                        <input type="text" id="expiration-date" name="expiration-date"><br><br>
+                        <label for="security-code">Security Code:</label>
+                        <input type="text" id="security-code" name="security-code"><br><br>
+                        <button class="donate-btn">Donate</button>
+                    </form>
+                    <button class="gift-btn">Give Now</button>
+                </div>
         </section>
+
         <main>
             <section class="hero">
                 <h2>FREE DONATION</h2>
