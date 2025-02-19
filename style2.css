@@ -79,7 +79,7 @@ header nav ul {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -124,4 +124,8 @@ header nav ul {
     width: 100px;
     height: 100px;
     object-fit: cover;
+}
+nav ul{
+    font-size: 1.2em;
+    color: rgb(29, 164, 218);
 }
