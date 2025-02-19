@@ -10,12 +10,13 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#map{
+#map {
     display: flex;
-  margin-top: 400px;
+    margin-top: 400px;
     justify-content: center;
     align-items: center;
 }
+
 .location {
     display: flex;
     justify-content: center;
@@ -26,16 +27,13 @@ body {
     justify-content: center;
     font-size: 7em;
 }
-footer {
-  
- }
- 
- footer p {
-  
- }
+
+footer {}
+
+footer p {}
 
 
- header {
+header {
     background-color: #333;
     color: #fff;
     padding: 1em;
@@ -54,7 +52,7 @@ header nav ul {
     background-image: url('./images/giving_quotes.jpg');
     background-size: cover;
     background-position: center;
-    font-family:sans-serif;
+    font-family: sans-serif;
     object-fit: cover;
     height: 90vh;
     display: flex;
@@ -62,7 +60,8 @@ header nav ul {
     align-items: center;
     color: #fff;
 }
-.hero img{
+
+.hero img {
     width: 100%;
     height: 130dvh;
     overflow: hidden;
@@ -76,7 +75,8 @@ header nav ul {
     bottom: 450px;
     font-size: 48px;
 }
-.hero p{
+
+.hero p {
     font-family: serif;
     font-size: 1em;
 }
@@ -118,7 +118,7 @@ header nav ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    font-family:sans-serif;
+    font-family: sans-serif;
     justify-content: center;
 }
 
@@ -131,7 +131,8 @@ header nav ul {
     height: 100px;
     object-fit: cover;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background: rgb(29, 27, 27);
+    background: #ffffff;
     height: 90px;
     width: 100%;
     position: fixed;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     padding: 7px 13px;
     font-size: 17px;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ nav ul li a {
 a.active,
 a:hover {
     background: grey;
-    color: orangered;
+    color:#d40c27;
     transition: .5s;
     transform-origin: top right;
     transform: scale(1.02);
@@ -156,42 +156,41 @@ i {
 
 .item1 {
     position: absolute;
-    top: 150px;
-    left: 100px;
+     top: 190px; 
+    left: 200px; 
     color: white;
-    font-size: 2em;
-    margin-top: 50px;
-   
-    text-align: center;
-    margin: 150px;
-    font-size: 30px;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-weight: bold;
-    word-spacing: 0px;
+    font-size: 3em;
+}
+.item1 h3{
+    position: relative;
+    top: 30px;
+    left: 250px;
 }
 
+.item1 h6{
+    position: relative;
+    bottom: 20px;
+    left: 140px;
+}
+.item1 span{
+    position: relative;
+    bottom: 40px;
+    left: 250px;
+    font-size: 0.8em;
+}
 
 .item2 {
     display: flex;
     justify-content: space-between;
     align-content: center;
     position: absolute;
-    top: 560px;
+    top: 460px;
     left: 550px;
     padding: 10px;
     transition-duration: 0.2s;
 }
 
-.item2:hover {
-    transform-origin: top left;
-    transform: scale(1.02);
-}
 
-.item3:hover {
-    transform-origin: top right;
-    transform: scale(1.02);
-}
 
 .item2 .element1 {
     color: #ffffff;
