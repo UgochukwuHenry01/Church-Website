@@ -48,7 +48,6 @@ nav ul li a {
 
 a.active,
 a:hover {
-    background: grey;
     color:#d40c27;
     transition: .5s;
     transform-origin: top right;
