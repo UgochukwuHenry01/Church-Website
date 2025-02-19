@@ -56,7 +56,7 @@ a:hover {
 
 .home {
     width: 100%;
-    height: 130dvh;
+    height: 110dvh;
     overflow: hidden;
     position: relative;
 }
@@ -174,8 +174,8 @@ i {
 .item1 span{
     position: relative;
     bottom: 40px;
-    left: 250px;
-    font-size: 0.8em;
+    left: 330px;
+    font-size: 0.7em;
 }
 
 .item2 {
@@ -188,8 +188,6 @@ i {
     padding: 10px;
     transition-duration: 0.2s;
 }
-
-
 
 .item2 .element1 {
     color: #ffffff;
@@ -220,7 +218,7 @@ i {
     text-decoration: underline;
     position: absolute;
     top: 550px;
-    right: 600px;
+    right: 550px;
     padding: 10px;
     font-size: 20px;
 }
@@ -229,6 +227,12 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    margin-top: 30px;
     font-size: 5em;
+}
+
+hr{
+    position: absolute;
+    left: 350px;
+    right: 350px;
 }
