@@ -59,3 +59,16 @@ donateBtn.addEventListener('click', () => {
   // Add payment processing logic here
   alert('Thank you for your donation!');
 });
+
+// Get the Image Element
+const image = document.querySelector('img');
+
+// Add an Event Listener for Image Load
+image.addEventListener('load', () => {
+  console.log('Image Loaded!');
+});
+
+// Add an Event Listener for Image Error
+image.addEventListener('error', () => {
+  console.log('Image Loading Error!');
+});
