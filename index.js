@@ -46,3 +46,16 @@ giveBtn.addEventListener('click', () => {
     // Code to handle the give button click event
     console.log('Give button clicked!');
 });
+
+const giftBtn = document.querySelector('.gift-btn');
+const paymentForm = document.querySelector('.payment-form');
+const donateBtn = document.querySelector('.donate-btn');
+
+giftBtn.addEventListener('click', () => {
+  paymentForm.style.display = 'block';
+});
+
+donateBtn.addEventListener('click', () => {
+  // Add payment processing logic here
+  alert('Thank you for your donation!');
+});
