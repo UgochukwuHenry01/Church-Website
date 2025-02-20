@@ -63,7 +63,7 @@ donateBtn.addEventListener('click', () => {
 const container = document.querySelectorAll(".img-container");
 const image = document.querySelectorAll(".hidden");
 
-let imgArr = ["./images/image 5.jpg","./images/image 6.jpg","./images/give 2.jpg"];
+let imgArr = ["./image/image 5.jpg","./image/image 6.jpg","./image/give 2.jpg"];
 
 for (let i = 0; i < container.length; i++)
     container[i].addEventListener("click", function(){
