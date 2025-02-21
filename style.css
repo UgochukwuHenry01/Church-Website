@@ -261,6 +261,33 @@ i {
     font-size: 5em;
 }
 
+.connected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    animation: typewriter 4s steps(15) infinite, blinktextcursor 0.5 infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to{
+        width: 10px;
+    }
+}
+@keyframes blinktextcursor{
+    from{
+        border-right:hsl(black) ;
+    }
+    to{
+        border-right-color:transparent ;
+    }
+}
+
 hr{
     position: absolute;
     left: 150px;
