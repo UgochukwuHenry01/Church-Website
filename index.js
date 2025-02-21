@@ -60,21 +60,3 @@ donateBtn.addEventListener('click', () => {
   alert('Thank you for your donation!');
 });
 
-const container = document.querySelectorAll(".img-container");
-const image = document.querySelectorAll(".hidden");
-
-let imgArr = ["./image/image 5.jpg","./image/image 6.jpg","./image/give 2.jpg"];
-
-for (let i = 0; i < container.length; i++)
-    container[i].addEventListener("click", function(){
-image[i].classList.remove("hidden");
-});
-
-const shuffle = function (imgArr){
-    for (let i = imgArr.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * (i + 1));
-        [imgArr[i], imgArr[j]] = [imgArr[j], imgArr[i]];
-    }
-    return imgArr;
-};
-console.log(shuffle(imgArr));
