@@ -262,29 +262,31 @@ i {
 }
 
 .connected {
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 3px;
+    cursor: pointer;
     border-right: 2px solid black;
-    animation: typewriter 4s steps(15) infinite, blinktextcursor 0.5 infinite;
-    white-space: nowrap;
+    animation: typewriter 4s steps(20) infinite, blinkTextCursor 0.2s infinite;
     overflow: hidden;
 }
 
-@keyframes typewriter{
+@keyframes typewriter {
     from{
         width: 0;
     }
     to{
-        width: 10px;
+        width: 550px;
     }
 }
-@keyframes blinktextcursor{
+@keyframes blinkTextCursor {
     from{
-        border-right:hsl(black) ;
+        border-right:black ;
     }
     to{
-        border-right-color:transparent ;
+        border-right-color: transparent ;
     }
 }
 
