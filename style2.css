@@ -268,3 +268,48 @@ button[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
+/* nav{
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo img {
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+nav ul{
+    float:right;
+    margin-right: 20px;
+    background-color: #0082e6;
+}
+
+nav ul li{
+    display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background-color: #2c3e50;
+    color: #d40c27;
+    transition: .5s;
+    transform-origin: top right;
+    transform: scale(1.02);
+} */
+
+
+
+
