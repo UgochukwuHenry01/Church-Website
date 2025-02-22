@@ -73,14 +73,7 @@ header {
     font-size: 1em;
 }
 
-.give-btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 40px;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .give-options {
     margin-left: 110px;
