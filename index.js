@@ -39,9 +39,6 @@ function loadNavBar() {
 }
 loadNavBar();
 
-
-
-
 // for payment form 
 const form = document.getElementById('payment-form');
 const submitButton = document.getElementById('submit-button');

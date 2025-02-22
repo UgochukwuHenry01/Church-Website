@@ -119,7 +119,7 @@ nav ul {
 #payment-form {
     max-width: 500px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -138,7 +138,7 @@ nav ul {
   
   input[type="text"], input[type="email"], input[type="date"], input[type="number"] {
     width: 100%;
-    height: 40px;
+    height: 30px;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
