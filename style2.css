@@ -76,15 +76,37 @@ header {
     padding: 10px;
 }
 
-h2 p {
+.impact h2 {
     position: absolute;
-    margin-left: 300px;
+    left: 90px;
+    margin-top: 90px;
+    font-size: 1.8em;
+}
+
+.impact p {
+    position: absolute;
+    left: 130px;
+    margin-top: 133px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.impact i {
+    position: absolute;
+    left: 250px;
+    margin-top: 163px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .impact ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 250px;
+    margin-right: 450px;
     display: flex;
     flex-wrap: wrap;
     font-family: sans-serif;
@@ -96,8 +118,8 @@ h2 p {
 }
 
 .impact img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -110,21 +132,46 @@ nav ul {
     color: #fff;
 }
 
-fieldset{
+fieldset {
     position: absolute;
     background-color: #0082e6;
     left: 67%;
     margin-top: 70px;
 }
 
-strong{
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 30%;
+    gap: 20px;
+}
+
+.logo img{
+    border-radius: 50px;
+}
+
+.logo img{
+    transition: .5s;
+    transform-origin: top right;
+    transform: scale(1.02);
+}
+strong {
     color: #2c3e50;
     position: absolute;
-    left: 75%;
-    margin-top: 37px;
+    left: 71%;
+    margin-top: 30px;
     font-size: 1.7em;
 }
-.payment-request{
+
+.payment-request strong {
+    color: #fff;
+    position: absolute;
+    left: 26%;
+    margin-top: 10px;
+    font-size: 1.08em;
+}
+
+.payment-request {
     display: flex;
     justify-content: center;
     width: 400px;
@@ -139,28 +186,31 @@ strong{
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: -5px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-  }
-  
-  input[type="text"], input[type="email"], input[type="date"], input[type="number"] {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
     width: 100%;
     height: 30px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     width: 100%;
     height: 40px;
     background-color: #2c3e50;
@@ -169,9 +219,8 @@ strong{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
+}
+
+button[type="submit"]:hover {
     background-color: #3e8e41;
-  }
-  
+}
