@@ -24,7 +24,12 @@ body {
     gap: 5px;
     height: 400px;
     margin-top: 40px;
+}
 
+.video-slide{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 #church-story {
@@ -273,8 +278,8 @@ i {
     align-items: center;
     letter-spacing: 3px;
     cursor: pointer;
-    border-right: 2px solid black;
-    animation: typewriter 3s steps(30) infinite, blinkTextCursor 1s infinite;
+    border-right: 1px solid black;
+    animation: typewriter 3s steps(30) infinite, blinkTextCursor 0.5s infinite;
     white-space: nowrap;
     overflow: hidden;
 }
