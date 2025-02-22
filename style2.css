@@ -181,18 +181,18 @@ fieldset {
     margin-top: 70px;
 }
 
-.logo {
+.logo-type {
     display: flex;
     justify-content: center;
     margin-right: 30%;
     gap: 20px;
 }
 
-.logo img {
+.logo-type img {
     border-radius: 50px;
 }
 
-.logo img:hover {
+.logo-type img:hover {
     transition: .5s;
     transform-origin: top right;
     transform: scale(1.08);
@@ -209,7 +209,7 @@ strong {
 .payment-request strong {
     color: #fff;
     position: absolute;
-    left: 26%;
+    left: 10%;
     margin-top: 10px;
     font-size: 1.08em;
 }
@@ -266,4 +266,146 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #3e8e41;
+}
+
+nav {
+    background: #ffffff;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+label.logo img {
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    padding: 7px 13px;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: color 0.5s ease-out;
+    transition-duration: 0.2s;
+}
+
+a.active,
+a:hover {
+    color: #d40c27;
+    transition: .5s;
+    transform-origin: top right;
+    transform: scale(1.02);
+}
+
+.home {
+    width: 100%;
+    height: 110dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+.home img {
+
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: orangered;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width:920px) {
+    nav {
+        justify-content: center;
+    }
+
+    a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
