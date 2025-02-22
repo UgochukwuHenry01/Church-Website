@@ -36,7 +36,6 @@ header {
     text-align: center;
 }
 
-
 .hero {
     background-image: url('./images/giving_quotes.jpg');
     background-size: cover;
@@ -64,7 +63,7 @@ header {
     font-size: 7em;
 }
 
-.hero ul{
+.hero ul {
     margin-top: 290px;
 }
 
@@ -72,13 +71,6 @@ header {
     font-family: serif;
     font-size: 1em;
 }
-
-
-
-
-
-
-
 
 .impact {
     padding: 10px;
@@ -117,8 +109,3 @@ nav ul {
     font-size: 1.4em;
     color: #fff;
 }
-
-
-  
-  
-
