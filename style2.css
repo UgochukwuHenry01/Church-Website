@@ -61,6 +61,29 @@ header {
     font-size: 48px;
     margin-top: 130px;
     font-size: 7em;
+    animation: typewriter 3s steps(30) infinite, blinkTextCursor 0.5s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 800px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: black;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .hero ul {
@@ -117,6 +140,12 @@ header {
     margin: 10px;
 }
 
+.impact li:hover{
+    transition: .5s;
+    transform-origin: top right;
+    transform: scale(1.02);
+}
+
 .impact img {
     width: 350px;
     height: 350px;
@@ -132,6 +161,19 @@ nav ul {
     color: #fff;
 }
 
+#bank {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group label{
+    color: #fff;
+  }
+
 fieldset {
     position: absolute;
     background-color: #0082e6;
@@ -146,15 +188,16 @@ fieldset {
     gap: 20px;
 }
 
-.logo img{
+.logo img {
     border-radius: 50px;
 }
 
-.logo img{
+.logo img:hover {
     transition: .5s;
     transform-origin: top right;
-    transform: scale(1.02);
+    transform: scale(1.08);
 }
+
 strong {
     color: #2c3e50;
     position: absolute;
