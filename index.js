@@ -59,15 +59,17 @@ loadNavBar();
 //   // Add payment processing logic here
 //   alert('Thank you for your donation!');
 // });
-const giftBtn = document.querySelector('.gift-btn');
-const paymentForm = document.querySelector('.payment-form');
-const donateBtn = document.querySelector('.donate-btn');
 
-giftBtn.addEventListener('click', () => {
-  paymentForm.style.display = 'block';
+
+// for payment form 
+const form = document.getElementById('payment-form');
+const submitButton = document.getElementById('submit-button');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // Handle form data here
+  const formData = new FormData(form);
+  // Send form data to server or process it 
+  console.log(formData);
 });
 
-donateBtn.addEventListener('click', () => {
-  // Add payment processing logic here
-  alert('Thank you for your donation!');
-});
