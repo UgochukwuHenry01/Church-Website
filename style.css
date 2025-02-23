@@ -263,6 +263,27 @@ i {
     font-size: 20px;
 }
 
+.testimonies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 5em;
+}
+
+.stay-connected {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+    /* border-right: 1px solid black;
+    animation: typewriter 3s steps(30) infinite, blinkTextCursor 0.5s infinite;
+    white-space: nowrap;
+    overflow: hidden; */
+}
+
 .service {
     display: flex;
     justify-content: center;
