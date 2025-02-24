@@ -32,12 +32,7 @@ languageOptions.addEventListener('click', (e) => {
     }
 });
 
-function loadNavBar() {
-    const navBarContainer = document.getElementById('nav-bar-container');
-    const navBarHtml = fetch('nav-bar.html').then(response => response.text())
-        .then(html => navBarContainer.innerHTML = html);
-}
-loadNavBar();
+
 
 // for payment form 
 const form = document.getElementById('payment-form');

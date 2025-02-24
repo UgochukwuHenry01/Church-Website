@@ -278,10 +278,53 @@ i {
     align-items: center;
     letter-spacing: 3px;
     cursor: pointer;
-   
-   
-   
-   
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 5em;
+}
+
+.messages {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-right: 1px solid black;
+    animation: typewriting 3s steps(30) infinite, blinkTextprint 0.5s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typewriting {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 500px;
+    }
+}
+
+@keyframes blinkTextprint {
+    from {
+        border-right-color: black;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+hr {
+    position: absolute;
+    left: 150px;
+    right: 150px;
 }
 
 .service {
