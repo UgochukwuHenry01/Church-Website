@@ -55,10 +55,10 @@ body {
    align-content: center;
    align-items: center;
    position: absolute;
-   flex-wrap: wrap;
-   margin-bottom: 190px;
-   gap: 30px;
-   overflow: none;
+   
+   margin-top: 100px;
+   /* gap: 30px; */
+   /* overflow: none; */
 }
 
 .language-button {

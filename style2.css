@@ -166,12 +166,12 @@ nav ul {
     height: 40px;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
 .form-group label {
-    color: #fff;
+    color: #333;
 }
 
 fieldset {
@@ -226,7 +226,7 @@ strong {
     margin: 40px auto;
     padding: 15px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -249,7 +249,7 @@ input[type="number"] {
     height: 30px;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 5px;
 }
 
