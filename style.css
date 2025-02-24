@@ -389,7 +389,7 @@ hr {
     height: 80%;
     display: flex;
     flex-direction: row;
-    transition: transform 1s ease-in-out;
+    transition: transform 1s 0.5s ease-in-out;
 }
 
 .testimonial {
@@ -404,13 +404,13 @@ hr {
 
 .testimonial ul {
     font-size: 18px;
-    font-style: sans-serif;
+    font-style: italic;
     margin-bottom: 20px;
     text-align: center;
-    width: 90%;
+    width: 80%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow:ellipsis ;
+    text-overflow: ellipsis;
 }
 
 .testimonial h3 {
@@ -420,9 +420,8 @@ hr {
 }
 
 .testimonial-image {
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
-    margin-bottom: 20px; 
-  }
-  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}

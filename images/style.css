@@ -21,9 +21,18 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 80%;
+   height: 80vh;
+   position: relative;
    max-width: 80%;
-   overflow-x: hidden;
+   overflow: hidden;
    margin-top: 230px;
+
+   iframe{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
 }
 
 .element-type {
@@ -134,7 +143,7 @@ body {
    align-items: center;
    flex-wrap: wrap;
    font-size: 1.5em;
-   margin-top: 420px;
+   margin-top: 750px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -158,9 +167,9 @@ fieldset {
    /* flex-wrap: wrap; */
    border: 1px solid black;
    justify-content: center;
-   height: 30vh;
-   left: -70px;
    align-items: center;
+   height: 50vh;
+   left: -60px;
 }
 
 #alter-call {
