@@ -402,14 +402,15 @@ hr {
     padding: 20px;
 }
 
-.testimonial p {
+.testimonial ul {
     font-size: 18px;
     font-style: sans-serif;
     margin-bottom: 20px;
     text-align: center;
-    width: 80%;
+    width: 90%;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow:ellipsis ;
 }
 
 .testimonial h3 {

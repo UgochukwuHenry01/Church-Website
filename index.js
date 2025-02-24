@@ -46,3 +46,14 @@ form.addEventListener('submit', (e) => {
 });
 
 
+const testimonialsSlider = document.querySelector('.testimonials-slider');
+const testimonials = document.querySelectorAll('.testimonial');
+let currentTestimonial = 0;
+
+setInterval(() => {
+  currentTestimonial++;
+  if (currentTestimonial >= testimonials.length) {
+    currentTestimonial = 0;
+  }
+  testimonialsSlider.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+}, 5000);
