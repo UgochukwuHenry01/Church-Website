@@ -1,20 +1,20 @@
 const livestreamcontainer = document.querySelector('.live-stream-container')
 livestreamcontainer.addEventListener('error', (event) => {
-    console.error('live stream error:', event);
+  console.error('live stream error:', event);
 })
 
 //for my section buttons (alter-call, prayer request, testimonies)
 const toggleButtons = document.querySelectorAll('.toggle-button');
 
 toggleButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-        const details = button.nextElementSibling;
-        const isVisible = details.style.display === 'block';
-        document.querySelectorAll('.details').forEach((detail) => {
-            detail.style.display = 'none';
-        });
-        details.style.display = isVisible ? 'none' : 'block';
+  button.addEventListener('click', () => {
+    const details = button.nextElementSibling;
+    const isVisible = details.style.display === 'block';
+    document.querySelectorAll('.details').forEach((detail) => {
+      detail.style.display = 'none';
     });
+    details.style.display = isVisible ? 'none' : 'block';
+  });
 });
 
 //for select a language button
@@ -22,22 +22,16 @@ const languageButton = document.querySelector('.language-button');
 const languageOptions = document.querySelector('.language-options');
 
 languageButton.addEventListener('click', () => {
-    languageOptions.style.display = languageOptions.style.display === 'block' ? 'none' :
-        'block';
+  languageOptions.style.display = languageOptions.style.display === 'block' ? 'none' :
+    'block';
 })
 languageOptions.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
-        const selectedLanguage = e.target.getAttribute('data-language');
-        console.log(`selected language: ${selectedLanguage}`);
-    }
+  if (e.target.tagName === 'A') {
+    const selectedLanguage = e.target.getAttribute('data-language');
+    console.log(`selected language: ${selectedLanguage}`);
+  }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const navHTML = fetch('nav.html')
-      .then(response => response.text())
-      .then(html => navBar.innerHTML = html);
-  });
-  
 
 // for payment form 
 const form = document.getElementById('payment-form');
