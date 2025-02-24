@@ -389,7 +389,7 @@ hr {
     height: 80%;
     display: flex;
     flex-direction: row;
-    transition: transform 1s  ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .testimonial {

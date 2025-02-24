@@ -46,8 +46,8 @@ form.addEventListener('submit', (e) => {
 });
 
 // for text slider
-const testimonialsSlider = document.querySelector('.testimonials-slider');
-const testimonials = document.querySelectorAll('.testimonial');
+const testimonialsSlider = document.querySelector(".testimonials-slider");
+const testimonials = document.querySelectorAll(".testimonial");
 let currentTestimonial = 0;
 
 setInterval(() => {
