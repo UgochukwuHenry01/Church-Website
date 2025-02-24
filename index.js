@@ -32,7 +32,12 @@ languageOptions.addEventListener('click', (e) => {
     }
 });
 
-
+document.addEventListener('DOMContentLoaded', () => {
+    const navHTML = fetch('nav.html')
+      .then(response => response.text())
+      .then(html => navBar.innerHTML = html);
+  });
+  
 
 // for payment form 
 const form = document.getElementById('payment-form');
