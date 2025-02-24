@@ -55,5 +55,5 @@ setInterval(() => {
   if (currentTestimonial >= testimonials.length) {
     currentTestimonial = 0;
   }
-  testimonialsSlider.style.transform = `translateX(-${currentTestimonial * 50}%)`;
+  testimonialsSlider.style.transform = `translateX(-${currentTestimonial * 80}%)`;
 }, 5000);

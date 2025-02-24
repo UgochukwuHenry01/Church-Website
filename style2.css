@@ -146,9 +146,13 @@ header {
     transform: scale(1.02);
 }
 
+.impact ul{
+    margin-right: 650px;
+}
+
 .impact img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -174,11 +178,12 @@ nav ul {
     color: #333;
 }
 
-fieldset {
+fieldset {  
     position: absolute;
     background-color: #0082e6;
     left: 67%;
     margin-top: 70px;
+    
 }
 
 .logo-type {
@@ -218,7 +223,7 @@ strong {
     display: flex;
     justify-content: center;
     width: 400px;
-    height: 690px;
+    height: 790px;
 }
 
 #payment-form {
