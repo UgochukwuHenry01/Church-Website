@@ -57,3 +57,33 @@ setInterval(() => {
   }
   testimonialsSlider.style.transform = `translateX(-${currentTestimonial * 80}%)`;
 }, 5000);
+
+//to help click my church request buttons
+const alterCallButton = document.querySelector('.alter-call');
+const alterCallForm = document.querySelector('.alter-call-form');
+
+alterCallButton.addEventListener('click', () => {
+  alterCallForm.style.display = 'block';
+});
+
+const firstTimeWorshipperButton = document.querySelector('.first-time-worshipper');
+const firstTimeWorshipperForm = document.querySelector('.first-time-worshipper-form');
+
+firstTimeWorshipperButton.addEventListener('click', () => {
+  firstTimeWorshipperForm.style.display = 'block';
+});
+
+const testimoniesButton = document.querySelector('.testimonies');
+const testimoniesForm = document.querySelector('.testimonies-form');
+
+testimoniesButton.addEventListener('click', () => {
+  testimoniesForm.style.display = 'block';
+});
+
+const prayerRequestButton = document.querySelector('.prayer-request');
+const prayerRequestForm = document.querySelector('.prayer-request-form');
+
+prayerRequestButton.addEventListener('click', () => {
+  prayerRequestForm.style.display = 'block';
+});
+
