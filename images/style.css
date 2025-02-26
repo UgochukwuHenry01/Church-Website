@@ -168,63 +168,6 @@ fieldset {
    left: -60px;
 }
 
-#alter-call {
-   position: relative;
-   top: 780px;
-   left: 70px;
-}
-
-#first-time-worshipper {
-   position: relative;
-   top: 700px;
-   left: 370px;
-}
-
-#testimonies {
-   position: relative;
-   top: 700px;
-   left: 800px;
-}
-
-#prayer-request {
-   position: relative;
-   top: 700px;
-   left: 1080px;
-}
-
-.toggle-button:hover {
-   background-color: #3e8e41;
-}
-
-.toggle-button,
-.hidden-details fieldset {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-}
-
-.stay-connected {
-   align-items: center;
-   position: absolute;
-   font-size: 5em;
-   justify-content: center;
-   margin-top: 980px;
-}
-
-/* footer {
-   gap: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
-}
-
-footer p {
-   display: flex;
-   justify-content: center;
-   color: white;
-} */
 
 .never-miss-an-update {
    display: flex;
