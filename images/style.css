@@ -40,15 +40,6 @@ body {
    font-size: 450%;
 }
 
-/* @keyframes slideOut {
-   0% {
-      transform: translate(5%) scale(0);
-   }
-
-   100% {
-      transform: translate(-10%) scale(1);
-   }
-} */
 
 .element-type-1 {
    color: rgb(29, 164, 218);
