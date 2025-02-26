@@ -22,11 +22,9 @@ body {
    justify-content: center;
    align-items: center;
    width: 80%;
-   height: 80vh;
-   position: relative;
-   max-width: 80%;
    overflow: hidden;
-   margin-top: 230px;
+   margin-right: 100px;
+   margin-top: 200px;
 
    iframe{
       width: 100%;
@@ -35,15 +33,14 @@ body {
    }
 }
 
-.element-type {
-   color: black;
-   position: absolute;
-   bottom: 480px;
-   right: 900px;
+.element {
+   color: #343434;
+   position: relative;
+   top: 140px;
    font-size: 450%;
 }
 
-@keyframes slideOut {
+/* @keyframes slideOut {
    0% {
       transform: translate(5%) scale(0);
    }
@@ -51,13 +48,13 @@ body {
    100% {
       transform: translate(-10%) scale(1);
    }
-}
+} */
 
 .element-type-1 {
    color: rgb(29, 164, 218);
    position: absolute;
-   bottom: 450px;
-   right: 800px;
+   bottom: 400px;
+   right: 400px;
    align-content: center;
    font-size: 150%;
    letter-spacing: 3px;
@@ -172,27 +169,26 @@ fieldset {
 }
 
 #alter-call {
-   flex-wrap: wrap;
-   position: absolute;
-   top: 980px;
+   position: relative;
+   top: 780px;
    left: 70px;
 }
 
 #first-time-worshipper {
-   position: absolute;
-   top: 980px;
+   position: relative;
+   top: 700px;
    left: 370px;
 }
 
 #testimonies {
-   position: absolute;
-   top: 980px;
+   position: relative;
+   top: 700px;
    left: 800px;
 }
 
 #prayer-request {
-   position: absolute;
-   top: 980px;
+   position: relative;
+   top: 700px;
    left: 1080px;
 }
 
@@ -242,13 +238,13 @@ footer p {
 
 footer {
    display: flex;
-   margin-top: 300px;
+   margin-top: -200px;
    justify-content: center;
    background-color: #343434;
 }
 
 .container {
-   width: 1140px;
+   width: 1300px;
    display: flex;
    justify-content: center;
    margin: 70px;
@@ -341,7 +337,7 @@ a:hover {
 .footer-bottom {
   background-color: #f18930;
  margin-top: 350px;
- width: 100%;
+ width: 150%;
  position: absolute;
 }
 .footer-bottom p{

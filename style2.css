@@ -166,6 +166,7 @@ fieldset {
 .logo-type {
     display: flex;
     justify-content: center;
+    object-fit: cover;
     margin-right: 40%;
     margin-top:100px ;
     gap: 30px;
@@ -257,7 +258,7 @@ button[type="submit"]:hover {
 
 footer {
     display: flex;
-    margin-top: 300px;
+    margin-top: 100px;
     justify-content: center;
     background-color: #343434;
 }

@@ -31,26 +31,6 @@ body{
     overflow: hidden;
 }
 
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 800px;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: black;
-    }
-
-    to {
-        border-right-color: transparent;
-    }
-}
-
 .heading {
     display: flex;
     justify-content: center;
