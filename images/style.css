@@ -67,8 +67,8 @@ body {
    display: flex;
    align-content: center;
    align-items: center;
-   position: absolute;
-   margin-bottom: 50px;
+   margin: 0;
+   padding: 35px;
 }
 
 .language-button {
