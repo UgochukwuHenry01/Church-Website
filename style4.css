@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     height: 600px;
-   margin: 90px;
+   margin: 50px;
 
 }
 
@@ -36,12 +36,6 @@
     justify-content: center;
     color: #2c3e50;
     margin-top: 20px;
-}
-
-.contact-us-display{
-    display: flex;
-    color: red;
-    margin-left: 100px;
 }
 
 footer {
