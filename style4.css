@@ -9,7 +9,8 @@
 .location {
     display: flex;
     justify-content: center;
-   margin-bottom: 300px;
+    height: 600px;
+   margin: 90px;
 
 }
 
@@ -17,7 +18,30 @@
     display: flex;
     justify-content: center;
     font-size: 6em;
-    margin: 100Px;
+    margin-top: 150Px;
+}
+
+.stay-connected-on {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.contact-us-display{
+    display: flex;
+    color: red;
+    margin-left: 100px;
 }
 
 footer {
