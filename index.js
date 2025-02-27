@@ -63,27 +63,27 @@ const alterCallButton = document.querySelector('.alter-call');
 const alterCallForm = document.querySelector('.alter-call-form');
 
 alterCallButton.addEventListener('click', () => {
-  alterCallForm.style.display = 'block';
+  alterCallForm.style.display = alterCallForm.style.display === 'block' ? 'none' : 'block';
 });
 
 const firstTimeWorshipperButton = document.querySelector('.first-time-worshipper');
 const firstTimeWorshipperForm = document.querySelector('.first-time-worshipper-form');
 
 firstTimeWorshipperButton.addEventListener('click', () => {
-  firstTimeWorshipperForm.style.display = 'block';
+  firstTimeWorshipperForm.style.display = firstTimeWorshipperForm.style.display === 'block' ? 'none' : 'block'
 });
 
 const testimoniesButton = document.querySelector('.testimonies');
 const testimoniesForm = document.querySelector('.testimonies-form');
 
 testimoniesButton.addEventListener('click', () => {
-  testimoniesForm.style.display = 'block';
+  testimoniesForm.style.display = testimoniesForm.style.display === 'block' ? 'none' : 'block'
 });
 
 const prayerRequestButton = document.querySelector('.prayer-request');
 const prayerRequestForm = document.querySelector('.prayer-request-form');
 
 prayerRequestButton.addEventListener('click', () => {
-  prayerRequestForm.style.display = 'block';
+  prayerRequestForm.style.display = prayerRequestForm.style.display === 'block' ? 'none' : 'block'
 });
 
