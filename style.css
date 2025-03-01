@@ -29,6 +29,9 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    border: none;
+    outline: none;
+    box-shadow:none ;
 }
 
 #church-story {
