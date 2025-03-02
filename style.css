@@ -31,7 +31,7 @@ body {
     margin-top: 50px;
     border: none;
     outline: none;
-    box-shadow:none ;
+    box-shadow: none;
 }
 
 #church-story {
@@ -201,7 +201,7 @@ i {
     font-size: 3em;
 }
 
-.item1 h3{
+.item1 h3 {
     position: relative;
     top: 30px;
     left: 250px;
@@ -617,12 +617,13 @@ a:hover {
 }
 
 .footer-bottom {
-   background-color: #f18930;
-  margin-top: 350px;
-  width: 100%;
-  position: absolute;
+    background-color: #f18930;
+    margin-top: 350px;
+    width: 100%;
+    position: absolute;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     display: flex;
     justify-content: center;
 }
@@ -632,4 +633,65 @@ p {
     margin: 0;
     font-size: 16px;
     padding: 7px;
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.popup-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    background-color: #0056b3;
+}
+
+.popup-content {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    top: 38px;
+    right: -3px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.popup-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-content li{
+    margin-bottom: 10px;
+}
+
+.popup-content a{
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.popup-button a:hover{
+    color: #23527c;
+}
+
+.show{
+    display: block;
 }
