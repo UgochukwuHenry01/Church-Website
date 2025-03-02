@@ -46,19 +46,9 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 1.5em;
+    gap: 15px;
     padding: 0;
     margin-top: 50px;
-    margin-right: 75%;
-}
-
-.list li::before {
-    content: '';
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background-color: #f18930;
-    transition-duration: .5s;
+    margin-right: 70%;
 }
