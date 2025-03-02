@@ -651,6 +651,12 @@ p {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.popup-button.show{
+    opacity: 1;
 }
 
 .popup-button:hover {
