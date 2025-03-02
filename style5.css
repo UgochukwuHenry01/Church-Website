@@ -41,3 +41,24 @@ text-decoration: none;
     font-size: 30px;
     margin-left: 125px;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+    margin-right: 75%;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #f18930;
+    transition-duration: .5s;
+}
