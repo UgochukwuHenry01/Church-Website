@@ -25,3 +25,19 @@ text-decoration: none;
     letter-spacing: 3px;
     cursor: pointer;
 }
+
+.talk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 55%;
+    font-size: 5em;
+}
+
+ .text h2, h3{
+    font-weight: bold;
+    color: aqua;
+    font-size: 30px;
+    margin-left: 125px;
+}

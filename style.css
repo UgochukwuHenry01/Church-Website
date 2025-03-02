@@ -577,18 +577,6 @@ h4 {
     transition-duration: .5s;
 }
 
-.active li::before {
-    content: '';
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition-duration: .5s;
-}
-
 .list li:hover::before {
     width: 70px;
 }
