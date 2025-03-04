@@ -216,6 +216,7 @@ p {
     display: none;
     justify-content: center;
     text-align: center;
+    text-decoration: underline;
     position: absolute;
     width: 250px;
     top: 38px;
