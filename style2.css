@@ -200,22 +200,7 @@ strong {
     font-size: 1.7em;
 }
 
-.payment-request strong {
-    color: #fff;
-    position: absolute;
-    left: 25%;
-    margin-top: 10px;
-    font-size: 1.08em;
-}
 
-.payment-request {
-    display: flex;
-    justify-content: center;
-    width: 420px;
-    height: 770px;
-    margin-left: -25px;
-    margin-top: 100px;
-}
 
 
 
