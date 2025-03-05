@@ -19,6 +19,8 @@ languageOptions.addEventListener('click', (e) => {
 });
 
 
+//Get all buttons
+const buttons = document.querySelectorAll('.button');
 
 // Add event listener to each button
 buttons.forEach((button) => {

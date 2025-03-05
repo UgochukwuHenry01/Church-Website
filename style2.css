@@ -45,25 +45,7 @@ header {
     text-align: center;
 }
 
-/* .hero {
-    background-image: url('./images/giving_quotes.jpg');
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-    object-fit: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
 
-.hero img {
-    width: 100%;
-    height: 130dvh;
-    overflow: hidden;
-    position: relative;
-} */
 
 .hero h1 {
     position: absolute;
@@ -235,53 +217,7 @@ strong {
     margin-top: 100px;
 }
 
-#payment-form {
-    width: 400px;
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
 
-.form-group {
-    margin-bottom: -5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="number"] {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #333;
-    border-radius: 5px;
-}
-
-button[type="submit"] {
-    width: 100%;
-    height: 40px;
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #3e8e41;
-}
 
 
 footer {

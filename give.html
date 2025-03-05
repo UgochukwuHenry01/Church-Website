@@ -53,56 +53,74 @@
             </nav>
         </section>
 
-        <strong>Praise Court Assembly</strong>
-        <fieldset class="payment-request">
-            <strong>MAKE PAYMENT HERE</strong>
+        <div class="payment-form">
+            <h2>Praise Court Assembly Bank Payment Form</h2>
             <form id="payment-form">
+              <fieldset id="payment-info">
+                <legend>Payment Information</legend>
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                  <label for="bank">Select Bank:</label>
+                  <select id="bank" name="bank">
+                    <option value="access-bank">Access Bank</option>
+                    <option value="zenith-bank">Zenith Bank</option>
+                    <option value="gtb">Guaranty Trust Bank (GTB)</option>
+                    <option value="first-bank">First Bank of Nigeria</option>
+                    <option value="uba">United Bank for Africa (UBA)</option>
+                    <option value="union-bank">Union Bank of Nigeria</option>
+                    <option value="fidelity-bank">Fidelity Bank</option>
+                    <option value="ecobank">Ecobank Nigeria</option>
+                    <option value="stanbic-ibtc">Stanbic IBTC Bank</option>
+                  </select>
                 </div>
-
+        
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                  <label for="account-name">Account Name:</label>
+                  <input type="text" id="account-name" name="account-name" value="Praise Court Assembly" readonly>
                 </div>
-
                 <div class="form-group">
-                    <label for="card-number">Card Number:</label>
-                    <input type="text" id="card-number" name="card-number" required>
+                  <label for="account-number">Account Number:</label>
+                  <input type="text" id="account-number" name="account-number" value="0123456789" readonly>
                 </div>
-
                 <div class="form-group">
-                    <label for="expiration-date">Expiration Date:</label>
-                    <input type="date" id="expiration-date" name="expiration-date" required>
+                  <label for="payment-type">Payment Type:</label>
+                  <select id="payment-type" name="payment-type">
+                    <option value="tithes">Tithes</option>
+                    <option value="offerings">Offerings</option>
+                    <option value="donations">Donations</option>
+                    <option value="other">Other (please specify)</option>
+                  </select>
                 </div>
-
+        
                 <div class="form-group">
-                    <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv" required>
+                  <label for="payment-amount">Payment Amount:</label>
+                  <input type="number" id="payment-amount" name="payment-amount">
                 </div>
-
                 <div class="form-group">
-                    <label for="amount">Amount:</label>
-                    <input type="number" id="amount" name="amount" required>
-
-                    <label for="bank">Select Bank:</label>
-                    <select id="bank" name="bank">
-                        <option value="">Select Bank</option>
-                        <option value="access_bank">Access Bank</option>
-                        <option value="gtbank">GTBank</option>
-                        <option value="first_bank">First Bank</option>
-                        <option value="zenith_bank">Zenith Bank</option>
-                        <!-- Add more bank options here -->
-                    </select>
+                  <label for="payment-description">Payment Description (optional):</label>
+                  <textarea id="payment-description" name="payment-description"></textarea>
                 </div>
-                <button type="submit" id="submit-button">Make Payment</button>
-                <br>
-                <br>
+                <button type="button" id="next-btn">Next</button>
+              </fieldset>
+              <fieldset id="payer-info" style="display: none;">
+                <legend>Payer's Information</legend>
                 <div class="form-group">
+                  <label for="payer-name">Name:</label>
+                  <input type="text" id="payer-name" name="payer-name">
+                </div>
+                <div class="form-group">
+                  <label for="payer-email">Email:</label>
+                  <input type="email" id="payer-email" name="payer-email">
+        
+                </div>
+                <div class="form-group">
+                  <label for="payer-phone">Phone Number:</label>
+                  <input type="text" id="payer-phone" name="payer-phone">
+                </div>
+                <button type="submit">Submit Payment</button>
+              </fieldset>
             </form>
-            </div>
-        </fieldset>
+          </div>
+        
 
         <section class="impact">
             <h2>Impact of Your tithes & offering to our community</h2>
