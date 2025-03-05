@@ -10,17 +10,32 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html{
+html {
     font-size: 12px;
     font-family: serif;
 }
 
-nav{
+nav {
     height: 60px;
-    background-color: var(--color-1);
+    background-color: #0056b3;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 header {
@@ -30,7 +45,7 @@ header {
     text-align: center;
 }
 
-.hero {
+/* .hero {
     background-image: url('./images/giving_quotes.jpg');
     background-size: cover;
     background-position: center;
@@ -48,7 +63,7 @@ header {
     height: 130dvh;
     overflow: hidden;
     position: relative;
-}
+} */
 
 .hero h1 {
     position: absolute;
@@ -168,12 +183,12 @@ nav ul {
     color: #333;
 }
 
-fieldset {  
+fieldset {
     position: absolute;
     background-color: #0082e6;
     left: 67%;
     margin-top: 60px;
-    
+
 }
 
 .logo-type {
@@ -181,7 +196,7 @@ fieldset {
     justify-content: center;
     object-fit: cover;
     margin-right: 40%;
-    margin-top:100px ;
+    margin-top: 100px;
     gap: 30px;
 }
 
@@ -265,9 +280,9 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #3e8e41;      
+    background-color: #3e8e41;
 }
-  
+
 
 footer {
     display: flex;
@@ -368,12 +383,13 @@ a:hover {
 }
 
 .footer-bottom {
-   background-color: #f18930;
-  margin-top: 350px;
-  width: 100%;
-  position: absolute;
+    background-color: #f18930;
+    margin-top: 350px;
+    width: 100%;
+    position: absolute;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     display: flex;
     justify-content: center;
 }
@@ -385,7 +401,7 @@ p {
     padding: 7px;
 }
 
-.popup {
+/* .popup {
     position: fixed;
     top: 20%;
     right: 20px;
@@ -405,7 +421,7 @@ p {
     transition: opacity 0.5s;
 }
 
-.popup-button.show{
+.popup-button.show {
     opacity: 1;
 }
 
@@ -430,29 +446,25 @@ p {
     white-space: nowrap;
 }
 
-.popup-content ul{
+.popup-content ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.popup-content li{
+.popup-content li {
     margin-bottom: 10px;
 }
 
-.popup-content a{
+.popup-content a {
     text-decoration: none;
     color: #337ab7;
 }
 
-.popup-button a:hover{
+.popup-button a:hover {
     color: #23527c;
 }
 
-.show{
+.show {
     display: block;
-}
-
-
-
-
+} */

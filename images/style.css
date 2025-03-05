@@ -23,20 +23,6 @@ body {
    }
 }
 
-.video-clip {
-   width: 100vw;
-   height: 100vh;
-   filter: blur(1px);
-   object-fit: cover;
-   top: 50%;
-   right: -15%;
-   transform: translate(-50, -50);
-   z-index: -1;
-}
-.video-clip img {
-   width: 100%;
-}
-
 .element {
    color: #343434;
    position: relative;
@@ -153,105 +139,99 @@ body {
    display: none;
 }
 
-.church-forms {
-   position: absolute;
-   top: 0;
-   left: 50%;
-   transform: translateX(-50%);
-   text-align: center;
-   margin-top: 1050px;
+/* Button container styles */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
 }
 
-button {
-   background-color: #2c3e50;
-   color: #fff;
-   padding: 14px 20px;
-   margin: 20px 10px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
+/* Button styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
 }
 
-button:hover {
-   background-color: #f18930;
+.button:hover {
+  background-color: #3e8e41;
 }
 
-button:hover {
-   background-color: #f18930;
-}
-
-form{
-   color: #f18930;
-}
-
-fieldset h2{
-   color: #23527c;
-}
-
+/* Form container styles */
 .form-container {
-   display: none;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-color: #fff;
-   padding: 20px;
-   border: 1px solid #ddd;
-   border-radius: 10px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
 
 
-.form-container h2 {
-   margin-top: 0;
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.form-container form {
-   margin-top: 20px;
+label {
+  font-weight: bold;
 }
 
-.form-container label {
-   display: block;
-   margin-bottom: 10px;
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.form-container label {
-   display: block;
-   margin-bottom: 10px;
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container textarea {
-   width: 100%;
-   padding: 10px;
-   margin-bottom: 20px;
-   border: 1px solid #ccc;
+input[type="submit"]:hover {
+  background-color: #3e8e41;
 }
 
- input[type="text"], textarea{
-   color: #f18930;
+.error {
+  color: red;
+  font-size: 12px;
 }
 
-.form-container button[type="submit"] {
-   background-color: #4CAF50;
-   color: #fff;
-   padding: 10px 20px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
+/* Positioning of form containers */
+#alter-call-form {
+  top: 50px;
+  left: 0;
 }
 
-.form-container button[type="submit"]:hover {
-   background-color: #3e8e41;
+
+#first-time-worshipper-form {
+  top: 50px;
+  left: 150px;
 }
 
-fieldset {
-   border: none;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#testimonies-form {
+  top: 50px;
+  left: 300px;
 }
+
+#prayer-request-form {
+  top: 50px;
+  left: 450px;
+}
+
 
 label {
    display: block;

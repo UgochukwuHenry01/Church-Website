@@ -19,58 +19,27 @@ languageOptions.addEventListener('click', (e) => {
 });
 
 
-// for payment form 
-// const form = document.getElementById('payment-form');
-// const submitButton = document.getElementById('submit-button');
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   // Handle form data here
-//   const formData = new FormData(form);
-//   // Send form data to server or process it 
-//   console.log(formData);
-// });
+// Add event listener to each button
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    // Get the form container associated with the button
+    const formContainer = button.nextElementSibling;
 
-
-const testimonialsSlider = document.querySelector('.testimonials-slider');
-const testimonials = document.querySelectorAll('.testimonial');
-let currentTestimonial = 0;
-
-setInterval(() => {
-  currentTestimonial++;
-  if (currentTestimonial >= testimonials.length) {
-    currentTestimonial = 0;
-  }
-  testimonialsSlider.style.transform = `translateX(-${currentTestimonial * 80}%)`;
-}, 5000);
-
-//to help click my church request buttons
-const alterCallButton = document.querySelector('.alter-call');
-const alterCallForm = document.querySelector('.alter-call-form');
-
-alterCallButton.addEventListener('click', () => {
-  alterCallForm.style.display = alterCallForm.style.display === 'block' ? 'none' : 'block';
+    // Check if the form container is already visible
+    if (formContainer.style.display === 'block') {
+      // Hide the form container
+      formContainer.style.display = 'none';
+    } else {
+      // Show the form container
+      formContainer.style.display = 'block';
+      // Hide other form containers
+      buttons.forEach((otherButton) => {
+        if (otherButton !== button) {
+          const otherFormContainer = otherButton.nextElementSibling;
+          otherFormContainer.style.display = 'none';
+        }
+      });
+    }
+  });
 });
-
-const firstTimeWorshipperButton = document.querySelector('.first-time-worshipper');
-const firstTimeWorshipperForm = document.querySelector('.first-time-worshipper-form');
-
-firstTimeWorshipperButton.addEventListener('click', () => {
-  firstTimeWorshipperForm.style.display = firstTimeWorshipperForm.style.display === 'block' ? 'none' : 'block'
-});
-
-const testimoniesButton = document.querySelector('.testimonies');
-const testimoniesForm = document.querySelector('.testimonies-form');
-
-testimoniesButton.addEventListener('click', () => {
-  testimoniesForm.style.display = testimoniesForm.style.display === 'block' ? 'none' : 'block'
-});
-
-const prayerRequestButton = document.querySelector('.prayer-request');
-const prayerRequestForm = document.querySelector('.prayer-request-form');
-
-prayerRequestButton.addEventListener('click', () => {
-  prayerRequestForm.style.display = prayerRequestForm.style.display === 'block' ? 'none' : 'block'
-});
-
-
