@@ -100,15 +100,9 @@ header{
    bottom: 400px;
 }
 
-.impact li {
-    margin: 10px;
-}
 
-.impact li:hover {
-    transition: .5s;
-    transform-origin: top right;
-    transform: scale(1.02);
-}
+
+
 
 
 
