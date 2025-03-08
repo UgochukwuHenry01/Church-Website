@@ -19,7 +19,64 @@
     <video autoplay loop muted src="./images/beautiful praying girl.mp4" controls></video>
   </div>
 
+  <div class="container">
+    <h1>Church Interaction</h1>
+    <p>Select an option below:</p>
+    <div class="interaction-buttons">
+        <button class="alter-call" onclick="toggleForm('Alter Call')">Alter Call</button>
+        <button class="testimonies" onclick="toggleForm('Testimonies')">Testimonies</button>
+        <button class="first-time" onclick="toggleForm('First Time Worshipper')">First Time Worshipper</button>
+        <button class="prayer-request" onclick="toggleForm('Prayer Request')">Prayer Request</button>
+        <button class="select-language" onclick="toggleForm('Select a Language')">Select a Language</button>
+    </div>
+</div>
 
+<div id="userForm" class="form-container">
+    <h2 id="formTitle">Form</h2>
+    <form onsubmit="validateForm(event)">
+        <label>Name:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" placeholder="example@mail.com" required>
+        <label>Phone:</label>
+        <select>
+            <option value="+234">+234 (Nigeria)</option>
+            <option value="+1">+1 (USA)</option>
+            <option value="+44">+44 (UK)</option>
+            <option value="+91">+91 (India)</option>
+            <option value="+61">+61 (Australia)</option>
+        </select>
+        <input type="tel" required>
+        <label>Date of Birth:</label>
+        <input type="date" required>
+        <label>Marital Status:</label>
+        <select required>
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+        </select>
+        <label>Home Address:</label>
+        <input type="text" required>
+        <label>Purpose:</label>
+        <textarea id="formPurpose" rows="3" required></textarea>
+        <div id="languageSelect" style="display: none;">
+            <label>Select Language:</label>
+            <select>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>German</option>
+                <option>Chinese</option>
+                <option>Arabic</option>
+            </select>
+        </div>
+        <label>
+            <input type="checkbox" required> Do you want to give your life to Jesus Christ?
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
   <section class="connected">
     <div class="connected"></div><strong>stay connected</strong></div>

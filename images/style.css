@@ -6,32 +6,83 @@
 }
 
 body {
-   font-family: sans-serif;
-   overflow-x: hidden;
-}
-
-.live-stream-container {
+   background-color: #f4f4f4;
+   padding-top: 60px;
+   text-align: center;
    display: flex;
    justify-content: center;
-   align-items: center;
-   margin-top: 200px;
-
-   iframe {
-      width: 50%;
-      height: 50%;
-      object-fit: cover;
+   align-items: flex-start;
+   gap: 20px;
+   flex-wrap: wrap;
+   padding: 20px;
+}
+.container, .form-container {
+   max-width: 400px;
+   width: 100%;
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+   height: 450px;
+   overflow-y: auto;
+}
+.interaction-buttons button {
+   width: 100%;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   transition: background 0.3s ease;
+}
+.alter-call { background-color: #e74c3c; color: white; }
+.alter-call:hover { background-color: #c0392b; }
+.testimonies { background-color: #3498db; color: white; }
+.testimonies:hover { background-color: #2980b9; }
+.first-time { background-color: #2ecc71; color: white; }
+.first-time:hover { background-color: #27ae60; }
+.prayer-request { background-color: #f39c12; color: white; }
+.prayer-request:hover { background-color: #e67e22; }
+.select-language { background-color: #9b59b6; color: white; }
+.select-language:hover { background-color: #8e44ad; }
+.form-container {
+   display: none;
+   text-align: left;
+}
+.form-container input, .form-container select, .form-container textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+.form-container button {
+   width: 100%;
+   padding: 10px;
+   background-color: #2c3e50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.form-container button:hover {
+   background-color: #1a252f;
+}
+@media (max-width: 768px) {
+   body {
+       flex-direction: column;
+       align-items: center;
    }
 }
 
-.element {
+/* .element {
    color: #343434;
    position: relative;
    top: 140px;
    left: 35%;
    font-size: 450%;
 }
-
-
 
 .element-type-1 {
    color: rgb(29, 164, 218);
@@ -176,4 +227,4 @@ p {
    margin: 0;
    font-size: 16px;
    padding: 7px;
-}
+} */
