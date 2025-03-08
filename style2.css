@@ -35,25 +35,7 @@ header{
     overflow: hidden;
 }
 
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
 
-    to {
-        width: 800px;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: black;
-    }
-
-    to {
-        border-right-color: transparent;
-    }
-}
 
 .hero p {
     font-family: serif;
