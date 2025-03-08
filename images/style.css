@@ -17,20 +17,7 @@ body {
    padding: 20px;
 }
 
-.live-stream-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  top: 150px;
-  overflow: hidden;
-  max-width: 150%;
 
-    iframe {
-      width: 50%;
-      height: 50%;
-      object-fit: cover;
-   }
-}
 
 .container, .form-container {
    max-width: 400px;
