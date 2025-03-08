@@ -274,11 +274,3 @@ p {
    padding: 7px;
 }
 
-.background {
-   transition: filter 0.3s ease-in-out;
-}
-
-.blur-background {
-   filter: blur(5px);
-   pointer-events: none;
-}
