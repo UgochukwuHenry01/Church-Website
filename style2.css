@@ -110,11 +110,7 @@ header{
     transform: scale(1.02);
 }
 
-.impact img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
+
 
 nav ul {
     display: flex;
@@ -424,3 +420,68 @@ p {
 .show {
     display: block;
 } */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-top: 50px;
+}
+h1 {
+    color: #333;
+}
+.donation-buttons button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+.offering { background-color: #ff5733; color: white; }
+.offering:hover { background-color: #c70039; }
+.tithes { background-color: #28a745; color: white; }
+.tithes:hover { background-color: #1e7e34; }
+.donation { background-color: #007bff; color: white; }
+.donation:hover { background-color: #0056b3; }
+.crypto { background-color: #ffcc00; color: black; }
+.crypto:hover { background-color: #e6b800; }
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.payment-form {
+    display: none;
+    background: white;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 300px;
+}
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}

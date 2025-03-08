@@ -38,7 +38,41 @@
       </nav>
     </section>
 
-    <div class="payment-form">
+
+    <div class="container">
+      <h1>Give to Praise Court Assembly</h1>
+      <p>Your generous donations help us continue our mission and serve the community.</p>
+      
+      <div class="donation-buttons">
+          <button class="offering" onclick="toggleForm('Offering')">Give Offering</button>
+          <button class="tithes" onclick="toggleForm('Tithes')">Give Tithes</button>
+          <button class="donation" onclick="toggleForm('Donation')">Make a Donation</button>
+          <button class="crypto" onclick="toggleForm('Cryptocurrency')">Give via Cryptocurrency</button>
+      </div>
+      
+      <div id="paymentForm" class="payment-form">
+          <h2 id="formTitle">Give</h2>
+          <form>
+              <label>Name:</label>
+              <input type="text" required><br><br>
+              <label>Amount:</label>
+              <input type="number" required><br><br>
+              <label>Payment Method:</label>
+              <select id="paymentPurpose">
+                  <option value="Offering">Offering</option>
+                  <option value="Tithes">Tithes</option>
+                  <option value="Donation">Donation</option>
+                  <option value="Cryptocurrency">Cryptocurrency</option>
+              </select><br><br>
+              <button type="submit">Proceed to Pay</button>
+          </form>
+          <button class="close-btn" onclick="toggleForm('')">Close</button>
+      </div>
+      
+      <p class="footer">For any assistance, contact us at <strong>contact@praisecourtassembly.com</strong></p>
+  </div>
+
+    <!-- <div class="payment-form">
       <h2>Praise Court Assembly Bank Payment Form</h2>
       <form id="payment-form">
         <fieldset id="payment-info">
@@ -104,24 +138,16 @@
           <button type="submit">Submit Payment</button>
         </fieldset>
       </form>
-    </div>
+    </div> -->
 
 
-    <section class="impact">
+    <!-- <section class="impact">
       <h2>Impact of Your tithes & offering to our community</h2>
       <p>Your tithes & offering will help us support local outreach programs,</p>
       <i>and spread the message of hope and love.</i>
         <img src="./images/happy image.jpg" alt="Image 1">
         <img src="./images/pngtree-hygienic-food-parcels-for-displaced-persons-in-ukraine-photo-image_48947428.jpg"
             alt="Image 3">
-    </section>
-
-    <!-- <section class="logo-type">
-      <img src="./images/best-digital-bank-in-nigeria.jpg" alt="" width="100px">
-      <img src="./images/Moniepoint_logo.jpg" alt="" width="100px">
-      <img src="./images/GTBank-logo.jpg" alt="" width="100px">
-      <img src="./images/Union-Bank_Secondary-Brandmark_Artwork_CMYK_Artboard-1-1-e1487334058775.png" alt=""
-        width="100px">
     </section> -->
 
     <section class="connected">
@@ -161,7 +187,7 @@
         <p> &copy; 2025 Praise Court Assembly.All rights reserved</p>
       </div>
     </footer>
-    <script src="./index2.js"></script>
+    <script src="./give.js"></script>
 </body>
 
 </html>
