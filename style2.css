@@ -65,35 +65,8 @@ header{
     top: 50%;
 }
 
-.impact {
-    padding: 10px;
-}
 
-.impact h2 {
-    position: absolute;
-    left: 30px;
-    top: 80%;
-    font-size: 1.8em;
-}
 
-.impact p {
-    position: absolute;
-    left: 25px;
-    top: 85%;
-    color: #000;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.impact i {
-    position: absolute;
-    left: 30px;
-   top: 91%;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-}
 
 
 
