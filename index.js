@@ -1,7 +1,4 @@
-// const livestreamcontainer = document.querySelector('.live-stream-container')
-// livestreamcontainer.addEventListener('error', (event) => {
-//   console.error('live stream error:', event);
-// })
+
 
 //for select a language button
 const languageButton = document.querySelector('.language-button');
