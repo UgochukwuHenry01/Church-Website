@@ -25,14 +25,7 @@ body {
     margin-top: 40px;
 }
 
-.video-slide {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
+
 
 #church-story {
     position: absolute;
@@ -298,8 +291,6 @@ i {
     letter-spacing: 3px;
     cursor: pointer;
 }
-
-
 
 @keyframes typewriting {
     from {
