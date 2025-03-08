@@ -307,18 +307,7 @@ i {
     font-size: 5em;
 }
 
-.messages {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 3px;
-    cursor: pointer;
-    border-right: 1px solid black;
-    animation: typewriting 3s steps(30) infinite, blinkTextprint 0.5s infinite;
-    white-space: nowrap;
-    overflow: hidden;
-}
+
 
 @keyframes typewriting {
     from {
