@@ -1,11 +1,10 @@
 * {
    margin: 0;
    padding: 0;
-   font-family: sans-serif;
    box-sizing: border-box;
+   font-family: Arial, sans-serif;
 }
-
-body {
+.page-body {
    background-color: #f4f4f4;
    padding-top: 60px;
    text-align: center;
@@ -16,9 +15,6 @@ body {
    flex-wrap: wrap;
    padding: 20px;
 }
-
-
-
 .container, .form-container {
    max-width: 400px;
    width: 100%;
@@ -73,38 +69,22 @@ body {
    background-color: #1a252f;
 }
 @media (max-width: 768px) {
-   body {
+   .page-body {
        flex-direction: column;
        align-items: center;
    }
 }
 
-/* .element {
-   color: #343434;
-   position: relative;
-   top: 140px;
-   left: 35%;
-   font-size: 450%;
-}  */
 
-/* .element-type-1 {
-   color: rgb(29, 164, 218);
-   position: absolute;
-   bottom: 400px;
-   left: 400px;
-   align-content: center;
-   font-size: 150%;
-   letter-spacing: 3px;
-} */
 
-/* .connected {
+.connected {
    display: flex;
    font-size: 3em;
    color: #2c3e50;
    cursor: pointer;
    justify-content: center;
    margin-bottom: 25px;
-} */
+}
 
 .never-miss-an-update {
    display: flex;
@@ -116,7 +96,7 @@ body {
 }
 
 
-/* footer {
+footer {
    display: flex;
    justify-content: center;
    background-color: #343434;
@@ -230,4 +210,4 @@ p {
    margin: 0;
    font-size: 16px;
    padding: 7px;
-}  */
+} 
