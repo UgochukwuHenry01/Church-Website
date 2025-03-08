@@ -1,19 +1,6 @@
 
 
-//for select a language button
-const languageButton = document.querySelector('.language-button');
-const languageOptions = document.querySelector('.language-options');
 
-languageButton.addEventListener('click', () => {
-  languageOptions.style.display = languageOptions.style.display === 'block' ? 'none' :
-    'block';
-})
-languageOptions.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A') {
-    const selectedLanguage = e.target.getAttribute('data-language');
-    console.log(`selected language: ${selectedLanguage}`);
-  }
-});
 
 
 //Get all buttons
