@@ -1,13 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    /* text-decoration: none; */
     list-style: none;
     box-sizing: border-box;
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 header{
@@ -17,7 +18,12 @@ header{
     background-position: center;
 }
 
-
+.header-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
 
 .hero h1 {
     position: absolute;
@@ -42,17 +48,6 @@ header{
     top: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -60,105 +55,6 @@ nav ul {
     flex-wrap: wrap;
     font-size: 1.4em;
     color: #343434;
-}
-
-/* .logo-type img {
-    
-    border-radius: 50px;
-    bottom: 350px;
-    left: 80px;
-    
-} */
-
-.logo-type img:hover {
-    transition: .5s;
-    transform-origin: top right;
-    transform: scale(1.08);
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.payment-form {
-    width: 40%;
-    margin: 10px auto;
-    margin-right: 30px;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: rgb(160, 29, 160);
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.payment-form:hover{
-    transition: .5s;
-    transform-origin: top right;
-    transform: scale(1.08);
-}
-
-fieldset {
-    border: none;
-    padding: 20px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-legend {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.form-group {
-    margin-bottom: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-}
-
-input[type="checkbox"] {
-    margin-bottom: 20px;
-}
-
-button[type="button"],
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="button"]:hover,
-button[type="submit"]:hover {
-    background-color: #3e8e41;
-}
-
-@media only screen and (max-width: 500px){
-    .payment-form{
-        width: 100%;
-        padding: 10px;
-    }
-
-    fieldset{
-        padding: 10px;
-    }
 }
 
 .connected {
@@ -362,13 +258,13 @@ p {
     display: block;
 } */
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
+} */
 .container {
     width: 90%;
     max-width: 500px;
