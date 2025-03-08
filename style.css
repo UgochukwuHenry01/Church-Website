@@ -299,14 +299,6 @@ i {
     cursor: pointer;
 }
 
-.services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    font-size: 5em;
-}
-
 
 
 @keyframes typewriting {
