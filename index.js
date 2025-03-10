@@ -1,16 +1,18 @@
 
 // for my navbars
-const mobileMenu = document.getElementById("mobile-menu");
-const navLinks = document.querySelector(".nav-links");
-const exitMenu = document.getElementById("exit-menu");
-
-mobileMenu.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
-
-exitMenu.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-});
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const body = document.querySelector('body');
+    const menuToggle = document.querySelector('.menu-toggle');
+    navLinks.classList.toggle('active');
+    body.classList.toggle('hide-home');
+    
+    if (navLinks.classList.contains('active')) {
+        menuToggle.innerHTML = '&times;'; // Exit icon
+    } else {
+        menuToggle.innerHTML = '&#9776;'; // Menu icon
+    }
+}
 
 
 //for radio broadcast

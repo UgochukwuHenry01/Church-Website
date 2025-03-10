@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     height: 60px;
-    /* Fixed navbar height */
+    /* Fixed navbar height 
 }
 
 .logo {
@@ -49,7 +49,6 @@
     color: white;
     text-decoration: none;
     font-size: 18px;
-    /* transition: color 0.3s ease; */
     position: relative;
 }
 
@@ -109,6 +108,110 @@
         position: absolute;
         top: 20px;
         right: 20px;
+    }
+} */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.index-content {
+    display: block;
+    text-align: center;
+    padding: 50px;
+    background: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        padding: 20px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .home-content {
+        display: block;
+        transition: opacity 0.3s ease;
+    }
+
+    .hide-home .home-content {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
     }
 }
 
