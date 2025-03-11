@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./images/style.css">
+  <link rel="stylesheet" href="./livestream.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,8 +14,77 @@
 
 <body>
 
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+    </div>
+    <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="give.html">Give</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="store.html">Store</a></li>
+    </ul>
+  </nav>
 
-  <script src="./index.js"></script>
+  <header>Praise Court Assembly (P.C.A) Livestream</header>
+  <div class="stream-title">
+    <span class="red">STREAM</span> <span class="white">YOUR WAY</span>
+  </div>
+  <div class="livestream-container">
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" allowfullscreen></iframe>
+  </div>
+
+  <div class="button-container">
+    <a href="./forms.html" class="church-button" onclick="toggleForm('altarCall')"><i class="fas fa-cross"></i>Altar
+      Call</a>
+    <a href="./forms.html" class="church-button" onclick="toggleForm('firstTime')"><i class="fas fa-user"></i>First Time
+      Worshipper</a>
+    <a href="./forms.html" class="church-button" onclick="toggleForm('testimony')"><i
+        class="fas fa-comment"></i>Testimonies</a>
+    <a href="./forms.html" class="church-button" onclick="toggleForm('prayerRequest')"><i
+        class="fas fa-praying-hands"></i>Prayer Request</a>
+  </div>
+
+  <section class="forms-section">
+    <div id="altarCall" class="form-container">
+      <h3>I accepted Jesus as Lord and Savior</h3>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Phone/Mobile" required>
+      <input type="text" placeholder="Address">
+      <input type="text" placeholder="City">
+      <input type="text" placeholder="State">
+      <input type="text" placeholder="Country">
+      <button class="submit">Submit</button>
+    </div>
+    <div id="firstTime" class="form-container">
+      <h3>This is my first time</h3>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Phone/Mobile" required>
+      <button class="submit">Submit</button>
+    </div>
+    <div id="testimony" class="form-container">
+      <h3>I have a testimony to share</h3>
+      <textarea placeholder="Your Testimony" required></textarea>
+      <label>Should we share it on our platform? <select required>
+          <option>Yes</option>
+          <option>No</option>
+        </select></label>
+      <button class="submit">Submit</button>
+    </div>
+    <div id="prayerRequest" class="form-container">
+      <h3>Please pray with me</h3>
+      <textarea placeholder="Your Prayer Request" required></textarea>
+      <button class="submit">Submit</button>
+    </div>
+  </section>
+  <!-- <footer>© <script>document.write(new Date().getFullYear());</script> Praise Court Assembly. All Rights Reserved.</footer> -->
+</body>
+</body>
+<script src="./livestream.js"></script>
 </body>
 
 </html>
