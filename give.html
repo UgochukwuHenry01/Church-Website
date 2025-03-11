@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="./give.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +12,103 @@
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+    </div>
+    <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="give.html">Give</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="store.html">Store</a></li>
+    </ul>
+</nav>
 
+<div class="hero">
+  <h1>Give Online</h1>
+</div>
+
+<div class="container">
+  <h1>Praise Court Assembly - Give Online</h1>
+  
+  <!-- Nigerian Payment Section -->
+  <div class="payment-section">
+      <h2>Nigerian Payment Options</h2>
+      <label for="ngn-amount">Enter Amount (NGN):</label>
+      <input type="number" id="ngn-amount" placeholder="Enter amount" required>
+      
+      <label for="ngn-bank">Choose a Bank:</label>
+      <select id="ngn-bank" required>
+          <option value="">Select a Bank</option>
+          <option value="access">Access Bank</option>
+          <option value="gtb">GTBank</option>
+          <option value="zenith">Zenith Bank</option>
+          <option value="uba">UBA</option>
+      </select>
+      
+      <button onclick="togglePayerForm('ngn-payer-form')">Proceed with Nigerian Payment</button>
+      
+      <div id="ngn-payer-form" class="payer-form">
+          <h2>Payer Information</h2>
+          <label for="ngn-payer-name">Full Name:</label>
+          <input type="text" id="ngn-payer-name" placeholder="Enter your name" required>
+          
+          <label for="ngn-payer-email">Email Address:</label>
+          <input type="email" id="ngn-payer-email" placeholder="Enter your email" required>
+          
+          <label for="ngn-payer-phone">Phone Number:</label>
+          <input type="number" id="ngn-payer-phone" placeholder="Enter your phone number" required minlength="11">
+          
+          <button onclick="submitPayment('ngn')">Submit Payment</button>
+      </div>
+  </div>
+  
+  <!-- Foreign Payment Section -->
+  <div class="payment-section">
+      <h2>Foreign Payment Options</h2>
+      <label for="foreign-amount">Enter Amount:</label>
+      <input type="number" id="foreign-amount" placeholder="Enter amount" required>
+      
+      <label for="currency">Select Currency:</label>
+      <select id="currency" required>
+          <option value="">Select Currency</option>
+          <option value="usd">US Dollar (USD)</option>
+          <option value="eur">Euro (EUR)</option>
+          <option value="gbp">British Pound (GBP)</option>
+          <option value="cad">Canadian Dollar (CAD)</option>
+      </select>
+      
+      <button onclick="togglePayerForm('foreign-payer-form')">Proceed with Foreign Payment</button>
+      
+      <div id="foreign-payer-form" class="payer-form">
+          <h2>Payer Information</h2>
+          <label for="foreign-payer-name">Full Name:</label>
+          <input type="text" id="foreign-payer-name" placeholder="Enter your name" required>
+          
+          <label for="foreign-payer-email">Email Address:</label>
+          <input type="email" id="foreign-payer-email" placeholder="Enter your email" required>
+          
+          <label for="foreign-payer-phone">Phone Number:</label>
+          <input type="number" id="foreign-payer-phone" placeholder="Enter your phone number" required minlength="11">
+          
+          <button onclick="submitPayment('foreign')">Submit Payment</button>
+      </div>
+  </div>
+</div>
+
+<section class="stay-connected">
+  <h2>Stay Connected</h2>
+  <p>Never miss an update. Follow us on social media:</p>
+  <div class="social-icons">
+      <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<script src="./give.js"></script>
 </body>
-
 </html>
