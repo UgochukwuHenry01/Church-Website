@@ -71,7 +71,8 @@
 .home-content {
     display: block;
     text-align: center;
-    padding: 100px 50px 50px; /* Adjusted padding to accommodate fixed navbar */
+    padding: 100px 50px 50px;
+    /* Adjusted padding to accommodate fixed navbar */
     background: #f5f5f5;
 }
 
@@ -124,6 +125,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #222;
     padding: 20px;
@@ -131,6 +133,7 @@ header {
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .stream-title {
     font-size: 36px;
     font-weight: bold;
@@ -138,12 +141,15 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .stream-title .red {
     color: red;
 }
+
 .stream-title .white {
     color: white;
 }
+
 .livestream-container {
     margin: 20px auto;
     max-width: 800px;
@@ -152,12 +158,14 @@ header {
     padding: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
+
 iframe {
     width: 100%;
     height: 450px;
     border: none;
     border-radius: 10px;
 }
+
 .button-container {
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +174,7 @@ iframe {
     margin-top: 30px;
     padding: 0 10px;
 }
+
 .church-button {
     background-color: yellow;
     color: black;
@@ -179,14 +188,17 @@ iframe {
     flex: 1 1 200px;
     max-width: 250px;
 }
+
 .church-button:hover {
     background-color: gold;
 }
+
 .forms-section {
     margin-top: 40px;
     padding: 20px;
     width: 100%;
 }
+
 .form-container {
     display: none;
     background: #222;
@@ -195,13 +207,17 @@ iframe {
     margin: 20px auto;
     max-width: 600px;
 }
-input, textarea, select {
+
+input,
+textarea,
+select {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
 }
+
 button.submit {
     background-color: yellow;
     color: black;
@@ -213,12 +229,15 @@ button.submit {
     font-weight: bold;
     cursor: pointer;
 }
+
 @media (max-width: 600px) {
     .button-container {
         flex-direction: column;
         align-items: center;
     }
-    .church-button, .form-container {
+
+    .church-button,
+    .form-container {
         width: 90%;
     }
 }

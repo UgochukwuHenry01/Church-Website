@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -22,11 +25,138 @@
             <li><a href="store.html">Store</a></li>
         </ul>
     </nav>
-    <section>
+
+    <div class="container">
+        <h1>Forms</h1>
+    </div>
+    <div class="button-container">
+        <button class="btn" onclick="toggleForm('formContainer')"><i class="fas fa-church"></i> Altar Call</button>
+        <button class="btn" onclick="toggleForm('testimonyForm')"><i class="fas fa-comment-alt"></i>
+            Testimonies</button>
+        <button class="btn" onclick="toggleForm('firsttimeform')"><i class="fas fa-handshake"></i> First Time
+            Worshipper</button>
+        <button class="btn" onclick="toggleForm('prayerForm')"><i class="fas fa-praying-hands"></i> Prayer
+            Request</button>
+    </div>
+
+    <div class="form-container" id="formContainer">
+        <h2>I ACCEPTED JESUS AS MY LORD AND SAVIOR</h2>
         <form>
-            <h2>Form</h2>
+            <input type="text" placeholder="Full Name" required>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone/Mobile" required>
+            </div>
+
+            <input type="text" placeholder="Address" required>
+            <div class="form-group">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+            </div>
+
+            <select required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+            <button type="submit">HELP ME START MY JOURNEY AS A BELIEVER</button>
         </form>
-    </section>
+    </div>
+
+
+    <div class="form-container" id="firsttimeform">
+        <h2>THIS IS MY FIRST TIME HERE</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone/Mobile" required>
+            </div>
+
+            <input type="text" placeholder="Address" required>
+            <div class="form-group">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+            </div>
+
+            <select required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+            <button type="submit">I'M GLAD TO WORSHIP HERE</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="testimonyForm">
+        <h2>Share Your Testimony</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone/Mobile" required>
+            </div>
+
+            <input type="text" placeholder="Address" required>
+            <div class="form-group">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+            </div>
+
+            <select required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+            <textarea placeholder="Write your testimony here..." required></textarea>
+            <label>Do you want to share your testimony on our platform?</label>
+            <select required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button type="submit">SHARE TESTIMONY</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="prayerForm">
+        <h2>Submit Your Prayer Request</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone/Mobile" required>
+            </div>
+
+            <input type="text" placeholder="Address" required>
+            <div class="form-group">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+            </div>
+
+            <select required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+            <textarea placeholder="Write your prayer request here..." required></textarea>
+            <button type="submit">SEND MY PRAYER</button>
+        </form>
+    </div>
+
+    <script src="./forms.js"></script>
 </body>
 
 </html>
