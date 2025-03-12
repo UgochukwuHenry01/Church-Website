@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style4.css">
+    <link rel="stylesheet" href="./location.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,6 +12,35 @@
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+        </div>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="give.html">Give</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>Locate a Branch - Praise Court Assembly</h2>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Enter location or church name...">
+        <button onclick="searchLocation()">Search</button>
+    </div>
+    <div class="location">
+        <iframe id="mapFrame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=No.%206%20Faith%20Avenue%20RUMUMASI%20%20Port%20Harcourt+(Praise%20Court%20Assembly)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+    </div>
+    <p class="quote">"For where two or three gather in my name, there am I with them." - Matthew 18:20</p>
+    <button class="exit-btn" onclick="goBack()">Exit</button>
+
     <!-- <div class="branch">Locate a branch</div>
 
     <div class="heading">
@@ -59,25 +88,19 @@
                     <li><a href="">STORE</a></li>
                 </ul>
             </div>
-            <div class="footer-content">
-                <h4>Follow Us</h4>
-                <ul class="social-icons">
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p> &copy; 2025 Praise Court Assembly.All rights reserved</p>
-        </div>
-    </footer> -->
-    <!-- 
+            
+
  
+    <section class="worship-section">
+        <div class="container-worship">
+            <h1>Hello, Worship with Us!</h1>
+            <p>Join our online morning devotion</p>
+            <button class="btn">Prayer Request</button>
+            <button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
 
-
-    <script src="./index.js"></script>
+    <script src="./location.js"></script>
 </body>
 
 </html>
