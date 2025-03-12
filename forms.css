@@ -164,7 +164,7 @@ h2 {
     text-transform: uppercase;
 }
 .btn:hover {
-    background-color: goldenrod;
+    background-color: #333;
 }
 .form-container {
     display: none;
