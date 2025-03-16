@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+        </div>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="give.html">Give</a></li>
+            <li><a href="About.html">About-Us</a></li>
+            <li><a href="contact-us.html">Contact-Us</a></li>
+            <li><a href="store.html">Store</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <h1>Praise Court Assembly</h1>
+    </header>
+
+    <!-- Bible Quote -->
+    <div class="bible-quote">
+        <p id="bible-text"></p>
+        <span id="bible-ref"></span>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-title">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you!</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Our Contact Details</h3>
+                <div class="info-item"><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</div>
+                <div class="info-item"><i class="fas fa-phone"></i> 08133253877</div>
+                <div class="info-item"><i class="fas fa-envelope"></i> ugochukwuhenryedeh@gmail.com</div>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form onsubmit="handleSubmit(event)">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="stay-connected">
+        <h2>Stay Connected</h2>
+        <p>Never miss an update. Follow us on social media:</p>
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <section class="worship-section">
+        <div class="container-worship">
+            <h1>Hello, Worship with Us!</h1>
+            <p>Join our online morning devotion</p>
+            <a href="./forms.html"><button class="btn">Prayer Request</button></a>
+            <a href="./location.html"><button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Praise Court Assembly. All rights reserved.
+    </footer>
+    <script src="./contact-us.js"></script>
+</body>
+</html>
