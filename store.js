@@ -137,3 +137,7 @@ function submitOrder() {
     document.getElementById('checkout-form').classList.remove('active');
     document.getElementById('cart').classList.remove('active');
 }
+
+
+ // Dynamically update year
+ document.getElementById('year').textContent = new Date().getFullYear();
