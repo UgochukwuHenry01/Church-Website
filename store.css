@@ -337,7 +337,7 @@ header * {
 .cart-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 100px;
     background: #8e44ad;
     color: #fff;
     border: none;
