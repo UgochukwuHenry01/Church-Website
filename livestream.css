@@ -116,7 +116,6 @@
 }
 
 
-/* for worship section  */
 .worship-section {
     margin: 0;
     padding: 0;
@@ -125,7 +124,7 @@
     align-items: center;
     height: 50vh;
     background: url('./images/candle.jpg') no-repeat center center/cover;
-    width: 100%;
+    width: 103%;
     overflow-y: hidden;
 }
 
@@ -177,6 +176,83 @@
 
 .container-worship .btn i {
     margin-left: 10px;
+}
+
+/* TYPEWRITER EFFECT */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    animation: typing 6s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+    position: relative;
+}
+
+/* Optional subtle fade effect */
+.typewriter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2));
+    pointer-events: none;
+}
+
+@keyframes typing {
+    0% {
+        width: 0
+    }
+
+    30% {
+        width: 1;
+    }
+
+    50% {
+        width: 60%
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .container-worship h1 {
+        font-size: 2rem;
+    }
+
+    .typewriter {
+        font-size: 1.1rem;
+    }
 }
 
 
