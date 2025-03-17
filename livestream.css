@@ -154,7 +154,7 @@ header {
 .livestream-container {
     margin: 20px auto;
     max-width: 800px;
-    background: #000;
+    background: black;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
@@ -194,21 +194,6 @@ iframe {
 
 .church-button:hover {
     background-color: gold;
-}
-
-.forms-section {
-    margin-top: 40px;
-    padding: 20px;
-    width: 100%;
-}
-
-.form-container {
-    display: none;
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 600px;
 }
 
 input,
@@ -305,7 +290,7 @@ button.submit {
 /* for my footer */
 body {
     font-family: 'Arial', sans-serif;
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
 }
 
 footer {
