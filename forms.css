@@ -126,6 +126,7 @@ body {
     min-height: 100vh;
     overflow-y: auto;
 }
+
 h1 {
     color: #333;
     font-size: 60px;
@@ -137,11 +138,13 @@ h1 {
     text-align: center;
     margin-top: 100px;
 }
+
 h2 {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -149,6 +152,7 @@ h2 {
     gap: 20px;
     margin-top: 50px;
 }
+
 .btn {
     width: 240px;
     padding: 10px;
@@ -162,9 +166,11 @@ h2 {
     transition: 0.3s;
     text-transform: uppercase;
 }
+
 .btn:hover {
     background-color: #333;
 }
+
 .form-container {
     display: none;
     background: white;
@@ -179,20 +185,26 @@ h2 {
     overflow-y: auto;
     margin-top: 50px;
 }
+
 .form-container.active {
     display: block;
 }
+
 .form-container .form-group {
     display: flex;
     gap: 15px;
 }
-.form-container input, .form-container select, .form-container textarea {
+
+.form-container input,
+.form-container select,
+.form-container textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .form-container button {
     width: 50%;
     padding: 10px;
@@ -205,6 +217,7 @@ h2 {
     display: block;
     margin: 20px auto 0;
 }
+
 .form-container button:hover {
     background-color: #555;
 }
@@ -220,8 +233,9 @@ h2 {
     height: 50vh;
     background: url('./images/candle.jpg') no-repeat center center/cover;
     width: 103%;
-overflow-y: hidden;
+    overflow-y: hidden;
 }
+
 .container-worship {
     width: 100%;
     max-width: 600px;
@@ -233,17 +247,20 @@ overflow-y: hidden;
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 .container-worship h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .container-worship p {
     font-size: 1.3rem;
     margin-bottom: 25px;
     font-style: italic;
 }
+
 .container-worship .btn {
     display: inline-flex;
     align-items: center;
@@ -259,10 +276,12 @@ overflow-y: hidden;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 .container-worship .btn:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
 }
+
 .container-worship .btn i {
     margin-left: 10px;
 }

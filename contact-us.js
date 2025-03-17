@@ -5,7 +5,7 @@ function toggleMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     navLinks.classList.toggle('active');
     body.classList.toggle('hide-home');
-    
+
     if (navLinks.classList.contains('active')) {
         menuToggle.innerHTML = '&times;'; // Exit icon
     } else {

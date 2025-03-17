@@ -5,7 +5,7 @@ function toggleMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     navLinks.classList.toggle('active');
     body.classList.toggle('hide-home');
-    
+
     if (navLinks.classList.contains('active')) {
         menuToggle.innerHTML = '&times;'; // Exit icon
     } else {
@@ -39,12 +39,12 @@ function submitPayment(type) {
     let name = document.getElementById(type + '-payer-name').value;
     let email = document.getElementById(type + '-payer-email').value;
     let phone = document.getElementById(type + '-payer-phone').value;
-    
+
     if (name === "" || email === "" || phone === "" || phone.length < 11) {
         alert("Please fill in all payer details correctly.");
         return;
     }
-    
+
     alert("Payment submitted successfully! Thank you, " + name);
     document.getElementById(type + '-payer-form').style.display = 'none';
     document.getElementById(type + '-amount').value = "";

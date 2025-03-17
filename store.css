@@ -451,8 +451,9 @@ header * {
     height: 50vh;
     background: url('./images/candle.jpg') no-repeat center center/cover;
     width: 100%;
-overflow-y: hidden;
+    overflow-y: hidden;
 }
+
 .container-worship {
     width: 100%;
     max-width: 600px;
@@ -464,17 +465,20 @@ overflow-y: hidden;
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 .container-worship h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .container-worship p {
     font-size: 1.3rem;
     margin-bottom: 25px;
     font-style: italic;
 }
+
 .container-worship .btn {
     display: inline-flex;
     align-items: center;
@@ -490,10 +494,12 @@ overflow-y: hidden;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 .container-worship .btn:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
 }
+
 .container-worship .btn i {
     margin-left: 10px;
 }

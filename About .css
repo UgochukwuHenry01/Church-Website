@@ -70,7 +70,8 @@
 .home-content {
     display: block;
     text-align: center;
-    padding: 100px 50px 50px; /* Adjusted padding to accommodate fixed navbar */
+    padding: 100px 50px 50px;
+    /* Adjusted padding to accommodate fixed navbar */
     background: #f5f5f5;
 }
 
@@ -121,19 +122,39 @@ body {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
-    50% { box-shadow: 0 0 20px rgba(255, 215, 0, 1); }
-    100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+    0% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
 }
 
 /* About Us Section */
@@ -207,7 +228,8 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
-.mission, .vision {
+.mission,
+.vision {
     flex: 1;
     max-width: 45%;
     background: white;
@@ -231,7 +253,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    .mission, .vision {
+
+    .mission,
+    .vision {
         max-width: 100%;
     }
 }
@@ -245,31 +269,37 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .text-content {
     max-width: 800px;
     margin-bottom: 30px;
 }
+
 .text-content h1 {
     color: #2c3e50;
     font-size: 36px;
     margin-bottom: 15px;
 }
+
 .text-content p {
     font-size: 18px;
     color: #555;
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
 .text-content ul {
     list-style: none;
     padding: 0;
 }
+
 .text-content ul li {
     padding: 12px 0;
     font-size: 18px;
@@ -277,6 +307,7 @@ body {
     font-weight: bold;
     border-bottom: 1px solid #ddd;
 }
+
 blockquote {
     font-style: italic;
     color: #777;
@@ -285,6 +316,7 @@ blockquote {
     border-left: 4px solid #3498db;
     padding-left: 15px;
 }
+
 .image-slider {
     width: 100%;
     max-width: 600px;
@@ -294,6 +326,7 @@ blockquote {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
 }
+
 .image-slider img {
     position: absolute;
     width: 100%;
@@ -302,18 +335,22 @@ blockquote {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 .image-slider img.active {
     opacity: 1;
 }
+
 @media (min-width: 768px) {
     .about {
         flex-direction: row;
         text-align: left;
     }
+
     .text-content {
         width: 50%;
         margin-right: 20px;
     }
+
     .image-slider {
         width: 50%;
     }
@@ -359,10 +396,21 @@ blockquote {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.social-icons .facebook { background: #1877F2; }
-.social-icons .twitter { background: #1DA1F2; }
-.social-icons .youtube { background: #FF0000; }
-.social-icons .instagram { background: #C13584; }
+.social-icons .facebook {
+    background: #1877F2;
+}
+
+.social-icons .twitter {
+    background: #1DA1F2;
+}
+
+.social-icons .youtube {
+    background: #FF0000;
+}
+
+.social-icons .instagram {
+    background: #C13584;
+}
 
 
 /* for worship section  */
@@ -375,8 +423,9 @@ blockquote {
     height: 50vh;
     background: url('./images/candle.jpg') no-repeat center center/cover;
     width: 100%;
-overflow-y: hidden;
+    overflow-y: hidden;
 }
+
 .container-worship {
     width: 100%;
     max-width: 600px;
@@ -388,17 +437,20 @@ overflow-y: hidden;
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 .container-worship h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .container-worship p {
     font-size: 1.3rem;
     margin-bottom: 25px;
     font-style: italic;
 }
+
 .container-worship .btn {
     display: inline-flex;
     align-items: center;
@@ -414,15 +466,12 @@ overflow-y: hidden;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 .container-worship .btn:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
 }
+
 .container-worship .btn i {
     margin-left: 10px;
 }
-
-
-
-
-

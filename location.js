@@ -5,7 +5,7 @@ function toggleMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     navLinks.classList.toggle('active');
     body.classList.toggle('hide-home');
-    
+
     if (navLinks.classList.contains('active')) {
         menuToggle.innerHTML = '&times;'; // Exit icon
     } else {
@@ -51,12 +51,12 @@ function toggleMenu() {
 function searchLocation() {
     var query = document.getElementById('search').value.trim();
     var mapFrame = document.getElementById('mapFrame');
-    
+
     if (query === "") {
         alert("Please enter a location or church name.");
         return;
     }
-    
+
     var encodedQuery = encodeURIComponent(query);
     mapFrame.src = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${encodedQuery}`;
 }
