@@ -115,7 +115,7 @@ function changeQty(index, change) {
         cart.splice(index, 1);
     }
     updateCart();
-}
+}   
 
 function showCheckout() {
     document.getElementById('checkout-form').classList.add('active');

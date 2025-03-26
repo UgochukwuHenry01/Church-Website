@@ -47,7 +47,7 @@
 }
 
 .nav-links a:hover {
-    color: #ffcc00;
+    color: #360061;
 }
 
 .nav-links a::after {
@@ -57,7 +57,7 @@
     bottom: -3px;
     width: 0;
     height: 3px;
-    background: #ffcc00;
+    background: #360061;
     transition: width 0.3s ease;
 }
 
@@ -119,11 +119,10 @@ h1 {
     font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
-    background: linear-gradient(to right, #ffcc00, #ff6600);
+    background: #360061;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    margin-top: 100px;
 }
 
 h2 {
@@ -146,7 +145,7 @@ h2 {
     font-size: 15px;
     font-weight: bold;
     color: white;
-    background-color: #555;
+    background-color: #360061;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -156,6 +155,10 @@ h2 {
 
 .btn:hover {
     background-color: #333;
+}
+
+.container {
+    margin-top: 100px;
 }
 
 .form-container {
@@ -188,14 +191,14 @@ h2 {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #887f7f;
     border-radius: 5px;
 }
 
 .form-container button {
     width: 50%;
     padding: 10px;
-    background-color: #333;
+    background-color:#360061 ;
     color: white;
     border: none;
     border-radius: 5px;
@@ -209,7 +212,68 @@ h2 {
     background-color: #555;
 }
 
+/* for hello worship with us  */
+.worship-section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url('./images/candle.jpg') no-repeat center center/cover;
+    width: 100%;
+}
 
+.container-worship {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container-worship h2 {
+    /* font-size: 2.5rem; */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-worship p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.container-worship .btn {
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 14px 24px; */
+    margin: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.container-worship .btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.container-worship .btn i {
+    margin-left: 10px;
+}
 
 /* TYPEWRITER EFFECT */
 .wrapper {

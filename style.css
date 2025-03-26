@@ -173,6 +173,10 @@
     gap: 15px;
 }
 
+  span {
+    color: purple;
+}
+
 .btn {
     background-color: #ffcc00;
     color: #333;
