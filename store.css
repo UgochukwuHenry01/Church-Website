@@ -300,7 +300,7 @@ header * {
 }
 
 .cart-item .qty-controls button {
-    background: #8e44ad;
+    background:purple;
     color: #fff;
     border: none;
     padding: 0.3rem 0.6rem;
@@ -313,13 +313,13 @@ header * {
     margin-top: auto;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #8e44ad;
+    color: purple;
 }
 
 .cart button.checkout {
     margin-top: 1rem;
     padding: 0.8rem;
-    background: #27ae60;
+    background:#8d44ad ;
     border: none;
     color: #fff;
     width: 100%;
@@ -330,7 +330,7 @@ header * {
 }
 
 .cart button.checkout:hover {
-    background: #1e8449;
+    background: #8d44adda;
 }
 
 /* Cart Toggle Button */
@@ -338,7 +338,7 @@ header * {
     position: fixed;
     top: 20px;
     right: 100px;
-    background: #8e44ad;
+    background:#8d44ad;
     color: #fff;
     border: none;
     padding: 0.8rem;

@@ -283,7 +283,7 @@ footer {
     align-items: center;
     height: 50vh;
     background: url('./images/candle.jpg') no-repeat center center/cover;
-    width: 103%;
+    width: 100%;
     overflow-y: hidden;
 }
 
