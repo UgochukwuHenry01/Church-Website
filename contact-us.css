@@ -173,8 +173,13 @@ header {
 
 .contact-info,
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1 1 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* justify-items: flex-start; */
 }
 
 .contact-info:hover,
@@ -483,6 +488,7 @@ footer {
 body {
     font-family: 'Arial', sans-serif;
     background: #f5f5f5;
+    overflow-x: hidden;
 }
 
 footer {
@@ -506,6 +512,7 @@ footer {
     flex: 1 1 250px;
     margin: 20px 10px;
     text-align: center;
+    justify-items: flex-start;
 }
 
 .footer-section h3 {
@@ -526,6 +533,7 @@ footer {
     color: #ccc;
     text-decoration: none;
     transition: 0.3s;
+    /* justify-items:flex-start ; */
 }
 
 .footer-section ul li a:hover {
