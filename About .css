@@ -249,7 +249,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     animation: glow 1.5s infinite alternate;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
@@ -280,6 +280,7 @@ body {
 .text-content {
     max-width: 800px;
     margin-bottom: 30px;
+    letter-spacing: 0.5px;
 }
 
 .text-content h1 {
@@ -293,9 +294,9 @@ color: #360061;
 }
 
 .text-content p {
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
-    line-height: 1.8;
+    /* line-height: 1.8; */
     margin-bottom: 20px;
 }
 
@@ -324,7 +325,7 @@ blockquote {
 .image-slider {
     width: 100%;
     max-width: 600px;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -431,10 +432,10 @@ blockquote {
 
 .container-worship {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    padding: 30px;
+    padding: 50px;
     border-radius: 20px;
     text-align: center;
     color: white;
