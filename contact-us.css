@@ -123,17 +123,52 @@ body {
 }
 
 header {
-    background: #4b0082;
+    background: #2c3e50;
     color: #fff;
     text-align: center;
     padding: 40px 0;
     margin-top: 80px;
+    overflow: hidden;
     /* brings header down from very top */
     position: relative;
     z-index: 10;
     animation: fadeSlideDown 0.8s ease-out forwards;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    z-index: 0;
+    transform: rotate(25deg);
+    animation: rotateBG 15s linear infinite;
+    opacity: 0.1;
+}
+
+@keyframes rotateBG {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(385deg);
+    }
+}
+header * {
+    position: relative;
+    z-index: 1;
+}
+
 
 .bible-quote,
 .contact-section {
