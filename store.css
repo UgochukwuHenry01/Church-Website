@@ -1,3 +1,125 @@
+/* Exit button styles for cart and checkout */
+
+/* Cart exit button: top left of cart */
+.cart-exit {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #f5f5f5;
+    border: none;
+    color: #8e44ad;
+    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    z-index: 10;
+}
+.cart-exit:hover {
+    background: #e1d7ee;
+    color: #360061;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+}
+
+/* Checkout exit button: top right of checkout form */
+.checkout-exit {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #f5f5f5;
+    border: none;
+    color: #8e44ad;
+    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    z-index: 10;
+}
+.checkout-exit:hover {
+    background: #e1d7ee;
+    color: #360061;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    /* Make sure the exit button is positioned absolutely relative to cart */
+    position: fixed;
+}
+.checkout-form {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1100;
+    width: 300px;
+    /* Make sure the exit button is positioned absolutely relative to checkout-form */
+    position: fixed;
+}
+@media (max-width: 600px) {
+    .cart {
+        width: 90vw;
+        min-width: 0;
+        padding: 1rem;
+    }
+    .checkout-form {
+        width: 90vw;
+        min-width: 0;
+        padding: 1rem;
+    }
+    .cart-exit {
+        top: 8px;
+        left: 8px;
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+    .checkout-exit {
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+}
+footer {
+    background: #111;
+    color: #fff;
+    padding: 50px 20px 20px;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    margin: 0;
+}
 /* styles.css */
 
 * {
@@ -292,6 +414,7 @@ header * {
 .cart-item p {
     margin: 0;
     font-size: 0.95rem;
+        position: relative; /* Ensure exit button can be placed absolutely */
 }
 
 .cart-item .qty-controls {
@@ -331,22 +454,6 @@ header * {
 
 .cart button.checkout:hover {
     background: #8d44adda;
-}
-
-/* Cart Toggle Button */
-.cart-toggle {
-    position: fixed;
-    top: 20px;
-    right: 100px;
-    background:#8d44ad;
-    color: white;
-    border: none;
-    padding: 0.8rem;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    z-index: 1001;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Checkout Form */
@@ -512,10 +619,22 @@ header * {
 
 .typewriter {
     overflow: hidden;
-    border-right: .15em solid #fff;
+    border-right: 2px solid #fff;
     white-space: nowrap;
-    animation: typing 6s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+    animation: typing 4s steps(32, end) infinite, blink-caret 0.75s step-end infinite;
     position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    min-width: 180px;
+    max-width: 100vw;
+    padding: 0.2em 0.5em;
+    background: rgba(56, 0, 97, 0.18);
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: left;
 }
 
 /* Optional subtle fade effect */
@@ -525,9 +644,10 @@ header * {
     top: 0;
     right: 0;
     height: 100%;
-    width: 40px;
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2));
+    width: 24px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.12));
     pointer-events: none;
+    z-index: 2;
 }
 
 @keyframes typing {
@@ -572,11 +692,15 @@ header * {
 /* RESPONSIVE */
 @media (max-width: 600px) {
     .container-worship h1 {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
-
     .typewriter {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        min-width: 100px;
+        padding: 0.15em 0.3em;
+        border-radius: 6px;
+        letter-spacing: 0.5px;
+        max-width: 90vw;
     }
 }
 

@@ -1,3 +1,273 @@
+/* ========== GLOBAL RESETS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    height: 60px;
+    width: auto;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #360061;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background: #360061;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        padding: 20px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    height: 100vh;
+    background: url('./images/premium_photo.jpeg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.welcome {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+.church-name {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+}
+.faith-home {
+    font-size: 28px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+.btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+.btn i {
+    font-size: 20px;
+}
+
+/* ========== ABOUT SECTION ========== */
+.about-section {
+    height: 100vh;
+    background: url('./images/pastor\ 3.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    position: relative;
+}
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.about-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.about-image {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 28px auto 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 4px rgba(56,0,97,0.10);
+    border: 3px solid #fff;
+    background: #fff;
+    object-fit: cover;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+/* ========== CHURCH ARMS SLIDER ========== */
+.church-arms {
+    text-align: center;
+    padding: 20px;
+}
+.church-arms h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.slides {
+    display: flex;
+    gap: 20px;
+    animation: slide 6s linear infinite;
+}
+.slides img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.slider-text {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* ========== FOOTER ========== */
+.footer-divider {
+    width: 2px;
+    background: rgba(255,255,255,0.12);
+    margin: 0 18px;
+    border-radius: 2px;
+    min-height: 80px;
+    align-self: stretch;
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    .footer-divider {
+        width: 80%;
+        min-height: 2px;
+        height: 2px;
+        margin: 18px auto;
+        background: rgba(255,255,255,0.18);
+        display: block;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -308,12 +578,27 @@ i {
 }
 
 .about-image {
+    display: block;
     width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 420px;
+    margin: 28px auto 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 4px rgba(56,0,97,0.10);
+    border: 3px solid #fff;
+    background: #fff;
+    object-fit: cover;
+    transition: box-shadow 0.3s, border 0.3s;
 }
+@media (max-width: 768px) {
+    .about-image {
+        max-width: 95vw;
+        border-radius: 10px;
+        margin-top: 18px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        border-width: 2px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .about-content h1 {
@@ -417,6 +702,7 @@ i {
     object-fit: cover;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 @keyframes slide {
     0% {
@@ -642,13 +928,26 @@ i {
     }
 
     .slides img {
-        max-width: 120px;
+        max-width: 800px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 24px 28px 18px 28px;
+        border-radius: 16px;
+        margin: 70px auto 20px auto;
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.18);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
-}  
+    @media (max-width: 768px) {
+        .about-content {
+            padding: 12px 6vw 10px 6vw;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+    }
+}
 
 
-
-/* for my footer */
 body {
     font-family: 'Arial', sans-serif;
     background: #f5f5f5;
@@ -673,7 +972,10 @@ footer {
 .footer-section {
     flex: 1 1 250px;
     margin: 20px 10px;
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: 1.7;
 }
 
 .footer-section h3 {

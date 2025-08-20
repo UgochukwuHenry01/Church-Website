@@ -83,3 +83,13 @@ function submitOrder() {
 
  // Dynamically update year
         document.getElementById('year').textContent = new Date().getFullYear();
+
+// Close cart sidebar
+function closeCart() {
+    document.getElementById('cart').classList.remove('active');
+}
+
+// Close checkout form
+function closeCheckoutForm() {
+    document.getElementById('checkout-form').classList.remove('active');
+}
