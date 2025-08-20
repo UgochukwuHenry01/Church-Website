@@ -1,4 +1,4 @@
-/* styles.css */
+styles.css
 
 * {
     margin: 0;
@@ -23,7 +23,7 @@
 
 .logo img {
     height: 50px;
-    /* width: auto; */
+    width: auto; 
     font-size: 50px;
     line-height: 20px;
     padding: 0 30px;
@@ -77,7 +77,7 @@
     text-align: center;
     padding: 100px 50px 50px;
     /* Adjusted padding to accommodate fixed navbar */
-    background: #f5f5f5;
+     background: #f5f5f5;
 }
 
 @media (max-width: 768px) {
@@ -150,20 +150,20 @@
 .welcome {
     font-size: 30px;
     font-weight: bold;
-    /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
 }
 
 .church-name {
     font-size: 60px;
     font-weight: bold;
-    /* text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
 }
 
 .faith-home {
     font-size: 28px;
     margin-top: 20px;
-    /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     text-decoration: underline;
 }
 
@@ -251,10 +251,10 @@ i {
     border-radius: 10px;
     margin-top: 70px;
     margin-bottom: 20px;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-content h1 {
+ .about-content h1 {
     font-size: 40px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -284,7 +284,7 @@ i {
 }
 
 /* for radio container */
-.radio-container {
+ .radio-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -391,10 +391,10 @@ i {
     font-size: 20px;
     font-weight: bold;
     color: #444;
-}
+} 
 
 /* for social media links  */
-.stay-connected {
+ .stay-connected {
     text-align: center;
     padding: 50px;
     background: white;
@@ -425,9 +425,9 @@ i {
     font-size: 28px;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} 
 
-.social-icons a:hover {
+ .social-icons a:hover {
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -446,10 +446,10 @@ i {
 
 .social-icons .instagram {
     background: #C13584;
-}
+}  
 
 /* for hello worship us page */
-.worship-section {
+ .worship-section {
     margin: 0;
     padding: 0;
     display: flex;
@@ -509,10 +509,10 @@ i {
 
 .container-worship .btn i {
     margin-left: 10px;
-}
+} 
 
 /* TYPEWRITER EFFECT */
-.wrapper {
+ .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -527,7 +527,7 @@ i {
 }
 
 /* Optional subtle fade effect */
-.typewriter::after {
+ .typewriter::after {
     content: "";
     position: absolute;
     top: 0;
@@ -575,10 +575,10 @@ i {
     50% {
         border-color: white;
     }
-}
+} 
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     .container-worship h1 {
         font-size: 2rem;
     }
@@ -586,11 +586,12 @@ i {
     .typewriter {
         font-size: 1.1rem;
     }
-}
+}  
+
 
 
 /* for my footer */
-body {
+ body {
     font-family: 'Arial', sans-serif;
     background: #f5f5f5;
 }
@@ -606,8 +607,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* center horizontally */
-    /* align-items: center; center vertically if needed */
     max-width: 1200px;
     margin: auto;
 }
@@ -679,3 +678,4 @@ footer {
         margin: 0 8px;
     }
 }
+
