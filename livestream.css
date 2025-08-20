@@ -259,7 +259,6 @@
 /* for livestream  */
 body {
     background-color: #000;
-    color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -268,6 +267,7 @@ body {
 
 header {
     background-color: #222;
+    color: white;
     padding: 20px;
     font-size: 28px;
     font-weight: bold;
