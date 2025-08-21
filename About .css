@@ -1,3 +1,73 @@
+section.container-slider {
+    width: 100vw;
+    max-width: 100vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border-radius: 0;
+    margin-left: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+.container-slider {
+    width: 92vw;
+    max-width: 1100px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 auto 32px auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+/* Add space above and below mission-vision-section for professional separation */
+.mission-vision-section {
+    margin: 40px auto 24px auto;
+}
+.fade-in {
+    color: #fff !important;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 24px;
+    background: rgba(30, 30, 60, 0.65);
+    padding: 18px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+    text-align: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 600px) {
+    .fade-in {
+        font-size: 1.1rem;
+        padding: 10px 8px;
+        border-radius: 10px;
+        margin-bottom: 16px;
+    }
+}
+.about-content h2 {
+    color: #360061;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 2;
+    position: relative;
+}
 /* styles.css */
 
 * {
@@ -105,17 +175,21 @@
 
 /* About Us Section */
 .about-section {
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     background: url('./images/pastor\ preacher.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
     color: white;
-    /* padding: 50px; */
     position: relative;
     flex-direction: column;
     animation: fadeIn 2s ease-in-out;
+    margin-left: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
 .overlay {
     position: absolute;
@@ -124,171 +198,106 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 .about-content {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0);
+    background: transparent;
     line-height: 20px;
     padding: 50px;
     border-radius: 10px;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
-    margin-top: 250px;
+    margin-top: 40px;
     animation: slideIn 1.5s ease-in-out;
 }
 
-
-/* about our weekly activities */
-.container-slider {
-    width: 100vw;
-    max-width: 100vw;
-    background: white;
-    padding: 40px 0;
-    border-radius: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.text-content {
-    max-width: 800px;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-}
-.text-content h1 {
-    color: #360061;
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-h2{
-color: #360061;
-}
-.text-content p {
-    font-size: 20px;
-    color: #333;
-    /* line-height: 1.8; */
-    margin-bottom: 20px;
-}
-.text-content ul {
-    list-style: none;
-    padding: 0;
-}
-.text-content ul li {
-    padding: 12px 0;
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
-    border-bottom: 1px solid #ddd;
-}
-blockquote {
-    font-style: italic;
-    color: #777;
-    margin-top: 20px;
-    font-size: 20px;
-    border-left: 4px solid #3498db;
-    padding-left: 15px;
-}
-.image-slider {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-.image-slider img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.image-slider img.active {
-    opacity: 1;
-}
-@media (min-width: 768px) {
-    .about {
-        flex-direction: row;
-        text-align: left;
-    }
-    .text-content {
-        width: 50%;
-        margin-right: 20px;
-    }
-    .image-slider {
-        width: 50%;
-    }
-}
-
-
 /* Bold Header Positioned on Background */
 .bold-header {
-    position: absolute;
-    top: 20%;
-    left: 10%;
     font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
     color: #f5f5f5;
-    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
+    text-shadow: 2px 2px 12px #000, 0 0 8px #360061;
     animation: fadeIn 2s ease-in-out;
-}
-
-.fade-in {
-    font-size: 2rem ;
-    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .mission,
 .vision {
-    flex: 1;
-    max-width: 45%;
-    background: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1 1 350px;
+    min-width: 320px;
+    max-width: 600px;
+    background: #fff;
+    padding: 36px 32px 32px 32px;
+    margin: 0;
+    border-radius: 16px;
+    box-shadow: 0px 4px 18px rgba(56,0,97,0.10);
     animation: slideIn 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.glow-btn {
-    background: #360061;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    animation: glow 1.5s infinite alternate;
-    margin-top: 30px;
+.mission h2,
+.vision h2 {
+    color: #360061;
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-
-@media (max-width: 768px) {
-
+.mission,
+.vision {
+    width: auto;
+    padding: 12px 16px 10px 16px;
+    margin: 0 2px;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+/* Mission & Vision side by side on large screens, column on small screens */
+/* More compact and professional mission-vision layout */
+.mission-vision-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    width: 98vw;
+    max-width: 98vw;
+    /* padding: 0 0 10px 0; */
+    margin: 0 auto 10px auto;
+}
+.mission,
+.vision {
+    width: auto;
+    padding: 12px 16px 10px 16px;
+    margin: 0 2px;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+@media (max-width: 900px) {
+    .mission-vision-section {
+        flex-direction: column;
+        gap: 10px;
+        width: 98vw;
+        max-width: 98vw;
+        padding: 10px 0;
+    }
     .mission,
     .vision {
-        max-width: 100%;
+        width: 98vw;
+        padding: 10px 8px 8px 8px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 }
 
 /* about our weekly activities */
-.container-slider {
-    width: 90%;
-    max-width: 1200px;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 .about {
     display: flex;
@@ -575,6 +584,21 @@ blockquote {
     .typewriter {
         font-size: 1.1rem;
     }
+
+    .image-slider {
+        width: 100vw;
+        max-width: 100vw;
+        aspect-ratio: 3/2;
+        height: auto;
+        min-height: 120px;
+    }
+    .image-slider img {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100%;
+        min-height: 120px;
+        object-fit: cover;
+    }
 }
 
 
@@ -653,19 +677,30 @@ footer {
     font-size: 14px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* Join Us Button Styling */
+.glow-btn {
+    background: #360061;
+    border: none;
+    padding: 12px 28px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 2px 12px rgba(56,0,97,0.10);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+.glow-btn:hover, .glow-btn:focus {
+    background: #4b0082;
+    box-shadow: 0 4px 24px rgba(56,0,97,0.18);
+    transform: translateY(-2px) scale(1.04);
+}
 
-    .footer-section {
-        margin: 20px 0;
-    }
-
-    .socials a {
-        margin: 0 8px;
-    }
+/* Remove white background from contact-section */
+.contact-section {
+    background: transparent !important;
 }

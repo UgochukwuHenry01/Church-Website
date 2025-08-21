@@ -704,7 +704,25 @@ header * {
     }
 }
 
- 
+/* Responsive and professional image sizing for store page */
+.store-section img, .store-products img, .store-container img, .product img, img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(56,0,97,0.08);
+    object-fit: cover;
+    max-height: 220px;
+}
+
+@media (max-width: 600px) {
+    .store-section img, .store-products img, .store-container img, .product img, img {
+        max-width: 90vw;
+        max-height: 140px;
+        margin-bottom: 12px;
+    }
+}
 
     body {
         font-family: 'Arial', sans-serif;
@@ -796,4 +814,4 @@ header * {
     }
 
 
- 
+
