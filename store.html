@@ -23,7 +23,8 @@
             <li><a href="give.html">Give</a></li>
             <li><a href="About.html">About-Us</a></li>
             <li><a href="CONTACT.html">Contact-Us</a></li>
-            <li><a href="#" class="cart-toggle" onclick="event.preventDefault();toggleCart();"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#" class="cart-toggle" onclick="event.preventDefault();toggleCart();"><i
+                        class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </nav>
 
@@ -119,8 +120,8 @@
 
     <!-- Cart Sidebar -->
     <div id="cart" class="cart">
-    <button class="cart-exit" onclick="closeCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
-    <h2>Your Cart</h2>
+        <button class="cart-exit" onclick="closeCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
+        <h2>Your Cart</h2>
         <div id="cart-items"></div>
         <div class="cart-total">Total: $<span id="total">0</span></div>
         <button class="checkout" onclick="showCheckout()">Checkout</button>
@@ -128,8 +129,9 @@
 
     <!-- Checkout Form -->
     <div id="checkout-form" class="checkout-form">
-    <button class="checkout-exit" onclick="closeCheckoutForm()" aria-label="Close checkout form"><i class="fas fa-times"></i></button>
-    <h3>Checkout</h3>
+        <button class="checkout-exit" onclick="closeCheckoutForm()" aria-label="Close checkout form"><i
+                class="fas fa-times"></i></button>
+        <h3>Checkout</h3>
         <input type="text" id="name" placeholder="Full Name">
         <input type="email" id="email" placeholder="Email">
         <select id="payment">
@@ -173,34 +175,35 @@
         <div class="footer-container">
             <!-- Contact Us -->
             <div class="footer-section">
-                <h3>Contact Us</h3>
+                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
                 <ul>
-                    <li>Email: <a href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
-                    <li>Phone: <a href="tel:+2348133253877">08133253877</a></li>
-                    <li>Address: No. 6 Faith Avenue</li>
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+2348133253877">08133253877</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</li>
                 </ul>
             </div>
-
+            <div class="footer-divider"></div>
             <!-- Quick Links -->
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Give</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Store</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="give.html"><i class="fas fa-hand-holding-heart"></i> Give</a></li>
+                    <li><a href="About.html"><i class="fas fa-users"></i> About Us</a></li>
+                    <li><a href="CONTACT.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
+                    <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
                 </ul>
             </div>
-
+            <div class="footer-divider"></div>
             <!-- Social Media -->
             <div class="footer-section">
-                <h3>Follow Us</h3>
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
                 <div class="socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -210,6 +213,7 @@
             &copy; <span id="year"></span> Praise Court Assembly. All rights reserved.
         </div>
     </footer>
+
 
 
     <script src="./store.js"></script>
