@@ -1,6 +1,6 @@
 /* Exit button styles for cart and checkout */
 
-/* Cart exit button: top left of cart */
+/* Cart exit button: top right of cart */
 .cart-exit {
     position: absolute;
     top: 16px;
@@ -46,7 +46,7 @@
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     z-index: 10;
 }
-.checkout-exit:hover {
+.form-checkout-exit:hover {
     background: #e1d7ee;
     color: #360061;
     box-shadow: 0 4px 12px rgba(0,0,0,0.13);
