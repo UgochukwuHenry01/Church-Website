@@ -4,7 +4,7 @@
 .cart-exit {
     position: absolute;
     top: 16px;
-    left: 16px;
+    right: 16px;
     background: #f5f5f5;
     border: none;
     color: #8e44ad;
@@ -27,7 +27,7 @@
 }
 
 /* Checkout exit button: top right of checkout form */
-.checkout-exit {
+.form-checkout-exit {
     position: absolute;
     top: 16px;
     right: 16px;
