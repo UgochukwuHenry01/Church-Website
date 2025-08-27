@@ -116,7 +116,7 @@
 
 
 .main-header {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     background: url('./images/phone\ contact.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
@@ -432,6 +432,10 @@ header * {
     /* justify-items: flex-start; */
 }
 
+.contact-form h3{
+    color: #fff;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -441,7 +445,8 @@ header * {
     min-width: 260px;
     max-width: 400px;
     padding: 24px 28px;
-    background: transparent;
+    color: #fff;
+    background:transparent;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(56, 0, 97, 0.06);
     margin: 0 auto;

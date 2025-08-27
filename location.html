@@ -29,17 +29,19 @@
 
 
     <h2>Locate a Branch - Praise Court Assembly</h2>
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Enter location or church name...">
-        <button onclick="searchLocation()">Search</button>
-    </div>
-    <div class="location">
-        <iframe id="mapFrame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=No.%206%20Faith%20Avenue%20RUMUMASI%20%20Port%20Harcourt+(Praise%20Court%20Assembly)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-        </iframe>
-    </div>
-    <p class="quote">"For where two or three gather in my name, there am I with them." - Matthew 18:20</p>
-    <button class="exit-btn" onclick="goBack()">Exit</button>
+    <section class="main-search-container">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Enter location or church name...">
+            <button onclick="searchLocation()">Search</button>
+        </div>
+        <div class="location">
+            <iframe id="mapFrame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=No.%206%20Faith%20Avenue%20RUMUMASI%20%20Port%20Harcourt+(Praise%20Court%20Assembly)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+        </div>
+        <p class="quote">"For where two or three gather in my name, there am I with them." - Matthew 18:20</p>
+        <button class="exit-btn" onclick="goBack()">Exit</button>
+    </section>
 
     <!-- for location on map -->
     <section class="worship-section">
