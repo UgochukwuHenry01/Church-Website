@@ -115,9 +115,9 @@
 }
 
 
-body {
+.main-header {
     font-family: 'Poppins', sans-serif;
-    background: url('') no-repeat center center fixed;
+    background: url('./images/phone\ contact.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     color: #333;
@@ -165,6 +165,7 @@ header::after {
         transform: rotate(385deg);
     }
 }
+
 header * {
     position: relative;
     z-index: 1;
@@ -182,6 +183,10 @@ header * {
     animation: fadeIn 1.5s ease forwards;
 }
 
+/* .contact-section, h2 p{
+    color: white;
+} */
+
 .bible-quote p {
     font-style: italic;
     color: #4b0082;
@@ -197,6 +202,7 @@ header * {
 
 .contact-title {
     text-align: center;
+    color: white;
     margin-bottom: 20px;
     animation: fadeSlideUp 1s ease-in;
 }
@@ -368,6 +374,7 @@ header::after {
         transform: rotate(385deg);
     }
 }
+
 header * {
     position: relative;
     z-index: 1;
