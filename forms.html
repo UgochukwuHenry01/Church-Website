@@ -26,151 +26,153 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>Forms</h1>
-    </div>
-    <div class="button-container">
-        <button class="btn" onclick="toggleForm('formContainer')"><i class="fas fa-church"></i> Altar Call</button>
-        <button class="btn" onclick="toggleForm('testimonyForm')"><i class="fas fa-comment-alt"></i>
-            Testimonies</button>
-        <button class="btn" onclick="toggleForm('firsttimeform')"><i class="fas fa-handshake"></i> First Time
-            Worshipper</button>
-        <button class="btn" onclick="toggleForm('prayerForm')"><i class="fas fa-praying-hands"></i> Prayer
-            Request</button>
-    </div>
+    <section class="forms-section">
+        <div class="container">
+            <h1>Forms</h1>
+        </div>
+        <div class="button-container">
+            <button class="btn" onclick="toggleForm('formContainer')"><i class="fas fa-church"></i> Altar Call</button>
+            <button class="btn" onclick="toggleForm('testimonyForm')"><i class="fas fa-comment-alt"></i>
+                Testimonies</button>
+            <button class="btn" onclick="toggleForm('firsttimeform')"><i class="fas fa-handshake"></i> First Time
+                Worshipper</button>
+            <button class="btn" onclick="toggleForm('prayerForm')"><i class="fas fa-praying-hands"></i> Prayer
+                Request</button>
+        </div>
 
-    <div class="form-container" id="formContainer">
-        <h2>I ACCEPTED JESUS AS MY LORD AND SAVIOR</h2>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone/Mobile" required>
+        <div class="form-container" id="formContainer">
+            <h2>I ACCEPTED JESUS AS MY LORD AND SAVIOR</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone/Mobile" required>
+                </div>
+
+                <input type="text" placeholder="Address" required>
+                <div class="form-group">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State" required>
+                </div>
+
+                <select required>
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Nigeria">Nigeria</option>
+                </select>
+                <button type="submit">HELP ME START MY JOURNEY AS A BELIEVER</button>
+            </form>
+        </div>
+
+
+        <div class="form-container" id="firsttimeform">
+            <h2>THIS IS MY FIRST TIME HERE</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone/Mobile" required>
+                </div>
+
+                <input type="text" placeholder="Address" required>
+                <div class="form-group">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State" required>
+                </div>
+
+                <select required>
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Nigeria">Nigeria</option>
+                </select>
+                <button type="submit">I'M GLAD TO WORSHIP HERE</button>
+            </form>
+        </div>
+
+        <div class="form-container" id="testimonyForm">
+            <h2>SHARE YOUR TESTIMONY</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone/Mobile" required>
+                </div>
+
+                <input type="text" placeholder="Address" required>
+                <div class="form-group">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State" required>
+                </div>
+
+                <select required>
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Nigeria">Nigeria</option>
+                </select>
+                <textarea placeholder="Write your testimony here..." required></textarea>
+                <label>Do you want to share your testimony on our platform?</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button type="submit">SHARE TESTIMONY</button>
+            </form>
+        </div>
+
+        <div class="form-container" id="prayerForm">
+            <h2>SUBMIT YOUR PRAYER REQUEST</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone/Mobile" required>
+                </div>
+
+                <input type="text" placeholder="Address" required>
+                <div class="form-group">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State" required>
+                </div>
+
+                <select required>
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Nigeria">Nigeria</option>
+                </select>
+                <textarea placeholder="Write your prayer request here..." required></textarea>
+                <button type="submit">SEND MY PRAYER</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- for location on map -->
+    <section class="worship-section">
+        <div class="container-worship">
+            <h2>Hello, Worship with Us!</h2>
+            <div class="wrapper">
+                <p class="typewriter">Join our online morning devotion</p>
             </div>
-
-            <input type="text" placeholder="Address" required>
-            <div class="form-group">
-                <input type="text" placeholder="City" required>
-                <input type="text" placeholder="State" required>
-            </div>
-
-            <select required>
-                <option value="">Select Country</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Nigeria">Nigeria</option>
-            </select>
-            <button type="submit">HELP ME START MY JOURNEY AS A BELIEVER</button>
-        </form>
-    </div>
-
-
-    <div class="form-container" id="firsttimeform">
-        <h2>THIS IS MY FIRST TIME HERE</h2>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone/Mobile" required>
-            </div>
-
-            <input type="text" placeholder="Address" required>
-            <div class="form-group">
-                <input type="text" placeholder="City" required>
-                <input type="text" placeholder="State" required>
-            </div>
-
-            <select required>
-                <option value="">Select Country</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Nigeria">Nigeria</option>
-            </select>
-            <button type="submit">I'M GLAD TO WORSHIP HERE</button>
-        </form>
-    </div>
-
-    <div class="form-container" id="testimonyForm">
-        <h2>SHARE YOUR TESTIMONY</h2>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone/Mobile" required>
-            </div>
-
-            <input type="text" placeholder="Address" required>
-            <div class="form-group">
-                <input type="text" placeholder="City" required>
-                <input type="text" placeholder="State" required>
-            </div>
-
-            <select required>
-                <option value="">Select Country</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Nigeria">Nigeria</option>
-            </select>
-            <textarea placeholder="Write your testimony here..." required></textarea>
-            <label>Do you want to share your testimony on our platform?</label>
-            <select required>
-                <option value="">Select</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-            <button type="submit">SHARE TESTIMONY</button>
-        </form>
-    </div>
-
-    <div class="form-container" id="prayerForm">
-        <h2>SUBMIT YOUR PRAYER REQUEST</h2>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone/Mobile" required>
-            </div>
-
-            <input type="text" placeholder="Address" required>
-            <div class="form-group">
-                <input type="text" placeholder="City" required>
-                <input type="text" placeholder="State" required>
-            </div>
-
-            <select required>
-                <option value="">Select Country</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Nigeria">Nigeria</option>
-            </select>
-            <textarea placeholder="Write your prayer request here..." required></textarea>
-            <button type="submit">SEND MY PRAYER</button>
-        </form>
-    </div>
-
-     <!-- for location on map -->
-  <section class="worship-section">
-    <div class="container-worship">
-      <h2>Hello, Worship with Us!</h2>
-      <div class="wrapper">
-        <p class="typewriter">Join our online morning devotion</p>
-      </div>
-      <a href="./forms.html">
-        <button class="btn">Prayer Request</button>
-      </a>
-      <a href="./location.html">
-        <button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button>
-      </a>
-    </div>
-  </section>
+            <a href="./forms.html">
+                <button class="btn">Prayer Request</button>
+            </a>
+            <a href="./location.html">
+                <button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button>
+            </a>
+        </div>
+    </section>
 
 
     <footer>
