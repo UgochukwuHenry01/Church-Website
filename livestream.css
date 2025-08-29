@@ -375,7 +375,7 @@ button.submit {
 /* for my footer */
 body {
     font-family: 'Arial', sans-serif;
-    /* background: #f5f5f5; */
+    overflow-x: hidden;
 }
 
 footer {
@@ -388,8 +388,7 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* center horizontally */
-    /* align-items: center; center vertically if needed */
+    justify-content: center;
     max-width: 1200px;
     margin: auto;
 }
@@ -397,7 +396,10 @@ footer {
 .footer-section {
     flex: 1 1 250px;
     margin: 20px 10px;
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: 1.7;
 }
 
 .footer-section h3 {
