@@ -114,112 +114,113 @@
 
 
 /* Section styling */
+/* Background styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Section wrapper */
 .forms-section {
   min-height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 120px 20px 40px; /* 🔥 added top padding so h1 clears navbar */
-  background: url("./images/form1.jpg") center center no-repeat;
-  position: relative;
-}
-
-/* Heading */
-.forms-section h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
+   background: url("./images/form1.jpg") no-repeat center center fixed; /* Your background image */
+  background-size: cover;
+  justify-content: flex-start; /* start so h1 is visible */
+  padding: 40px 20px;
   text-align: center;
-  margin-bottom: 25px;
-  color: #ffeb3b; /* yellow */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2; /* always above overlay + forms */
+  backdrop-filter: blur(4px);
 }
 
-/* Button container */
+/* Title */
+.forms-section h1 {
+  font-size: 2.5rem;
+  margin: 100px 0 25px; /* push below navbar */
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* Buttons row */
 .button-container {
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
-.button-container .btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 12px 25px;
-  border-radius: 12px;
+.btn {
+  flex: 1 1 calc(50% - 15px); /* Equal width, 2 per row on larger screens */
+  text-align: center;
+  padding: 14px;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(12px);
+  color: white;
+  transition: 0.3s ease;
+  backdrop-filter: blur(6px);
 }
 
-.button-container .btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+.btn:hover {
+  background: rgba(255,255,255,0.3);
   transform: translateY(-3px);
 }
 
-/* Form container */
+/* Form container (glass effect) */
 .form-container {
-  display: none;
-  margin: 0 auto 40px;
-  padding: 25px;
-  border-radius: 16px;
-  max-width: 700px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
+  display: none; /* Hidden by default */
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   text-align: left;
+  animation: fadeIn 0.6s ease;
 }
 
+/* Show active form */
 .form-container.active {
   display: block;
 }
 
-/* Form title */
+/* Form headings */
 .form-container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
 }
 
-/* Inputs and selects */
-.form-container form input,
-.form-container form select,
-.form-container form textarea {
+/* Form fields */
+form input, form select, form textarea {
   width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 18px;
+  padding: 12px;
+  margin: 10px 0;
   border: none;
-  border-radius: 10px;
-  outline: none;
+  border-radius: 8px;
   font-size: 1rem;
-  background: rgba(255, 255, 255, 0.85);
-  color: #333;
-  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  outline: none;
+  backdrop-filter: blur(8px);
 }
 
-.form-container form input:focus,
-.form-container form select:focus,
-.form-container form textarea:focus {
-  border: 2px solid #ffeb3b;
-  background: #fff;
+form input::placeholder, form textarea::placeholder {
+  color: #eee;
 }
 
-/* Form groups (side by side on desktop) */
+/* Grouped fields */
 .form-group {
   display: flex;
   gap: 15px;
@@ -230,57 +231,51 @@
 }
 
 /* Textarea */
-.form-container form textarea {
+textarea {
+  min-height: 100px;
   resize: none;
-  height: 120px;
 }
 
-/* Buttons */
-.form-container form button {
+/* Submit buttons */
+form button {
   width: 100%;
   padding: 14px;
+  margin-top: 15px;
   border: none;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #ff9800, #ff5722);
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.form-container form button:hover {
-  background: linear-gradient(135deg, #ff5722, #ff9800);
-  transform: scale(1.03);
+form button:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
 }
 
-/* ✅ Responsive Design */
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .form-group {
-    flex-direction: column;
-  }
-
   .form-container {
-    width: 100%;
-    padding: 20px;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .form-container h2 {
-    font-size: 1.2rem;
-  }
-
-  .forms-section h1 {
-    font-size: 2rem;
+    max-width: 100%;   /* Full width on tablets/mobiles */
+    border-radius: 0;  /* Edge-to-edge look */
   }
 }
+
+@media (max-width: 600px) {
+  .btn {
+    flex: 1 1 100%;  /* Full width buttons on mobile */
+  }
+}
+
 
 
 /* for hello worship with us  */
@@ -296,7 +291,7 @@
 }
 
 .container-worship {
-    width: 100%;
+    /* width: 100%; */
     max-width: 800px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -321,7 +316,7 @@
 }
 
 .container-worship .btn {
-    width: 40%;
+    width: 60%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
