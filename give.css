@@ -497,8 +497,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* center horizontally */
-    /* align-items: center; center vertically if needed */
     max-width: 1200px;
     margin: auto;
 }
@@ -506,7 +504,10 @@ footer {
 .footer-section {
     flex: 1 1 250px;
     margin: 20px 10px;
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: 1.7;
 }
 
 .footer-section h3 {
