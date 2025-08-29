@@ -291,7 +291,6 @@ i {
     }
 }
 
-
 @media (max-width: 768px) {
     .about-content h1 {
         font-size: 28px;
@@ -360,8 +359,83 @@ i {
     background: #e6b800;
 }
 
+/*  for church arms section  */
+.church-arms {
+  text-align: center;
+  padding: 2rem 1rem;
+  /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+}
 
+.church-arms h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-weight: bold;
+}
 
+.slider {
+  position: relative;
+  width: 100%;        /* ✅ full width */
+  max-width: 100%;    /* ✅ removed 900px limit */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 0;   /* ✅ flush with section edges (use 16px if you want rounded corners) */
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 420px;  /* fixed height for desktop */
+}
+
+.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ✅ image fills entire width */
+  opacity: 0;
+  animation: fade 35s infinite;
+}
+
+/* Each image takes its turn */
+.slides img:nth-child(1) { animation-delay: 0s; }
+.slides img:nth-child(2) { animation-delay: 5s; }
+.slides img:nth-child(3) { animation-delay: 10s; }
+.slides img:nth-child(4) { animation-delay: 15s; }
+.slides img:nth-child(5) { animation-delay: 20s; }
+.slides img:nth-child(6) { animation-delay: 25s; }
+.slides img:nth-child(7) { animation-delay: 30s; }
+
+@keyframes fade {
+  0%   { opacity: 0; transform: scale(1.05); }
+  5%   { opacity: 1; transform: scale(1); }
+  20%  { opacity: 1; transform: scale(1); }
+  25%  { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 0; }
+}
+
+.slider-text {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* 🔹 Mobile Responsiveness */
+@media (max-width: 768px) {
+  .slides { height: 250px; }  /* smaller height for tablets */
+  .church-arms h1 { font-size: 1.5rem; }
+  .slider-text { font-size: 0.95rem; padding: 0 0.5rem; }
+}
+
+@media (max-width: 480px) {
+  .slides { height: 200px; }  /* smaller height for phones */
+  .church-arms h1 { font-size: 1.3rem; }
+  .slider-text { font-size: 0.9rem; }
+}
 
 
 /* for social media links  */

@@ -27,17 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // ========== CHURCH ARMS SLIDER ==========
-    let index = 0;
-    const slides = document.querySelector('.slides');
-    const images = document.querySelectorAll('.slides img');
-    function nextSlide() {
-        if (!slides || images.length === 0) return;
-        index = (index + 1) % images.length;
-        slides.style.transform = `translateX(${-index * 20}%)`;
-    }
-    setInterval(nextSlide, 3000); // Slide every 3 seconds
-
-    // ========== (Add more section logic here as needed) ==========
+    // let index = 0;
+    // const slides = document.querySelector('.slides');
+    // const images = document.querySelectorAll('.slides img');
+    // function nextSlide() {
+    //     if (!slides || images.length === 0) return;
+    //     index = (index + 1) % images.length;
+    //     slides.style.transform = `translateX(${-index * 20}%)`;
+    // }
+    // setInterval(nextSlide, 3000); 
 
 });
 
