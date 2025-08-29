@@ -128,7 +128,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-   background: url("./images/form1.jpg") no-repeat center center fixed; /* Your background image */
+   background: url("./images/form5.jpg") no-repeat center center fixed; /* Your background image */
   background-size: cover;
   justify-content: flex-start; /* start so h1 is visible */
   padding: 40px 20px;
@@ -291,7 +291,7 @@ form button:hover {
 }
 
 .container-worship {
-    /* width: 100%; */
+    width: 100%;
     max-width: 800px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -316,7 +316,7 @@ form button:hover {
 }
 
 .container-worship .btn {
-    width: 60%;
+    width: 40%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
