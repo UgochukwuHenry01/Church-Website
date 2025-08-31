@@ -302,79 +302,167 @@ header * {
     z-index: 1;
 }
 
-.store-container {
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+
+/* Store Section */
+.store-section {
+  margin-bottom: 3rem;
 }
 
+.store-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: #222;
+}
+
+/* Scroll Container (mobile: horizontal scroll, desktop: grid) */
+.scroll-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+/* Product Card */
 .product-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
+/* Product Image */
 .product-card img {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
-    transition: transform 0.4s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.product-card:hover img {
-    transform: scale(1.05);
-}
-
+/* Product Info */
 .product-info {
-    padding: 1.2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 1rem;
 }
 
 .product-info h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.product-info p {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    color: #555;
-    flex-grow: 1;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .product-info .price {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #8e44ad;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #8e44ad;
 }
 
+.product-info .price small {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Button */
 .product-info button {
-    padding: 0.7rem 1rem;
-    background: #8e44ad;
-    border: none;
-    color: #fff;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #8e44ad, #732d91);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 
 .product-info button:hover {
-    background: #732d91;
-    transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge.new { background: green; }
+.badge.hot { background: orange; }
+.badge.bestseller { background: royalblue; }
+
+/* Rating */
+.rating {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: gold;
+}
+
+/* 📱 Mobile (≤599px) */
+@media (max-width: 599px) {
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* hide scrollbar on mobile */
+  }
+
+  .product-card {
+    min-width: 220px;
+    max-width: 240px;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  .product-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .product-info button {
+    font-size: 0.85rem;
+  }
+}
+
+/* 📱 Tablet (600px–1023px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .scroll-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+}
+
+/* 💻 Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .scroll-container {
+    grid-template-columns: repeat(8, minmax(200px, 1fr));
+    overflow-x: hidden;
+  }
+}
+
+
 
 /* Cart Sidebar */
 .cart {

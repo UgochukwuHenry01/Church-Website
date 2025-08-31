@@ -34,89 +34,204 @@
     </header>
 
 
+<div class="store-wrapper">
 
-    <!-- Store Items -->
-    <div class="store-container">
-        <!-- Item 1 -->
-        <div class="product-card">
-            <img src="./images/holy bible.png" alt="Holy Bible">
-            <div class="product-info">
-                <h3>Holy Bible</h3>
-                <span class="price">$25</span>
-                <button onclick="addToCart('Holy Bible', 25)">Add to Cart</button>
-            </div>
+  <!-- Section 1: Bibles -->
+  <section class="store-section">
+    <h2>Bibles</h2>
+    <div class="scroll-container">
+      <div class="product-card">
+        <span class="badge new">New</span>
+        <img src="./images/holy bible.png" alt="Holy Bible">
+        <div class="product-info">
+          <h3>Holy Bible</h3>
+          <span class="price">$25 <small>(₦37,500)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Holy Bible', 25)">Add to Cart</button>
         </div>
+      </div>
 
-        <!-- Item 2 -->
-        <div class="product-card">
-            <img src="./images/morninig devotion.jpg" alt="Devotional Guide">
-            <div class="product-info">
-                <h3>Our Daily Devotional</h3>
-                <span class="price">$10</span>
-                <button onclick="addToCart('Daily Devotional', 10)">Add to Cart</button>
-            </div>
+      <div class="product-card">
+        <span class="badge bestseller">Best Seller</span>
+        <img src="./images/bible guide.jpg" alt="Bible Reading Guide">
+        <div class="product-info">
+          <h3>Bible Reading Guide</h3>
+          <span class="price">$7 <small>(₦10,500)</small></span>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <button onclick="addToCart('Bible Reading Guide', 7)">Add to Cart</button>
         </div>
+      </div>
 
-        <!-- Item 3 -->
-        <div class="product-card">
-            <img src="./images/Church flyer Design.jpeg" alt="Church Flyers">
-            <div class="product-info">
-                <h3>Church Flyers</h3>
-                <span class="price">$5</span>
-                <button onclick="addToCart('Church Flyers', 5)">Add to Cart</button>
-            </div>
+      <div class="product-card">
+        <span class="badge hot">Hot</span>
+        <img src="./images/bible2.jpg" alt="Family Bible">
+        <div class="product-info">
+          <h3>Family Bible</h3>
+          <span class="price">$30 <small>(₦45,000)</small></span>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <button onclick="addToCart('Family Bible', 30)">Add to Cart</button>
         </div>
+      </div>
 
-        <!-- Item 4 -->
-        <div class="product-card">
-            <img src="./images/bible guide.jpg" alt="Reading Guide">
-            <div class="product-info">
-                <h3>Our Reading Guide</h3>
-                <span class="price">$7</span>
-                <button onclick="addToCart('Reading Guide', 7)">Add to Cart</button>
-            </div>
+      <div class="product-card">
+        <img src="./images/bible3.jpg" alt="Study Bible">
+        <div class="product-info">
+          <h3>Study Bible</h3>
+          <span class="price">$18 <small>(₦27,000)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Study Bible', 18)">Add to Cart</button>
         </div>
+      </div>
 
-        <!-- Item 5 -->
-        <div class="product-card">
-            <img src="./images/children story book.jpg" alt="Bible Story Books">
-            <div class="product-info">
-                <h3>Bible Story Books</h3>
-                <span class="price">$15</span>
-                <button onclick="addToCart('Bible Story Books', 15)">Add to Cart</button>
-            </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="product-card">
-            <img src="./images/T-shirt1.jpg" alt="church T-shirt">
-            <div class="product-info">
-                <h3>church T-shirt</h3>
-                <span class="price">$17</span>
-                <button onclick="addToCart('church T-shirt', 17)">Add to Cart</button>
-            </div>
-        </div>
-
-        <!-- Item 7 -->
-        <div class="product-card">
-            <img src="./images/t-shirt2.jpg" alt="church T-shirt">
-            <div class="product-info">
-                <h3>church T-shirt</h3>
-                <span class="price">$25</span>
-                <button onclick="addToCart('church T-shirt', 25)">Add to Cart</button>
-            </div>
-        </div>
-
-        <!-- Item 8 -->
-        <div class="product-card">
-            <img src="./images/T-shirt3.jpg" alt="church T-shirt">
-            <div class="product-info">
-                <h3>church T-shirt</h3>
-                <span class="price">$20</span>
-                <button onclick="addToCart('church T-shirt', 20)">Add to Cart</button>
-            </div>
-        </div>
+      <!-- Add more to make total = 8 -->
     </div>
+  </section>
+
+  <!-- Section 2: Devotionals -->
+  <section class="store-section">
+    <h2>Devotionals</h2>
+    <div class="scroll-container">
+      <div class="product-card">
+        <img src="./images/morninig devotion.jpg" alt="Daily Devotional">
+        <div class="product-info">
+          <h3>Daily Devotional</h3>
+          <span class="price">$10 <small>(₦15,000)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Daily Devotional', 10)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/children story book.jpg" alt="Bible Story Book">
+        <div class="product-info">
+          <h3>Bible Story Book</h3>
+          <span class="price">$15 <small>(₦22,500)</small></span>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <button onclick="addToCart('Bible Story Book', 15)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/devotional2.jpg" alt="Prayer Guide">
+        <div class="product-info">
+          <h3>Prayer Guide</h3>
+          <span class="price">$12 <small>(₦18,000)</small></span>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <button onclick="addToCart('Prayer Guide', 12)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/devotional3.jpg" alt="Youth Devotional">
+        <div class="product-info">
+          <h3>Youth Devotional</h3>
+          <span class="price">$9 <small>(₦13,500)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Youth Devotional', 9)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Add more to make total = 8 -->
+    </div>
+  </section>
+
+  <!-- Section 3: T-Shirts -->
+  <section class="store-section">
+    <h2>Church T-Shirts</h2>
+    <div class="scroll-container">
+      <div class="product-card">
+        <img src="./images/T-shirt1.jpg" alt="Church T-Shirt">
+        <div class="product-info">
+          <h3>Classic T-Shirt</h3>
+          <span class="price">$17 <small>(₦25,500)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Classic T-Shirt', 17)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="badge hot">Hot</span>
+        <img src="./images/t-shirt2.jpg" alt="Church T-Shirt">
+        <div class="product-info">
+          <h3>Trendy T-Shirt</h3>
+          <span class="price">$25 <small>(₦37,500)</small></span>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <button onclick="addToCart('Trendy T-Shirt', 25)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/T-shirt3.jpg" alt="Church T-Shirt">
+        <div class="product-info">
+          <h3>Logo T-Shirt</h3>
+          <span class="price">$20 <small>(₦30,000)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Logo T-Shirt', 20)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/t-shirt4.jpg" alt="Church T-Shirt">
+        <div class="product-info">
+          <h3>Faith T-Shirt</h3>
+          <span class="price">$22 <small>(₦33,000)</small></span>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <button onclick="addToCart('Faith T-Shirt', 22)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Flyers -->
+  <section class="store-section">
+    <h2>Flyers</h2>
+    <div class="scroll-container">
+      <div class="product-card">
+        <img src="./images/Church flyer Design.jpeg" alt="Church Flyers">
+        <div class="product-info">
+          <h3>Church Flyer Pack</h3>
+          <span class="price">$5 <small>(₦7,500)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Church Flyers', 5)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/flyer2.jpg" alt="Gospel Flyers">
+        <div class="product-info">
+          <h3>Gospel Flyers</h3>
+          <span class="price">$6 <small>(₦9,000)</small></span>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <button onclick="addToCart('Gospel Flyers', 6)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/flyer3.jpg" alt="Conference Flyers">
+        <div class="product-info">
+          <h3>Conference Flyers</h3>
+          <span class="price">$8 <small>(₦12,000)</small></span>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <button onclick="addToCart('Conference Flyers', 8)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/flyer4.jpg" alt="Youth Flyers">
+        <div class="product-info">
+          <h3>Youth Event Flyers</h3>
+          <span class="price">$7 <small>(₦10,500)</small></span>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <button onclick="addToCart('Youth Flyers', 7)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+   
 
     <!-- Cart Sidebar -->
     <div id="cart" class="cart">
