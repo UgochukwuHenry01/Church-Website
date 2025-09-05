@@ -13,321 +13,339 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+    <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/Photoroom-20250211_132555.png" alt="Praise Court Assembly Logo">
+    </div>
+    <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="give.html">Give</a></li>
+      <li><a href="About.html">About-Us</a></li>
+      <li><a href="CONTACT.html">Contact-Us</a></li>
+      <li>
+        <a href="#" class="cart-toggle" onclick="event.preventDefault();toggleCart();">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header class="store-header">
+    <h1>Praise Court Assembly Store</h1>
+    <p class="tagline">Faith-inspired resources for your spiritual journey</p>
+    <!-- Search -->
+    <div class="store-search">
+      <input type="text" id="search-bar" placeholder="Search for Bibles, T-Shirts, Devotionals..." onkeyup="searchProducts()">
+    </div>
+  </header>
+
+  <!-- Store Wrapper -->
+  <div class="store-wrapper">
+
+    <!-- Section 1: Bibles -->
+    <section class="store-section" id="bibles">
+      <h2>Bibles</h2>
+      <div class="scroll-container">
+        <div class="product-card" data-name="Holy Bible">
+          <span class="badge new">New</span>
+          <img src="./images/holy bible.png" alt="Holy Bible" loading="lazy">
+          <div class="product-info">
+            <h3>Holy Bible</h3>
+            <span class="price">$25 <small>(₦37,500)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Holy Bible', 25)">Add to Cart</button>
+          </div>
         </div>
-        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="give.html">Give</a></li>
-            <li><a href="About.html">About-Us</a></li>
-            <li><a href="CONTACT.html">Contact-Us</a></li>
-            <li><a href="#" class="cart-toggle" onclick="event.preventDefault();toggleCart();"><i
-                        class="fas fa-shopping-cart"></i></a></li>
+
+        <div class="product-card" data-name="Bible Reading Guide">
+          <span class="badge bestseller">Best Seller</span>
+          <img src="./images/bible guide.jpg" alt="Bible Reading Guide" loading="lazy">
+          <div class="product-info">
+            <h3>Bible Reading Guide</h3>
+            <span class="price">$7 <small>(₦10,500)</small></span>
+            <div class="rating">⭐⭐⭐☆☆</div>
+            <button onclick="addToCart('Bible Reading Guide', 7)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Family Bible">
+          <span class="badge hot">Hot</span>
+          <img src="./images/bible2.jpg" alt="Family Bible" loading="lazy">
+          <div class="product-info">
+            <h3>Family Bible</h3>
+            <span class="price">$30 <small>(₦45,000)</small></span>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <button onclick="addToCart('Family Bible', 30)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Study Bible">
+          <img src="./images/bible3.jpg" alt="Study Bible" loading="lazy">
+          <div class="product-info">
+            <h3>Study Bible</h3>
+            <span class="price">$18 <small>(₦27,000)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Study Bible', 18)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Devotionals -->
+    <section class="store-section" id="devotionals">
+      <h2>Devotionals</h2>
+      <div class="scroll-container">
+        <div class="product-card" data-name="Daily Devotional">
+          <img src="./images/morninig devotion.jpg" alt="Daily Devotional" loading="lazy">
+          <div class="product-info">
+            <h3>Daily Devotional</h3>
+            <span class="price">$10 <small>(₦15,000)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Daily Devotional', 10)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Bible Story Book">
+          <img src="./images/children story book.jpg" alt="Bible Story Book" loading="lazy">
+          <div class="product-info">
+            <h3>Bible Story Book</h3>
+            <span class="price">$15 <small>(₦22,500)</small></span>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <button onclick="addToCart('Bible Story Book', 15)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Prayer Guide">
+          <img src="./images/devotional2.jpg" alt="Prayer Guide" loading="lazy">
+          <div class="product-info">
+            <h3>Prayer Guide</h3>
+            <span class="price">$12 <small>(₦18,000)</small></span>
+            <div class="rating">⭐⭐⭐☆☆</div>
+            <button onclick="addToCart('Prayer Guide', 12)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Youth Devotional">
+          <img src="./images/devotional3.jpg" alt="Youth Devotional" loading="lazy">
+          <div class="product-info">
+            <h3>Youth Devotional</h3>
+            <span class="price">$9 <small>(₦13,500)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Youth Devotional', 9)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: T-Shirts -->
+    <section class="store-section" id="tshirts">
+      <h2>Church T-Shirts</h2>
+      <div class="scroll-container">
+        <div class="product-card" data-name="Classic T-Shirt">
+          <img src="./images/T-shirt1.jpg" alt="Classic T-Shirt" loading="lazy">
+          <div class="product-info">
+            <h3>Classic T-Shirt</h3>
+            <span class="price">$17 <small>(₦25,500)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Classic T-Shirt', 17)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Trendy T-Shirt">
+          <span class="badge hot">Hot</span>
+          <img src="./images/t-shirt2.jpg" alt="Trendy T-Shirt" loading="lazy">
+          <div class="product-info">
+            <h3>Trendy T-Shirt</h3>
+            <span class="price">$25 <small>(₦37,500)</small></span>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <button onclick="addToCart('Trendy T-Shirt', 25)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Logo T-Shirt">
+          <img src="./images/T-shirt3.jpg" alt="Logo T-Shirt" loading="lazy">
+          <div class="product-info">
+            <h3>Logo T-Shirt</h3>
+            <span class="price">$20 <small>(₦30,000)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Logo T-Shirt', 20)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Faith T-Shirt">
+          <img src="./images/t-shirt4.jpg" alt="Faith T-Shirt" loading="lazy">
+          <div class="product-info">
+            <h3>Faith T-Shirt</h3>
+            <span class="price">$22 <small>(₦33,000)</small></span>
+            <div class="rating">⭐⭐⭐☆☆</div>
+            <button onclick="addToCart('Faith T-Shirt', 22)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Flyers -->
+    <section class="store-section" id="flyers">
+      <h2>Flyers</h2>
+      <div class="scroll-container">
+        <div class="product-card" data-name="Church Flyer Pack">
+          <img src="./images/Church flyer Design.jpeg" alt="Church Flyers" loading="lazy">
+          <div class="product-info">
+            <h3>Church Flyer Pack</h3>
+            <span class="price">$5 <small>(₦7,500)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Church Flyers', 5)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Gospel Flyers">
+          <img src="./images/flyer2.jpg" alt="Gospel Flyers" loading="lazy">
+          <div class="product-info">
+            <h3>Gospel Flyers</h3>
+            <span class="price">$6 <small>(₦9,000)</small></span>
+            <div class="rating">⭐⭐⭐☆☆</div>
+            <button onclick="addToCart('Gospel Flyers', 6)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Conference Flyers">
+          <img src="./images/flyer3.jpg" alt="Conference Flyers" loading="lazy">
+          <div class="product-info">
+            <h3>Conference Flyers</h3>
+            <span class="price">$8 <small>(₦12,000)</small></span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <button onclick="addToCart('Conference Flyers', 8)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Youth Flyers">
+          <img src="./images/flyer4.jpg" alt="Youth Flyers" loading="lazy">
+          <div class="product-info">
+            <h3>Youth Event Flyers</h3>
+            <span class="price">$7 <small>(₦10,500)</small></span>
+            <div class="rating">⭐⭐⭐☆☆</div>
+            <button onclick="addToCart('Youth Flyers', 7)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Cart Sidebar -->
+  <div id="cart" class="cart">
+    <button class="cart-exit" onclick="closeCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total">Total: $<span id="total">0</span></div>
+    <button class="checkout" onclick="showCheckout()">Checkout</button>
+  </div>
+
+  <!-- Checkout Form -->
+  <div id="checkout-form" class="checkout-form">
+    <button class="form-checkout-exit" onclick="closeCheckoutForm()" aria-label="Close checkout form"><i class="fas fa-times"></i></button>
+    <h3>Checkout</h3>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <textarea id="address" placeholder="Delivery Address"></textarea>
+    <select id="payment" required>
+      <option value="">Select Payment Method</option>
+      <option value="Credit Card">Credit Card</option>
+      <option value="Bank Transfer">Bank Transfer</option>
+      <option value="USSD">USSD</option>
+      <option value="Cash on Delivery">Cash on Delivery</option>
+    </select>
+    <div class="order-summary">
+      <h4>Order Summary</h4>
+      <div id="order-summary-items"></div>
+      <div class="order-total">Total: $<span id="checkout-total">0</span></div>
+    </div>
+    <button onclick="submitOrder()">Submit Order</button>
+  </div>
+
+  <!-- Stay Connected -->
+  <section class="stay-connected">
+    <h2>Stay Connected</h2>
+    <p><strong>Never miss an update. Follow us on social media:</strong></p>
+    <div class="social-icons">
+      <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get devotionals, product updates, and special offers.</p>
+    <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Worship Section -->
+  <section class="worship-section">
+    <div class="container-worship">
+      <h1>Hello, Worship with Us!</h1>
+      <div class="wrapper">
+        <p class="typewriter">Join our online morning devotion</p>
+      </div>
+      <a href="./forms.html">
+        <button class="btn">Prayer Request</button>
+      </a>
+      <a href="./location.html">
+        <button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Contact Us -->
+      <div class="footer-section">
+        <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+2348133253877">08133253877</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</li>
         </ul>
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <h1>Praise Court Assembly Store</h1>
-    </header>
-
-
-<div class="store-wrapper">
-
-  <!-- Section 1: Bibles -->
-  <section class="store-section">
-    <h2>Bibles</h2>
-    <div class="scroll-container">
-      <div class="product-card">
-        <span class="badge new">New</span>
-        <img src="./images/holy bible.png" alt="Holy Bible">
-        <div class="product-info">
-          <h3>Holy Bible</h3>
-          <span class="price">$25 <small>(₦37,500)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Holy Bible', 25)">Add to Cart</button>
-        </div>
       </div>
-
-      <div class="product-card">
-        <span class="badge bestseller">Best Seller</span>
-        <img src="./images/bible guide.jpg" alt="Bible Reading Guide">
-        <div class="product-info">
-          <h3>Bible Reading Guide</h3>
-          <span class="price">$7 <small>(₦10,500)</small></span>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <button onclick="addToCart('Bible Reading Guide', 7)">Add to Cart</button>
-        </div>
+      <div class="footer-divider"></div>
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3><i class="fas fa-link"></i> Quick Links</h3>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="give.html"><i class="fas fa-hand-holding-heart"></i> Give</a></li>
+          <li><a href="About.html"><i class="fas fa-users"></i> About Us</a></li>
+          <li><a href="CONTACT.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
+          <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
+        </ul>
       </div>
-
-      <div class="product-card">
-        <span class="badge hot">Hot</span>
-        <img src="./images/bible2.jpg" alt="Family Bible">
-        <div class="product-info">
-          <h3>Family Bible</h3>
-          <span class="price">$30 <small>(₦45,000)</small></span>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <button onclick="addToCart('Family Bible', 30)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/bible3.jpg" alt="Study Bible">
-        <div class="product-info">
-          <h3>Study Bible</h3>
-          <span class="price">$18 <small>(₦27,000)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Study Bible', 18)">Add to Cart</button>
-        </div>
-      </div>
-
-      <!-- Add more to make total = 8 -->
-    </div>
-  </section>
-
-  <!-- Section 2: Devotionals -->
-  <section class="store-section">
-    <h2>Devotionals</h2>
-    <div class="scroll-container">
-      <div class="product-card">
-        <img src="./images/morninig devotion.jpg" alt="Daily Devotional">
-        <div class="product-info">
-          <h3>Daily Devotional</h3>
-          <span class="price">$10 <small>(₦15,000)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Daily Devotional', 10)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/children story book.jpg" alt="Bible Story Book">
-        <div class="product-info">
-          <h3>Bible Story Book</h3>
-          <span class="price">$15 <small>(₦22,500)</small></span>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <button onclick="addToCart('Bible Story Book', 15)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/devotional2.jpg" alt="Prayer Guide">
-        <div class="product-info">
-          <h3>Prayer Guide</h3>
-          <span class="price">$12 <small>(₦18,000)</small></span>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <button onclick="addToCart('Prayer Guide', 12)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/devotional3.jpg" alt="Youth Devotional">
-        <div class="product-info">
-          <h3>Youth Devotional</h3>
-          <span class="price">$9 <small>(₦13,500)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Youth Devotional', 9)">Add to Cart</button>
-        </div>
-      </div>
-
-      <!-- Add more to make total = 8 -->
-    </div>
-  </section>
-
-  <!-- Section 3: T-Shirts -->
-  <section class="store-section">
-    <h2>Church T-Shirts</h2>
-    <div class="scroll-container">
-      <div class="product-card">
-        <img src="./images/T-shirt1.jpg" alt="Church T-Shirt">
-        <div class="product-info">
-          <h3>Classic T-Shirt</h3>
-          <span class="price">$17 <small>(₦25,500)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Classic T-Shirt', 17)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <span class="badge hot">Hot</span>
-        <img src="./images/t-shirt2.jpg" alt="Church T-Shirt">
-        <div class="product-info">
-          <h3>Trendy T-Shirt</h3>
-          <span class="price">$25 <small>(₦37,500)</small></span>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <button onclick="addToCart('Trendy T-Shirt', 25)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/T-shirt3.jpg" alt="Church T-Shirt">
-        <div class="product-info">
-          <h3>Logo T-Shirt</h3>
-          <span class="price">$20 <small>(₦30,000)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Logo T-Shirt', 20)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/t-shirt4.jpg" alt="Church T-Shirt">
-        <div class="product-info">
-          <h3>Faith T-Shirt</h3>
-          <span class="price">$22 <small>(₦33,000)</small></span>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <button onclick="addToCart('Faith T-Shirt', 22)">Add to Cart</button>
+      <div class="footer-divider"></div>
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+        <div class="socials">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Section 4: Flyers -->
-  <section class="store-section">
-    <h2>Flyers</h2>
-    <div class="scroll-container">
-      <div class="product-card">
-        <img src="./images/Church flyer Design.jpeg" alt="Church Flyers">
-        <div class="product-info">
-          <h3>Church Flyer Pack</h3>
-          <span class="price">$5 <small>(₦7,500)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Church Flyers', 5)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/flyer2.jpg" alt="Gospel Flyers">
-        <div class="product-info">
-          <h3>Gospel Flyers</h3>
-          <span class="price">$6 <small>(₦9,000)</small></span>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <button onclick="addToCart('Gospel Flyers', 6)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/flyer3.jpg" alt="Conference Flyers">
-        <div class="product-info">
-          <h3>Conference Flyers</h3>
-          <span class="price">$8 <small>(₦12,000)</small></span>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <button onclick="addToCart('Conference Flyers', 8)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./images/flyer4.jpg" alt="Youth Flyers">
-        <div class="product-info">
-          <h3>Youth Event Flyers</h3>
-          <span class="price">$7 <small>(₦10,500)</small></span>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <button onclick="addToCart('Youth Flyers', 7)">Add to Cart</button>
-        </div>
-      </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Praise Court Assembly. All rights reserved.
     </div>
-  </section>
-
-</div>
-
-
-   
-
-    <!-- Cart Sidebar -->
-    <div id="cart" class="cart">
-        <button class="cart-exit" onclick="closeCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
-        <h2>Your Cart</h2>
-        <div id="cart-items"></div>
-        <div class="cart-total">Total: $<span id="total">0</span></div>
-        <button class="checkout" onclick="showCheckout()">Checkout</button>
-    </div>
-
-    <!-- Checkout Form -->
-    <div id="checkout-form" class="checkout-form">
-        <button class="form-checkout-exit" onclick="closeCheckoutForm()" aria-label="Close checkout form"><i
-                class="fas fa-times"></i></button>
-        <h3>Checkout</h3>
-        <input type="text" id="name" placeholder="Full Name">
-        <input type="email" id="email" placeholder="Email">
-        <select id="payment">
-            <option value="">Select Payment Method</option>
-            <option value="Credit Card">Credit Card</option>
-            <option value="Bank Transfer">Bank Transfer</option>
-            <option value="Cash on Delivery">Cash on Delivery</option>
-        </select>
-        <button onclick="submitOrder()">Submit Order</button>
-    </div>
-
-    <section class="stay-connected">
-        <h2>Stay Connected</h2>
-        <p><strong>Never miss an update. Follow us on social media:</strong></p>
-        <div class="social-icons">
-            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-            <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </section>
-
-    <!-- for location on map -->
-    <section class="worship-section">
-        <div class="container-worship">
-            <h1>Hello, Worship with Us!</h1>
-            <div class="wrapper">
-                <p class="typewriter">Join our online morning devotion</p>
-            </div>
-            <a href="./forms.html">
-                <button class="btn">Prayer Request</button>
-            </a>
-            <a href="./location.html">
-                <button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button>
-            </a>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="footer-container">
-            <!-- Contact Us -->
-            <div class="footer-section">
-                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
-                <ul>
-                    <li><i class="fas fa-envelope"></i> <a
-                            href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> <a href="tel:+2348133253877">08133253877</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h3><i class="fas fa-link"></i> Quick Links</h3>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="give.html"><i class="fas fa-hand-holding-heart"></i> Give</a></li>
-                    <li><a href="About.html"><i class="fas fa-users"></i> About Us</a></li>
-                    <li><a href="CONTACT.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-                    <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <!-- Social Media -->
-            <div class="footer-section">
-                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
-                <div class="socials">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="footer-bottom">
-            &copy; <span id="year"></span> Praise Court Assembly. All rights reserved.
-        </div>
-    </footer>
+  </footer>
 
 
 
