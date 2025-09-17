@@ -10,46 +10,30 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Praise Court Assembly|Store</title>
 </head>
+    <body>
 
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./store.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Praise Court Assembly|Store</title>
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/Photoroom-20250211_132555.png" alt="Praise Court Assembly Logo">
-        </div>
-        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-        <div class="navbar-icons">
-            <span class="cart-icon" onclick="toggleCart()" aria-label="Cart">
-                <i class="fas fa-shopping-cart"></i>
-                <span id="cart-count" class="cart-count">0</span>
-            </span>
-            <span class="account-icon" onclick="alert('Account feature coming soon!')" aria-label="Account">
-                <i class="fas fa-user-circle"></i>
-            </span>
-        </div>
+            <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="./images/Photoroom-20250211_132555.png" alt="Praise Court Assembly Logo">
+    </div>
+    <div class="navbar-right">
+        <span class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</span>
+        <span class="cart-icon" onclick="toggleCart()" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </span>
+        <span class="account-icon" onclick="alert('Account feature coming soon!')" aria-label="Account">
+            <i class="fas fa-user-circle"></i>
+        </span>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="give.html">Give</a></li>
             <li><a href="About.html">About-Us</a></li>
             <li><a href="CONTACT.html">Contact-Us</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
 
     <!-- Header / Hero -->
     <header class="store-header">
@@ -57,7 +41,8 @@
         <p class="tagline">Faith-inspired resources for your spiritual journey</p>
         <!-- Search -->
         <div class="store-search">
-            <input type="text" id="search-bar" placeholder="Search for Bibles, T-Shirts, Devotionals..." onkeyup="searchProducts()">
+            <input type="text" id="search-bar" placeholder="Search for Bibles, T-Shirts, Devotionals..."
+                onkeyup="searchProducts()">
         </div>
     </header>
 
@@ -86,7 +71,8 @@
                         <h3>Bible Reading Guide</h3>
                         <span class="price">$7 <small>(₦10,500)</small></span>
                         <div class="rating">⭐⭐⭐☆☆</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Bible Reading Guide', 7)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Bible Reading Guide', 7)">Add to
+                            Cart</button>
                     </div>
                 </div>
 
@@ -123,7 +109,8 @@
                         <h3>Daily Devotional</h3>
                         <span class="price">$10 <small>(₦15,000)</small></span>
                         <div class="rating">⭐⭐⭐⭐☆</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Daily Devotional', 10)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Daily Devotional', 10)">Add to
+                            Cart</button>
                     </div>
                 </div>
 
@@ -133,7 +120,8 @@
                         <h3>Bible Story Book</h3>
                         <span class="price">$15 <small>(₦22,500)</small></span>
                         <div class="rating">⭐⭐⭐⭐⭐</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Bible Story Book', 15)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Bible Story Book', 15)">Add to
+                            Cart</button>
                     </div>
                 </div>
 
@@ -153,7 +141,8 @@
                         <h3>Youth Devotional</h3>
                         <span class="price">$9 <small>(₦13,500)</small></span>
                         <div class="rating">⭐⭐⭐⭐☆</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Youth Devotional', 9)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Youth Devotional', 9)">Add to
+                            Cart</button>
                     </div>
                 </div>
             </div>
@@ -169,7 +158,8 @@
                         <h3>Classic T-Shirt</h3>
                         <span class="price">$17 <small>(₦25,500)</small></span>
                         <div class="rating">⭐⭐⭐⭐☆</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Classic T-Shirt', 17)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Classic T-Shirt', 17)">Add to
+                            Cart</button>
                     </div>
                 </div>
 
@@ -180,7 +170,8 @@
                         <h3>Trendy T-Shirt</h3>
                         <span class="price">$25 <small>(₦37,500)</small></span>
                         <div class="rating">⭐⭐⭐⭐⭐</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Trendy T-Shirt', 25)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Trendy T-Shirt', 25)">Add to
+                            Cart</button>
                     </div>
                 </div>
 
@@ -200,7 +191,8 @@
                         <h3>Faith T-Shirt</h3>
                         <span class="price">$22 <small>(₦33,000)</small></span>
                         <div class="rating">⭐⭐⭐☆☆</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Faith T-Shirt', 22)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Faith T-Shirt', 22)">Add to
+                            Cart</button>
                     </div>
                 </div>
             </div>
@@ -236,7 +228,8 @@
                         <h3>Conference Flyers</h3>
                         <span class="price">$8 <small>(₦12,000)</small></span>
                         <div class="rating">⭐⭐⭐⭐☆</div>
-                        <button class="add-to-cart-btn" onclick="addToCart('Conference Flyers', 8)">Add to Cart</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('Conference Flyers', 8)">Add to
+                            Cart</button>
                     </div>
                 </div>
 
@@ -255,7 +248,8 @@
 
     <!-- Cart Sidebar -->
     <div id="cart" class="cart">
-        <button class="cart-exit" onclick="closeCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
+        <button class="cart-exit" onclick="closeCart()" aria-label="Close cart"><i
+                class="fas fa-times"></i></button>
         <h2>Your Cart</h2>
         <div id="cart-items"></div>
         <div class="cart-total">Total: $<span id="total">0</span></div>
@@ -264,7 +258,8 @@
 
     <!-- Checkout Form -->
     <div id="checkout-form" class="checkout-form">
-        <button class="form-checkout-exit" onclick="closeCheckoutForm()" aria-label="Close checkout form"><i class="fas fa-times"></i></button>
+        <button class="form-checkout-exit" onclick="closeCheckoutForm()" aria-label="Close checkout form"><i
+                class="fas fa-times"></i></button>
         <h3>Checkout</h3>
         <input type="text" id="name" placeholder="Full Name" required>
         <input type="email" id="email" placeholder="Email" required>
@@ -330,7 +325,8 @@
             <div class="footer-section">
                 <h3><i class="fas fa-envelope"></i> Contact Us</h3>
                 <ul>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
                     <li><i class="fas fa-phone"></i> <a href="tel:+2348133253877">08133253877</a></li>
                     <li><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</li>
                 </ul>
@@ -365,13 +361,7 @@
         </div>
     </footer>
 
-    <script src="./store.js"></script>
-</body>
+        <script src="./store.js"></script>
+    </body>
 
-</html>
-
-
-    <script src="./store.js"></script>
-</body>
-
-</html>
+    </html>

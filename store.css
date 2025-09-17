@@ -14,50 +14,114 @@ body {
 }
 
 /* --- Navbar --- */
+/* --- Navbar --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    padding: 15px 20px;
+    background: #fff;
+    padding: 18px 32px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 16px rgba(56,0,97,0.08);
 }
 
 .logo img {
-    height: 60px;
+    height: 72px;
     width: auto;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(56,0,97,0.10);
+    transition: transform 0.2s;
+}
+
+.logo img:hover {
+    transform: scale(1.04) rotate(-2deg);
+    box-shadow: 0 6px 18px rgba(56,0,97,0.13);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    position: relative;
+    padding-right: 18px;
 }
 
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 2.2rem;
+    color: #360061;
     cursor: pointer;
+    background: #f7f7fa;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    box-shadow: 0 2px 8px rgba(56,0,97,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.menu-toggle:hover {
+    background: #e1d7ee;
+    color: #8e44ad;
+    box-shadow: 0 4px 12px rgba(56,0,97,0.13);
+}
+
+.cart-icon, .account-icon {
+    position: relative;
+    font-size: 1.7rem;
+    color: #8e44ad;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.cart-icon:hover, .account-icon:hover {
+    color: #360061;
+}
+
+.cart-icon #cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: #ffcc00;
+    color: #2c3e50;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 7px;
+    min-width: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(56,0,97,0.10);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    margin-left: 22px;
+    align-items: center;
+    transition: all 0.3s;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 14px;
 }
 
 .nav-links a {
-    color: black;
+    color: #222;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
+    padding: 4px 0;
 }
 
 .nav-links a:hover {
-    color: #360061;
+    color: #8e44ad;
 }
 
 .nav-links a::after {
@@ -67,7 +131,7 @@ body {
     bottom: -3px;
     width: 0;
     height: 3px;
-    background: #360061;
+    background: #8e44ad;
     transition: width 0.3s ease;
 }
 
@@ -75,28 +139,123 @@ body {
     width: 100%;
 }
 
+/* --- Responsive Navbar --- */
+@media (max-width: 900px) {
+    .nav-links li {
+        margin: 0 8px;
+    }
+    .logo img {
+        height: 56px;
+    }
+}
+
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 12px 10px;
+    }
+    .logo img {
+        height: 48px;
+    }
+    .navbar-right {
+        gap: 12px;
+        padding-right: 18px;
+    }
     .menu-toggle {
         display: block;
     }
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
         position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
+        top: 110%;
+        right: 0;
+        background: #fff;
+        width: 180px;
+        box-shadow: 0px 4px 16px rgba(56,0,97,0.10);
+        margin-left: 0;
         padding: 20px 0;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 12px 12px;
+        z-index: 999;
     }
     .nav-links.active {
         display: flex;
     }
     .nav-links li {
-        text-align: center;
+        text-align: left;
         margin: 10px 0;
+        padding-left: 20px;
     }
+}
+
+// ...existing code...
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .logo img {
+        height: 48px;
+    }
+    .navbar-right {
+        gap: 12px;
+        padding-right: 18px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110%;
+        right: 0;
+        background: #fff;
+        width: 210px;
+        box-shadow: 0 8px 32px rgba(56,0,97,0.13);
+        margin-left: 0;
+        padding: 18px 0 18px 0;
+        border-radius: 0 0 18px 18px;
+        z-index: 999;
+        border: 1px solid #eee;
+        animation: dropdownFade 0.3s;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: left;
+        margin: 0;
+        padding: 12px 28px;
+        font-size: 1.08rem;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background 0.2s;
+    }
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+    .nav-links a {
+        color: #360061;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+        border-radius: 8px;
+        padding: 2px 0;
+    }
+    .nav-links a:hover {
+        background: #f7f7fa;
+        color: #8e44ad;
+    }
+}
+
+@keyframes dropdownFade {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
 }
 
 /* --- Header / Hero --- */
@@ -417,8 +576,8 @@ header * { position: relative; z-index: 1; }
 
 /* --- Cart Count Badge --- */
 #cart-count, .cart-count {
-    background: #ff0d00;
-    color:#fff;
+    background: #ffcc00;
+    color: #2c3e50;
     font-size: 0.85rem;
     font-weight: bold;
     border-radius: 50%;
@@ -427,7 +586,7 @@ header * { position: relative; z-index: 1; }
     vertical-align: top;
     position: relative;
     top: -8px;
-    left: -12px;
+    left: -2px;
     box-shadow: 0 2px 6px rgba(56,0,97,0.10);
     min-width: 22px;
     text-align: center;
@@ -472,7 +631,7 @@ header * { position: relative; z-index: 1; }
 }
 .newsletter button[type="submit"] {
     padding: 10px 24px;
-    background: linear-gradient(#ff0d00, #ff4500);
+    background: linear-gradient(135deg, #8e44ad, #732d91);
     color: #fff;
     border: none;
     border-radius: 8px;
