@@ -14,19 +14,25 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
-        </div>
+ <nav class="navbar">
+    <div class="logo">
+        <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+    </div>
+    <div class="navbar-actions">
         <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="give.html">Give</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
-        </ul>
-    </nav>
+        <span class="notification-bell" onclick="showAnnouncements()" aria-label="Announcements">
+            <i class="fas fa-bell"></i>
+            <span id="notification-count" class="notification-count">0</span>
+        </span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="give.html">Give</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+</nav>
     
     <section class="hero">
         <div class="overlay"></div>

@@ -12,6 +12,62 @@ body {
     background: #f5f5f5;
 }
 
+
+/* --- Notification Bell --- */
+.notification-bell {
+    position: relative;
+    font-size: 1.7rem;
+    color: #8e44ad;
+    margin-left: 8px; /* reduced from 18px */
+    margin-right: 0px; /* reduced from 8px */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s, box-shadow 0.2s;
+    background: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    /* box-shadow: 0 2px 8px rgba(56,0,97,0.08); */
+}
+
+.notification-bell:hover {
+    color: #360061;
+    box-shadow: 0 4px 12px rgba(56, 0, 97, 0.13);
+}
+
+.notification-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #ff3b3b;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 7px;
+    min-width: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(56, 0, 97, 0.10);
+}
+
+@media (max-width: 768px) {
+    .notification-bell {
+        font-size: 1.4rem;
+        margin-left: 4px; /* reduced from 10px */
+        margin-right: 0px; /* reduced from 4px */
+        padding: 4px;
+    }
+}
+
+@media (max-width: 500px) {
+    .notification-bell {
+        font-size: 1.2rem;
+        margin-left: 2px; /* reduced from 6px */
+        margin-right: 0px; /* reduced from 2px */
+        padding: 2px;
+    }
+}
+
 /* ========== NAVBAR ========== */
 .navbar {
     display: flex;
@@ -26,22 +82,27 @@ body {
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .logo img {
     height: 60px;
     width: auto;
 }
+
 .menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
+
 .nav-links {
     display: flex;
     list-style: none;
 }
+
 .nav-links li {
     margin: 0 15px;
 }
+
 .nav-links a {
     color: black;
     text-decoration: none;
@@ -49,9 +110,11 @@ body {
     position: relative;
     transition: color 0.3s ease;
 }
+
 .nav-links a:hover {
     color: #360061;
 }
+
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -62,14 +125,41 @@ body {
     background: #360061;
     transition: width 0.3s ease;
 }
+
 .nav-links a:hover::after {
     width: 100%;
 }
 
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        flex: 1;
+        text-align: left;
+    }
+
+    .navbar-actions {
+        flex: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        /* Ensure actions are at the right end */
+    }
+
     .menu-toggle {
         display: block;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -81,14 +171,17 @@ body {
         padding: 20px 0;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
+
     .nav-links.active {
         display: flex;
     }
+
     .nav-links li {
         text-align: center;
         margin: 10px 0;
     }
 }
+
 
 /* for home page */
 .hero {
@@ -258,7 +351,7 @@ i {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
- .about-content h1 {
+.about-content h1 {
     font-size: 40px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -275,18 +368,19 @@ i {
     max-width: 420px;
     margin: 28px auto 0 auto;
     border-radius: 16px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 4px rgba(56,0,97,0.10);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(56, 0, 97, 0.10);
     border: 3px solid #fff;
     background: #fff;
     object-fit: cover;
     transition: box-shadow 0.3s, border 0.3s;
 }
+
 @media (max-width: 768px) {
     .about-image {
         max-width: 95vw;
         border-radius: 10px;
         margin-top: 18px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
         border-width: 2px;
     }
 }
@@ -302,7 +396,7 @@ i {
 }
 
 /* for radio container */
- .radio-container {
+.radio-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,85 +455,147 @@ i {
 
 /*  for church arms section  */
 .church-arms {
-  text-align: center;
-  padding: 2rem 1rem;
-  /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+    text-align: center;
+    padding: 2rem 1rem;
+    /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
 }
 
 .church-arms h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #222;
-  font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+    font-weight: bold;
 }
 
 .slider {
-  position: relative;
-  width: 100%;        /* ✅ full width */
-  max-width: 100%;    /* ✅ removed 900px limit */
-  margin: auto;
-  overflow: hidden;
-  border-radius: 0;   /* ✅ flush with section edges (use 16px if you want rounded corners) */
-  /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+    position: relative;
+    width: 100%;
+    /* ✅ full width */
+    max-width: 100%;
+    /* ✅ removed 900px limit */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0;
+    /* ✅ flush with section edges (use 16px if you want rounded corners) */
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
 }
 
 .slides {
-  position: relative;
-  width: 100%;
-  height: 420px;  /* fixed height for desktop */
+    position: relative;
+    width: 100%;
+    height: 420px;
+    /* fixed height for desktop */
 }
 
 .slides img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* ✅ image fills entire width */
-  opacity: 0;
-  animation: fade 35s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ✅ image fills entire width */
+    opacity: 0;
+    animation: fade 35s infinite;
 }
 
 /* Each image takes its turn */
-.slides img:nth-child(1) { animation-delay: 0s; }
-.slides img:nth-child(2) { animation-delay: 5s; }
-.slides img:nth-child(3) { animation-delay: 10s; }
-.slides img:nth-child(4) { animation-delay: 15s; }
-.slides img:nth-child(5) { animation-delay: 20s; }
-.slides img:nth-child(6) { animation-delay: 25s; }
-.slides img:nth-child(7) { animation-delay: 30s; }
+.slides img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slides img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slides img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slides img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.slides img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.slides img:nth-child(6) {
+    animation-delay: 25s;
+}
+
+.slides img:nth-child(7) {
+    animation-delay: 30s;
+}
 
 @keyframes fade {
-  0%   { opacity: 0; transform: scale(1.05); }
-  5%   { opacity: 1; transform: scale(1); }
-  20%  { opacity: 1; transform: scale(1); }
-  25%  { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 0; }
+    0% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+
+    5% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .slider-text {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #444;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
 }
 
 /* 🔹 Mobile Responsiveness */
 @media (max-width: 768px) {
-  .slides { height: 250px; }  /* smaller height for tablets */
-  .church-arms h1 { font-size: 1.5rem; }
-  .slider-text { font-size: 0.95rem; padding: 0 0.5rem; }
+    .slides {
+        height: 250px;
+    }
+
+    /* smaller height for tablets */
+    .church-arms h1 {
+        font-size: 1.5rem;
+    }
+
+    .slider-text {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .slides { height: 200px; }  /* smaller height for phones */
-  .church-arms h1 { font-size: 1.3rem; }
-  .slider-text { font-size: 0.9rem; }
+    .slides {
+        height: 200px;
+    }
+
+    /* smaller height for phones */
+    .church-arms h1 {
+        font-size: 1.3rem;
+    }
+
+    .slider-text {
+        font-size: 0.9rem;
+    }
 }
 
 
 /* for social media links  */
- .stay-connected {
+.stay-connected {
     text-align: center;
     padding: 50px;
     background: white;
@@ -470,9 +626,9 @@ i {
     font-size: 28px;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-} 
+}
 
- .social-icons a:hover {
+.social-icons a:hover {
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -491,10 +647,10 @@ i {
 
 .social-icons .instagram {
     background: #C13584;
-}  
+}
 
 /* for hello worship us page */
- .worship-section {
+.worship-section {
     margin: 0;
     padding: 0;
     display: flex;
@@ -554,10 +710,10 @@ i {
 
 .container-worship .btn i {
     margin-left: 10px;
-} 
+}
 
 /* TYPEWRITER EFFECT */
- .wrapper {
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -584,7 +740,7 @@ i {
 }
 
 /* Optional subtle fade effect */
- .typewriter::after {
+.typewriter::after {
     content: "";
     position: absolute;
     top: 0;
@@ -633,17 +789,17 @@ i {
     50% {
         border-color: white;
     }
-} 
+}
 
 /* RESPONSIVE */
- @media (max-width: 600px) {
+@media (max-width: 600px) {
     .container-worship h1 {
         font-size: 2rem;
     }
 
     .typewriter {
         font-size: 1.1rem;
-        min-width:100px;
+        min-width: 100px;
         padding: 0.15em 0.3em;
         border-radius: 6px;
         letter-spacing: 0.5px;
@@ -762,4 +918,3 @@ footer {
         margin: 0 8px;
     }
 }
-
