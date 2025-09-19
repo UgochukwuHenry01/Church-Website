@@ -14,26 +14,26 @@
 </head>
 
 <body>
- <nav class="navbar">
-    <div class="logo">
-        <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
-    </div>
-    <div class="navbar-actions">
-        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-        <span class="notification-bell" onclick="showAnnouncements()" aria-label="Announcements">
-            <i class="fas fa-bell"></i>
-            <span id="notification-count" class="notification-count">0</span>
-        </span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="give.html">Give</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
-    </ul>
-</nav>
-    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+        </div>
+        <div class="navbar-actions">
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <span class="notification-bell" onclick="showAnnouncements()" aria-label="Announcements">
+                <i class="fas fa-bell"></i>
+                <span id="notification-count" class="notification-count">0</span>
+            </span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="give.html">Give</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
@@ -127,32 +127,38 @@
                 <div class="testimony-card">
                     <div class="testifier-photo" style="background-image: url('./images/testifier1.jpg');"></div>
                     <div class="testifier-name">Jane Doe</div>
-                    <div class="testimony-text">"God healed me from a long-term illness after joining PCA. I am grateful for the prayers and support."</div>
+                    <div class="testimony-text">"God healed me from a long-term illness after joining PCA. I am grateful
+                        for the prayers and support."</div>
                 </div>
                 <div class="testimony-card">
                     <div class="testifier-photo" style="background-image: url('./images/testifier2.jpg');"></div>
                     <div class="testifier-name">John Smith</div>
-                    <div class="testimony-text">"My family was restored and united through the love and teachings at Praise Court Assembly."</div>
+                    <div class="testimony-text">"My family was restored and united through the love and teachings at
+                        Praise Court Assembly."</div>
                 </div>
                 <div class="testimony-card">
                     <div class="testifier-photo" style="background-image: url('./images/testifier3.jpg');"></div>
                     <div class="testifier-name">Grace Okafor</div>
-                    <div class="testimony-text">"I received a miracle job after attending the breakthrough service. God is truly faithful!"</div>
+                    <div class="testimony-text">"I received a miracle job after attending the breakthrough service. God
+                        is truly faithful!"</div>
                 </div>
                 <div class="testimony-card">
                     <div class="testifier-photo" style="background-image: url('./images/testifier4.jpg');"></div>
                     <div class="testifier-name">Samuel Eze</div>
-                    <div class="testimony-text">"My spiritual life has grown so much since I joined PCA. The worship and word are life-changing."</div>
+                    <div class="testimony-text">"My spiritual life has grown so much since I joined PCA. The worship and
+                        word are life-changing."</div>
                 </div>
                 <div class="testimony-card">
                     <div class="testifier-photo" style="background-image: url('./images/testifier5.jpg');"></div>
                     <div class="testifier-name">Ngozi Chukwu</div>
-                    <div class="testimony-text">"God delivered me from fear and anxiety. I now live with peace and joy every day."</div>
+                    <div class="testimony-text">"God delivered me from fear and anxiety. I now live with peace and joy
+                        every day."</div>
                 </div>
                 <div class="testimony-card">
                     <div class="testifier-photo" style="background-image: url('./images/testifier6.jpg');"></div>
                     <div class="testifier-name">Peter Obi</div>
-                    <div class="testimony-text">"I found purpose and hope at PCA. My life has been transformed for good."</div>
+                    <div class="testimony-text">"I found purpose and hope at PCA. My life has been transformed for
+                        good."</div>
                 </div>
             </div>
         </div>
@@ -229,25 +235,6 @@
     </footer>
 
     <script src="./index.js"></script>
-    <script>
-// Auto-slide testimonies
-const slider = document.querySelector('.testimony-list');
-let cardWidth = slider ? slider.querySelector('.testimony-card').offsetWidth : 0;
-let currentIndex = 0;
-function slideTestimonies() {
-    if (!slider) return;
-    const cards = slider.querySelectorAll('.testimony-card');
-    currentIndex = (currentIndex + 1) % cards.length;
-    slider.scrollTo({
-        left: cardWidth * currentIndex,
-        behavior: 'smooth'
-    });
-}
-setInterval(slideTestimonies, 3500);
-window.addEventListener('resize', () => {
-    cardWidth = slider ? slider.querySelector('.testimony-card').offsetWidth : 0;
-});
-</script>
 </body>
 
 </html>

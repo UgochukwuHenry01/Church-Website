@@ -1,4 +1,3 @@
-
 // ========== INDEX PAGE JAVASCRIPT ==========
 
 // Wait for DOM to load
@@ -36,6 +35,26 @@ document.addEventListener('DOMContentLoaded', function() {
     //     slides.style.transform = `translateX(${-index * 20}%)`;
     // }
     // setInterval(nextSlide, 3000); 
+
+    // Auto-slide testimonies
+    document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.querySelector('.testimony-list');
+        let cardWidth = slider ? slider.querySelector('.testimony-card').offsetWidth : 0;
+        let currentIndex = 0;
+        function slideTestimonies() {
+            if (!slider) return;
+            const cards = slider.querySelectorAll('.testimony-card');
+            currentIndex = (currentIndex + 1) % cards.length;
+            slider.scrollTo({
+                left: cardWidth * currentIndex,
+                behavior: 'smooth'
+            });
+        }
+        setInterval(slideTestimonies, 3500);
+        window.addEventListener('resize', () => {
+            cardWidth = slider ? slider.querySelector('.testimony-card').offsetWidth : 0;
+        });
+    });
 
 });
 
