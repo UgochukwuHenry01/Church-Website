@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 /* ========== GLOBAL RESETS ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 body {
     width: 100vw;
     min-height: 100vh;
     background: #f5f5f5;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 
@@ -1035,6 +1037,8 @@ footer {
     -webkit-overflow-scrolling: touch;
     padding-bottom: 16px;
     transition: scroll-left 0.5s;
+    /* Ensure no wrapping on mobile */
+    flex-wrap: nowrap;
 }
 
 .testimony-card {
@@ -1142,4 +1146,34 @@ footer {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section fade-in animation */
+.section-fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+.section-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optionally, apply to all major sections */
+.hero,
+.about-section,
+.radio-container,
+.church-arms,
+.testimonies,
+.stay-connected,
+.worship-section,
+footer {
+    /* Add fade class by JS */
+    will-change: opacity, transform;
 }

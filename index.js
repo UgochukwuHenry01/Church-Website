@@ -1,10 +1,10 @@
 // ========== INDEX PAGE JAVASCRIPT ==========
 
 // Wait for DOM to load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     // ========== NAVBAR TOGGLE ==========
-    window.toggleMenu = function() {
+    window.toggleMenu = function () {
         const navLinks = document.querySelector('.nav-links');
         const body = document.body;
         const menuToggle = document.querySelector('.menu-toggle');
@@ -16,45 +16,73 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // ========== RADIO BROADCAST PLAYER ==========
-    window.playRadio = function() {
+    window.playRadio = function () {
         const player = document.getElementById('radio-player');
         if (player) player.play();
     };
-    window.pauseRadio = function() {
+    window.pauseRadio = function () {
         const player = document.getElementById('radio-player');
         if (player) player.pause();
     };
 
-    // ========== CHURCH ARMS SLIDER ==========
-    // let index = 0;
-    // const slides = document.querySelector('.slides');
-    // const images = document.querySelectorAll('.slides img');
-    // function nextSlide() {
-    //     if (!slides || images.length === 0) return;
-    //     index = (index + 1) % images.length;
-    //     slides.style.transform = `translateX(${-index * 20}%)`;
-    // }
-    // setInterval(nextSlide, 3000); 
 
     // Auto-slide testimonies
-    document.addEventListener('DOMContentLoaded', function () {
-        const slider = document.querySelector('.testimony-list');
-        let cardWidth = slider ? slider.querySelector('.testimony-card').offsetWidth : 0;
+    const slider = document.querySelector('.testimony-list');
+    if (slider) {
         let currentIndex = 0;
+
+        function getCardWidth() {
+            const card = slider.querySelector('.testimony-card');
+            if (!card) return 0;
+            // Get gap between cards (modern browsers)
+            let gap = 0;
+            try {
+                gap = parseInt(getComputedStyle(slider).gap) || 0;
+            } catch (e) { }
+            return card.offsetWidth + gap;
+        }
+
         function slideTestimonies() {
-            if (!slider) return;
             const cards = slider.querySelectorAll('.testimony-card');
+            if (cards.length === 0) return;
             currentIndex = (currentIndex + 1) % cards.length;
+            const cardWidth = getCardWidth();
             slider.scrollTo({
                 left: cardWidth * currentIndex,
                 behavior: 'smooth'
             });
         }
+
         setInterval(slideTestimonies, 3500);
+
         window.addEventListener('resize', () => {
-            cardWidth = slider ? slider.querySelector('.testimony-card').offsetWidth : 0;
+            // No need to update cardWidth globally, always calculate in slideTestimonies
         });
+    }
+
+    // Section fade-in on scroll
+    const fadeSections = document.querySelectorAll(
+        '.hero, .about-section, .radio-container, .church-arms, .testimonies, .stay-connected, .worship-section, footer'
+    );
+    fadeSections.forEach(section => {
+        section.classList.add('section-fade');
     });
+
+    function revealSections() {
+        fadeSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 60) {
+                section.classList.add('visible');
+            } else {
+                section.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealSections);
+    window.addEventListener('resize', revealSections);
+    // Initial reveal
+    revealSections();
 
 });
 
