@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!navLinks || !body || !menuToggle) return;
         navLinks.classList.toggle('active');
         body.classList.toggle('hide-home');
-        // Toggle menu icon
-        menuToggle.innerHTML = navLinks.classList.contains('active') ? '&times;' : '&#9776;';
-      // Update ARIA expanded
+        // Toggle menu icon by toggling class for animation
+        menuToggle.classList.toggle('active');
+        // Update ARIA expanded
         menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
     };
 
