@@ -13,163 +13,148 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
-        </div>
-        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="give.html">Give</a></li>
-            <li><a href="About.html">About-Us</a></li>
-            <li><a href="CONTACT.html">Contact-Us</a></li>
-            <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
-        </ul>
-    </nav>
+<!-- ================== NAVBAR ================== -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="./images/Photoroom-20250211_132555.png" alt="Praise Court Assembly Logo">
+  </div>
+  <span class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</span>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="give.html">Give</a></li>
+    <li><a href="About.html" aria-current="page">About Us</a></li>
+    <li><a href="CONTACT.html">Contact Us</a></li>
+    <li><a href="store.html" aria-label="View Store"><i class="fas fa-shopping-cart"></i></a></li>
+  </ul>
+</nav>
 
-    <!-- for about us page  -->
-    <section class="about-section">
-        <h1 class="bold-header">About Us</h1>
-        <div class="overlay"></div>
-        <div class="about-content">
-            <!-- <img src="./images/pastor.jpg" alt="Pastor's Image" class="pastor-image"> -->
-            <h2 class="fade-in">About Praise Court Assembly</h2>
-            <p class="slide-in">
-                Praise Court Assembly was founded by <strong>Engr.Pastor Chidebere Sunny Nwachukwu</strong>, a visionary leader
-                dedicated to spreading faith and hope. Since its establishment, our church has been a beacon of light,
-                guiding believers in worship, community service, and spiritual growth.
-            </p>
-            <p class="slide-in">
-                Over the years, Praise Court Assembly has grown into a thriving congregation where people experience
-                divine transformation. Through powerful sermons, dynamic worship, and outreach programs, we continue to
-                make an impact in lives and communities.
-            </p>
-            <a href="./forms.html"><button class="glow-btn">Join Us</button></a>
-        </div>
-    </section>
+<!-- ================== ABOUT US ================== -->
+<section class="about-section" data-animate="fade-up">
+  <h1 class="bold-header">About Us</h1>
+  <div class="overlay"></div>
+  <div class="about-content">
+    <h2 class="fade-in">About Praise Court Assembly</h2>
+    <p class="slide-in">
+      Praise Court Assembly was founded by 
+      <strong>Engr. Pastor Chidebere Sunny Nwachukwu</strong>, a visionary leader
+      dedicated to spreading faith and hope. Since its establishment, our church has been a beacon of light,
+      guiding believers in worship, community service, and spiritual growth.
+    </p>
+    <p class="slide-in">
+      Over the years, Praise Court Assembly has grown into a thriving congregation where people experience
+      divine transformation. Through powerful sermons, dynamic worship, and outreach programs, we continue to
+      make an impact in lives and communities.
+    </p>
+    <a href="./forms.html" class="glow-btn">Join Us</a>
+  </div>
+</section>
 
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision-section">
-        <div class="mission">
-            <h2>Our Mission</h2>
-            <p>
-                <strong>
-                    To raise a generation of spiritually empowered believers, spreading the love and truth of Christ to
-                    the
-                    world.
-                </strong>
-            </p>
-        </div>
-        <div class="vision">
-            <h2>Our Vision</h2>
-            <p>
-                <strong>
-                    To establish a strong foundation in spiritual authority, equipping individuals with the Word and
-                    power
-                    of God to transform lives and communities.
-                </strong>
-            </p>
-        </div>
-    </section>
+<!-- ================== MISSION & VISION ================== -->
+<section class="mission-vision-section" data-animate="fade-up">
+  <div class="mission">
+    <h2>Our Mission</h2>
+    <p><strong>To raise a generation of spiritually empowered believers, spreading the love and truth of Christ to the world.</strong></p>
+  </div>
+  <div class="vision">
+    <h2>Our Vision</h2>
+    <p><strong>To establish a strong foundation in spiritual authority, equipping individuals with the Word and power of God to transform lives and communities.</strong></p>
+  </div>
+</section>
 
+<!-- ================== WEEKLY ACTIVITIES ================== -->
+<div class="container-slider" data-animate="fade-up">
+  <section class="about">
+    <div class="text-content">
+      <h1>Our Church Weekly Activities</h1>
+      <p>At Praise Court Assembly, we are more than just a church—we are a family united in faith, love, and worship. Every week, we gather to experience the power of God, grow spiritually, and encourage one another in our walk with Christ.</p>
+      <h2>Join Us for a Life-Changing Experience</h2>
+      <ul>
+        <li><strong>Sunday Worship Service:</strong> 8:00 AM - 12:00 PM - Encounter God's presence through powerful worship and an inspiring message.</li>
+        <li><strong>Tuesday Bible Studies:</strong> 6:00 PM - 8:00 PM - Dive deep into the Word, gain wisdom, and grow in faith with interactive discussions.</li>
+        <li><strong>Friday Deliverance Service:</strong> 6:00 PM - 9:00 PM - A night of intense prayers, breakthroughs, and spiritual liberation.</li>
+        <li><strong>Saturday Faith Clinic:</strong> 10:00 AM - 12:00 PM - Strengthen your faith through biblical teachings, counseling, and guidance.</li>
+      </ul>
+      <blockquote>"For where two or three gather in my name, there am I with them." - Matthew 18:20</blockquote>
+    </div>
+    <div class="image-slider">
+      <img src="./images/pastor.jpg" alt="Lead Pastor" class="slide active">
+      <img src="./images/aunty chi.jpg" alt="Church member leading worship" class="slide" loading="lazy">
+      <img src="./images/women.jpg" alt="Women's fellowship group" class="slide" loading="lazy">
+    </div>
+  </section>
+</div>
 
-    <div class="container-slider">
-        <section class="about">
-            <div class="text-content">
-                <h1>Our Church Weekly Activities</h1>
-                <p>At Praise Court Assembly, we are more than just a church—we are a family united in faith, love, and
-                    worship. Every week, we gather to experience the power of God, grow spiritually, and encourage one
-                    another in our walk with Christ.</p>
-                <h2>Join Us for a Life-Changing Experience</h2>
-                <ul>
-                    <li><strong>Sunday Worship Service:</strong> 8:00 AM - 12:00 PM - Encounter God's presence through
-                        powerful worship and an inspiring message.</li>
-                    <li><strong>Tuesday Bible Studies:</strong> 6:00 PM - 8:00 PM - Dive deep into the Word, gain wisdom,
-                        and grow in faith with interactive discussions.</li>
-                    <li><strong>Friday Deliverance Service:</strong> 6:00 PM - 9:00 PM - A night of intense prayers,
-                        breakthroughs, and spiritual liberation.</li>
-                    <li><strong>Saturday Faith Clinic:</strong> 10:00 AM - 12:00 PM - Strengthen your faith through biblical
-                        teachings, counseling, and guidance.</li>
-                </ul>
-                <blockquote>"For where two or three gather in my name, there am I with them." - Matthew 18:20</blockquote>
-            </div>
-            <div class="image-slider">
-                <img src="./images/pastor.jpg" class="slide active">
-                <img src="./images/aunty chi.jpg" class="slide">
-                <img src="./images/women.jpg" class="slide">
-            </div>
-        </section>
+<!-- ================== STAY CONNECTED ================== -->
+<section class="stay-connected" data-animate="fade-up">
+  <h2>Stay Connected</h2>
+  <p><strong>Never miss an update. Follow us on social media:</strong></p>
+  <div class="social-icons">
+    <a href="#" class="facebook" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer" class="twitter" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="Follow us on YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<!-- ================== WORSHIP WITH US ================== -->
+<section class="worship-section" data-animate="fade-up">
+  <div class="container-worship">
+    <h1>Hello, Worship with Us!</h1>
+    <div class="wrapper">
+      <p class="typewriter">Join our online morning devotion</p>
+    </div>
+    <a href="./forms.html" class="btn">Prayer Request</a>
+    <a href="./location.html" class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+  <div class="footer-container">
+    <!-- Contact Us -->
+    <div class="footer-section">
+      <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
+        <li><i class="fas fa-phone"></i> <a href="tel:+2348133253877">08133253877</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</li>
+      </ul>
     </div>
 
-    <section class="stay-connected">
-        <h2>Stay Connected</h2>
-        <p><strong>Never miss an update. Follow us on social media:</strong></p>
-        <div class="social-icons">
-            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-            <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </section>
+    <div class="footer-divider"></div>
 
-    <!-- for location on map -->
-    <section class="worship-section">
-        <div class="container-worship">
-            <h1>Hello, Worship with Us!</h1>
-            <div class="wrapper">
-                <p class="typewriter">Join our online morning devotion</p>
-            </div>
-            <a href="./forms.html">
-                <button class="btn">Prayer Request</button>
-            </a>
-            <a href="./location.html">
-                <button class="btn">Locate a Branch <i class="fas fa-arrow-right"></i></button>
-            </a>
-        </div>
-    </section>
+    <!-- Quick Links -->
+    <nav class="footer-section" aria-label="Quick Links">
+      <h3><i class="fas fa-link"></i> Quick Links</h3>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="give.html"><i class="fas fa-hand-holding-heart"></i> Give</a></li>
+        <li><a href="About.html"><i class="fas fa-users"></i> About Us</a></li>
+        <li><a href="CONTACT.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
+        <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
+      </ul>
+    </nav>
 
-    <footer>
-        <div class="footer-container">
-            <!-- Contact Us -->
-            <div class="footer-section">
-                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
-                <ul>
-                    <li><i class="fas fa-envelope"></i> <a
-                            href="mailto:ugochukwuhenryedeh@gmail.com">ugochukwuhenryedeh@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> <a href="tel:+2348133253877">08133253877</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> No. 6 Faith Avenue</li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h3><i class="fas fa-link"></i> Quick Links</h3>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="give.html"><i class="fas fa-hand-holding-heart"></i> Give</a></li>
-                    <li><a href="About.html"><i class="fas fa-users"></i> About Us</a></li>
-                    <li><a href="CONTACT.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
-                    <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <!-- Social Media -->
-            <div class="footer-section">
-                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
-                <div class="socials">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
+    <div class="footer-divider"></div>
 
-        <!-- Copyright -->
-        <div class="footer-bottom">
-            &copy; <span id="year"></span> Praise Court Assembly. All rights reserved.
-        </div>
-    </footer>
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+      <div class="socials">
+        <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    &copy; <span id="year"></span> Praise Court Assembly. All rights reserved.
+  </div>
+</footer>
+
 
     <script src="./About.js"></script>
 </body>

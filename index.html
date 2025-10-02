@@ -14,27 +14,34 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
-        </div>
-        <div class="navbar-actions">
-            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-            <span class="notification-bell" onclick="showAnnouncements()" aria-label="Announcements">
-                <i class="fas fa-bell"></i>
-                <span id="notification-count" class="notification-count">0</span>
-            </span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="give.html">Give</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/Photoroom-20250211_132555.png" alt="Church Logo">
+            </div>
+            <div class="navbar-actions">
+                <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="notification-bell" onclick="showAnnouncements()" aria-label="Announcements">
+                    <i class="fas fa-bell"></i>
+                    <span id="notification-count" class="notification-count">0</span>
+                </span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="store.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="hero">
+    <main>
+        <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
             <div class="welcome">Welcome to</div>
@@ -57,47 +64,59 @@
         </div>
     </section>
 
+    <section class="bible-quote-section section-fade">
+        <div class="bible-quote-container">
+            <blockquote class="bible-quote-text">
+                "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future."
+            </blockquote>
+            <cite class="bible-reference">- Jeremiah 29:11</cite>
+        </div>
+    </section>
+
     <section class="about-section">
         <div class="overlay"></div>
         <div class="about-content">
-            <h1>About Praise Court Assembly</h1>
-            <p class="slide-in">
-                <strong>Praise Court Assembly</strong> was founded by <strong>Chidebere Sunny Nwachukwu</strong>, a
-                visionary leader dedicated to spreading faith, hope, and love. Since our inception, we have served as a
-                beacon of light—guiding believers in worship, community service, and spiritual growth.
-            </p>
-            <p class="slide-in">
-                Our church is a welcoming home for all, where lives are transformed through the power of God’s Word,
-                heartfelt worship, and genuine fellowship. We believe in nurturing every individual’s spiritual journey
-                and empowering them to fulfill their God-given purpose.
-            </p>
-            <p class="slide-in">
-                Over the years, Praise Court Assembly has grown into a vibrant congregation. Through inspiring sermons,
-                dynamic worship, and impactful outreach programs, we continue to make a positive difference in the lives
-                of our members and the wider community.
-            </p>
-            <p class="slide-in">
-                Join us as we worship, grow, and serve together—becoming a family united in faith, hope, and love.
-            </p>
-            <!-- <img src="./images/pastor.jpg" alt="Praise Court Assembly" class="about-image"> -->
+            <div class="about-text">
+                <h1>About Praise Court Assembly</h1>
+                <p class="slide-in">
+                    Founded by visionary leader <strong>Chidebere Sunny Nwachukwu</strong>, Praise Court Assembly is a beacon of faith, hope, and love. We guide believers through worship, community service, and spiritual growth.
+                </p>
+                <p class="slide-in">
+                    Our welcoming congregation transforms lives through God's Word, heartfelt worship, and genuine fellowship. Join us in nurturing spiritual journeys and fulfilling divine purposes.
+                </p>
+                <a href="About.html" class="btn learn-more-btn">
+                    <i class="fas fa-arrow-right"></i> Learn More
+                </a>
+            </div>
+            <div class="about-image">
+                <img src="./images/pastor preacher.jpg" alt="Praise Court Assembly Pastor">
+            </div>
+        </div>
     </section>
 
     <section class="radio-container">
-        <div class="radio-info">
-            <img src="./images/pastor preacher.jpg" alt="Pastor">
-            <h2>Praise Court Assembly (P.C.A) Live Radio</h2>
-            <p>Join us for live broadcasts of worship, prayers, and powerful sermons.</p>
-        </div>
-
-        <div class="radio-section">
-            <h3>Live Radio Broadcast</h3>
-            <audio id="radio-player" controls>
-                <source src="live-radio-stream.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <div class="radio-buttons">
-                <button onclick="playRadio()">Play</button>
-                <button onclick="pauseRadio()">Pause</button>
+        <div class="radio-card">
+            <div class="radio-header">
+                <h2>Listen Now</h2>
+            </div>
+            <div class="radio-content">
+                <div class="radio-image">
+                    <img src="./images/pastor preacher.jpg" alt="Praise Court Assembly">
+                </div>
+                <div class="radio-details">
+                    <h3>Praise Court Assembly (P.C.A) Live Radio</h3>
+                    <blockquote class="bible-quote">
+                        "For where two or three gather in my name, there am I with them." - Matthew 18:20
+                    </blockquote>
+                    <audio id="radio-player" controls>
+                        <source src="live-radio-stream.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="radio-buttons">
+                        <button onclick="playRadio()">Play</button>
+                        <button onclick="pauseRadio()">Pause</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -190,6 +209,7 @@
             </a>
         </div>
     </section>
+    </main>
 
     <footer>
         <div class="footer-container">

@@ -13,7 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.toggle('hide-home');
         // Toggle menu icon
         menuToggle.innerHTML = navLinks.classList.contains('active') ? '&times;' : '&#9776;';
+      // Update ARIA expanded
+        menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
     };
+
+    // Keyboard accessibility for menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleMenu();
+            }
+        });
+    }
 
     // ========== RADIO BROADCAST PLAYER ==========
     window.playRadio = function () {
@@ -62,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Section fade-in on scroll
     const fadeSections = document.querySelectorAll(
-        '.hero, .about-section, .radio-container, .church-arms, .testimonies, .stay-connected, .worship-section, footer'
+        '.hero, .bible-quote-section, .about-section, .radio-container, .church-arms, .testimonies, .stay-connected, .worship-section, footer'
     );
     fadeSections.forEach(section => {
         section.classList.add('section-fade');
@@ -79,7 +92,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    window.addEventListener('scroll', revealSections);
+    // Throttle function for performance
+    function throttle(func, limit) {
+        let inThrottle;
+        return function() {
+            const args = arguments;
+            const context = this;
+            if (!inThrottle) {
+                func.apply(context, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        };
+    }
+
+    const throttledReveal = throttle(revealSections, 100);
+
+    window.addEventListener('scroll', throttledReveal);
     window.addEventListener('resize', revealSections);
     // Initial reveal
     revealSections();

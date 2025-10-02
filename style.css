@@ -267,6 +267,109 @@ body {
     }
 }
 
+/* bible quote section */
+.bible-quote-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e9ecef 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bible-quote-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./images/premium_photo.jpeg') no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.bible-quote-container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    border: none;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.bible-quote-text {
+    font-size: 2rem;
+    font-style: italic;
+    color: #360061;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+}
+
+.bible-quote-text::before {
+    content: '"';
+    font-size: 4rem;
+    color: #FFD700;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    font-family: serif;
+}
+
+.bible-quote-text::after {
+    content: '"';
+    font-size: 4rem;
+    color: #FFD700;
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+    font-family: serif;
+}
+
+.bible-reference {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .bible-quote-section {
+        padding: 40px 10px;
+    }
+
+    .bible-quote-container {
+        padding: 30px 20px;
+        margin: 0 10px;
+    }
+
+    .bible-quote-text {
+        font-size: 1.5rem;
+    }
+
+    .bible-quote-text::before,
+    .bible-quote-text::after {
+        font-size: 3rem;
+        top: -15px;
+        left: -20px;
+        bottom: -30px;
+        right: -20px;
+    }
+
+    .bible-reference {
+        font-size: 1rem;
+    }
+}
+
 /* for home page */
 .hero {
     height: 100vh;
@@ -374,20 +477,151 @@ i {
     }
 
     .about-section {
-        padding: 20px 5px;
+        padding: 20px 10px;
         min-height: 80vh;
         height: auto;
     }
 
-    .radio-container {
+    .about-content {
         flex-direction: column;
-        padding: 20px 5px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .radio-container {
+        padding: 10px 0;
+    }
+
+    .radio-card {
+        width: 95%;
+        padding: 15px;
+        flex-direction: column;
         gap: 15px;
     }
 
-    .radio-info,
-    .radio-section {
+    .radio-header h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .radio-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .radio-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .radio-details {
+        text-align: center;
         max-width: 100%;
+    }
+
+    .radio-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .bible-quote {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .radio-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .radio-buttons button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .church-arms {
+        padding: 1rem 0.5rem;
+    }
+
+    .church-arms h1 {
+        font-size: 1.5rem;
+    }
+
+    .slides {
+        height: 250px;
+    }
+
+    .slider-text {
+        font-size: 0.9rem;
+    }
+
+    .testimonies {
+        padding: 30px 0 20px 0;
+    }
+
+    .testimonies h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .testimony-list {
+        gap: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .testimony-card {
+        width: 280px;
+        min-width: 280px;
+        padding: 15px 10px 15px 10px;
+    }
+
+    .testifier-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testifier-name {
+        font-size: 1rem;
+    }
+
+    .testimony-text {
+        font-size: 0.95rem;
+        min-height: 50px;
+    }
+
+    .stay-connected {
+        padding: 30px 10px;
+    }
+
+    .stay-connected h2 {
+        font-size: 24px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons a {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
     }
 
     .worship-section {
@@ -397,20 +631,45 @@ i {
     }
 
     .container-worship {
-        padding: 10px;
+        padding: 20px;
+    }
+
+    .container-worship h1 {
+        font-size: 2rem;
+    }
+
+    .typewriter {
+        font-size: 1.1rem;
+        min-width: 150px;
+        padding: 0.15em 0.3em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 15px 0;
+        max-width: 90%;
+    }
+
+    .socials a {
+        margin: 0 5px;
     }
 }
 
 /* about us section */
 .about-section {
-    height: 100vh;
+    min-height: 100vh;
     background: url('./images/pastor\ 3.jpg') no-repeat center center/cover;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    /* padding: 50px; */
+    padding: 50px 20px;
     position: relative;
 }
 
@@ -420,102 +679,182 @@ i {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .about-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 70px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
 }
 
-.about-content h1 {
-    font-size: 40px;
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: var(--secondary-color);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
-.about-content p {
-    font-size: 18px;
-    line-height: 1.6;
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+.learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.learn-more-btn:hover {
+    background: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
 }
 
 .about-image {
-    display: block;
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
     width: 100%;
-    max-width: 420px;
-    margin: 28px auto 0 auto;
-    border-radius: 16px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(56, 0, 97, 0.10);
-    border: 3px solid #fff;
-    background: #fff;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--secondary-color);
     object-fit: cover;
-    transition: box-shadow 0.3s, border 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    .about-image {
-        max-width: 95vw;
-        border-radius: 10px;
-        margin-top: 18px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-        border-width: 2px;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-content h1 {
-        font-size: 28px;
+    .about-content {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
     }
 
-    .about-content p {
-        font-size: 16px;
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        max-width: 100%;
     }
 }
 
 /* for radio container */
 .radio-container {
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.radio-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.radio-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #360061;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.radio-content {
+    display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px;
-    background: #f4f4f4;
-    gap: 30px;
 }
 
-.radio-info {
-    flex: 1;
-    max-width: 400px;
-    text-align: center;
-    padding: 20px;
-    background: #000;
-    color: white;
-    border-radius: 10px;
-}
-
-.radio-info img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.radio-image img {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 4px solid #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
-.radio-section {
+.radio-details {
     flex: 1;
-    max-width: 400px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: left;
+}
+
+.radio-details h3 {
+    font-size: 1.8rem;
+    color: #360061;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.bible-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    border-left: 4px solid #ffd700;
+    padding-left: 15px;
 }
 
 .radio-buttons {
@@ -523,18 +862,22 @@ i {
 }
 
 .radio-buttons button {
-    background: #ffcc00;
+    background: #ffd700;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px;
+    padding: 14px 28px;
+    font-size: 18px;
+    margin: 8px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+    border-radius: 12px;
+    font-weight: 700;
+    color: #360061;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .radio-buttons button:hover {
     background: #e6b800;
+    transform: translateY(-3px);
 }
 
 /*  for church arms section  */
@@ -1176,4 +1519,69 @@ html {
 footer {
     /* Add fade class by JS */
     will-change: opacity, transform;
+}
+
+/* CSS Variables for consistent branding */
+:root {
+    --primary-color: #360061;
+    --secondary-color: #FFD700;
+    --accent-color: #ffcc00;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+    --font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Improved focus styles for accessibility */
+.nav-links a:focus,
+.btn:focus,
+.social-icons a:focus,
+.radio-buttons button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Enhanced button hover effects */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional responsive improvements */
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 10px;
+    }
+
+    .church-name {
+        font-size: 32px;
+    }
+
+    .testimony-card {
+        padding: 12px 4px 10px 4px;
+    }
+}
+
+/* Professional spacing and typography enhancements */
+.about-content p {
+    line-height: 1.8;
+}
+
+.testimony-text {
+    line-height: 1.6;
+}
+
+/* Subtle animations for professional feel */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideInFromLeft 1s ease-out;
 }
