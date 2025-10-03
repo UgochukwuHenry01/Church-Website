@@ -134,27 +134,45 @@ function searchProducts() {
     });
 }
 
+// --- CATEGORY FILTER FUNCTIONALITY ---
+function filterByCategory(category) {
+    const sections = document.querySelectorAll('.store-section');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    // Update active button
+    filterBtns.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    sections.forEach(section => {
+        if (category === 'all') {
+            section.style.display = '';
+        } else {
+            section.style.display = section.id === category ? '' : 'none';
+        }
+    });
+}
+
 // --- OPTIONAL: ADD TO CART BUTTONS FOR PRODUCT CARDS ---
 // Example: Assign prices and enable clicking on product cards to add to cart
 document.addEventListener('DOMContentLoaded', () => {
-    // Example price mapping (customize as needed)
+    // Price mapping matching HTML
     const priceMap = {
-        "Holy Bible": 20,
-        "Bible Reading Guide": 10,
-        "Family Bible": 25,
+        "Holy Bible": 25,
+        "Bible Reading Guide": 7,
+        "Family Bible": 30,
         "Study Bible": 18,
-        "Daily Devotional": 8,
-        "Bible Story Book": 12,
-        "Prayer Guide": 7,
+        "Daily Devotional": 10,
+        "Bible Story Book": 15,
+        "Prayer Guide": 12,
         "Youth Devotional": 9,
-        "Classic T-Shirt": 15,
-        "Trendy T-Shirt": 17,
-        "Logo T-Shirt": 16,
-        "Faith T-Shirt": 15,
+        "Classic T-Shirt": 17,
+        "Trendy T-Shirt": 25,
+        "Logo T-Shirt": 20,
+        "Faith T-Shirt": 22,
         "Church Flyer Pack": 5,
-        "Gospel Flyers": 5,
-        "Conference Flyers": 6,
-        "Youth Flyers": 5
+        "Gospel Flyers": 6,
+        "Conference Flyers": 8,
+        "Youth Flyers": 7
     };
 
     // Add "Add to Cart" buttons dynamically

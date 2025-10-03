@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Praise Court Assembly|Store</title>
 </head>
 
@@ -38,7 +39,7 @@
 
 
     <!-- Header / Hero -->
-    <heade r class="store-header">
+    <header class="store-header">
 
         <h1>Praise Court Assembly Store</h1>
         <p class="tagline">Faith-inspired resources for your spiritual journey</p>
@@ -47,7 +48,15 @@
             <input type="text" id="search-bar" placeholder="Search for Bibles, T-Shirts, Devotionals..."
                 onkeyup="searchProducts()">
         </div>
-        </header>
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="filter-btn active" onclick="filterByCategory('all')">All</button>
+            <button class="filter-btn" onclick="filterByCategory('bibles')">Bibles</button>
+            <button class="filter-btn" onclick="filterByCategory('devotionals')">Devotionals</button>
+            <button class="filter-btn" onclick="filterByCategory('tshirts')">T-Shirts</button>
+            <button class="filter-btn" onclick="filterByCategory('flyers')">Flyers</button>
+        </div>
+    </header>
 
         <!-- Store Wrapper -->
         <div class="store-wrapper">
@@ -56,8 +65,6 @@
             <section class="store-section" id="bibles">
                 <h2>Bibles</h2>
                 <div class="scroll-container">
-
-                    |
                     <div class="product-card" data-name="Holy Bible">
 
                         <span class="badge new">New</span>
