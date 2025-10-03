@@ -203,7 +203,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('./images/premium_photo.jpeg') no-repeat center center/cover;
+    /* background: url('./images/premium_photo.jpeg') no-repeat center center/cover; */
     opacity: 0.1;
     z-index: 0;
 }
@@ -224,32 +224,12 @@ body {
 
 .bible-quote-text {
     font-size: 2rem;
-    font-style: italic;
-    color: #360061;
+    font-style: normal;
+    /* color: #360061; */
     line-height: 1.6;
     margin-bottom: 20px;
     position: relative;
     font-weight: 600;
-}
-
-.bible-quote-text::before {
-    content: '"';
-    font-size: 4rem;
-    color: #FFD700;
-    position: absolute;
-    top: -20px;
-    left: -30px;
-    font-family: serif;
-}
-
-.bible-quote-text::after {
-    content: '"';
-    font-size: 4rem;
-    color: #FFD700;
-    position: absolute;
-    bottom: -40px;
-    right: -30px;
-    font-family: serif;
 }
 
 .bible-reference {
@@ -273,7 +253,7 @@ body {
     }
 
     .bible-quote-text {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .bible-quote-text::before,
@@ -286,7 +266,7 @@ body {
     }
 
     .bible-reference {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
